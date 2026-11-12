@@ -1,0 +1,14 @@
+12	2	counts + "ratio of the training, validation, and test sets is 7:2:1" - no rule
+13	1	"The training set was formed by randomly selecting 90% of labeled images" - random stated
+14	2	"20% of the dataset (4306 images) was allocated for testing"; remaining "further split" - no rule stated
+15	1	"The dataset is randomly divided into training, validation, and test sets in a 7:2:1 ratio" - random stated
+16	2	"partitioned the dataset of 16 125 images into 12 393 for training and 3732 for validation" - counts, no rule
+17	3	no partition statement anywhere in the complete full text
+18	3	no partition statement anywhere in the complete full text
+19	3	no partition statement anywhere in the complete full text
+20	2	set sizes given for train and test; no allocation rule stated
+21	1	"Eighty percent of the collected data were randomly used as training data" - random stated
+22	1	group-disjoint by fire, stated explicitly: "Splitting the data by fires instead of images ensures that no data related to the test set are in the training set"
+23	4	"divided ... in a ratio of 8:1:1" but the paper elsewhere defers to another work's partitioning; cannot resolve whether a rule is inherited
+24	2	"divided into training set, validation set, and test set in 8:1:1"; augmentation explicitly AFTER allocation - no allocation rule
+25	2	"was divided into training, validation, and testing sets in a ratio" - no rule

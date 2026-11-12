@@ -1,0 +1,192 @@
+[
+ {
+  "id": "A1_out_of_scope",
+  "population": "POP_VERIFIED",
+  "label": "papers out of scope among full-text-verified papers",
+  "numerator": 44,
+  "denominator": 111,
+  "source": "scripts/scope_final.py + the 10 batch scope exclusions",
+  "note": "the ten batch exclusions are full-text-verified OUT and belong in the denominator",
+  "pct": 39.6396
+ },
+ {
+  "id": "A1b_in_scope",
+  "population": "POP_VERIFIED",
+  "label": "papers in scope among full-text-verified papers",
+  "numerator": 67,
+  "denominator": 111,
+  "source": "scripts/scope_final.py",
+  "pct": 60.3604
+ },
+ {
+  "id": "A3a_out_s2",
+  "population": "POP_CANDIDATE",
+  "label": "out of scope on task (S2) across the candidate corpus",
+  "numerator": 35,
+  "denominator": 169,
+  "source": "corpus/scope_final.json",
+  "pct": 20.7101
+ },
+ {
+  "id": "A3b_out_s1",
+  "population": "POP_CANDIDATE",
+  "label": "out of scope on domain (S1) across the candidate corpus",
+  "numerator": 23,
+  "denominator": 169,
+  "source": "corpus/scope_final.json",
+  "pct": 13.6095
+ },
+ {
+  "id": "A7_oa_retrieval_failures",
+  "population": "POP_RETRIEVAL_FAILURES",
+  "label": "retrieval failures occurring on nominally open-access papers",
+  "numerator": 39,
+  "denominator": 54,
+  "source": "corpus/retrieval_table.csv",
+  "pct": 72.2222
+ },
+ {
+  "id": "E1_split_protocol",
+  "label": "split mechanism unreported",
+  "numerator": 38,
+  "denominator": 64,
+  "population": "POP_LEARNED",
+  "source": "scripts/prevalence.py (coder A, primary)",
+  "pct": 59.375
+ },
+ {
+  "id": "E2_split_protocol",
+  "label": "official held-out split used",
+  "numerator": 0,
+  "denominator": 64,
+  "population": "POP_LEARNED",
+  "source": "scripts/prevalence.py (coder A, primary)",
+  "pct": 0.0
+ },
+ {
+  "id": "E3_split_protocol",
+  "label": "augmentation before partition",
+  "numerator": 5,
+  "denominator": 64,
+  "population": "POP_LEARNED",
+  "source": "scripts/prevalence.py (coder A, primary)",
+  "pct": 7.8125
+ },
+ {
+  "id": "E4_false_alarms_per_unit_time",
+  "label": "any operational metric reported",
+  "numerator": 6,
+  "denominator": 67,
+  "population": "POP_ALL",
+  "source": "scripts/prevalence.py (coder A, primary)",
+  "pct": 8.9552
+ },
+ {
+  "id": "E5_deployment_level",
+  "label": "deployment beyond dataset-only (>= L2)",
+  "numerator": 9,
+  "denominator": 67,
+  "population": "POP_ALL",
+  "source": "scripts/prevalence.py (coder A, primary)",
+  "pct": 13.4328
+ },
+ {
+  "id": "E6_real_wildfire_detected",
+  "label": "detected a real unplanned wildfire",
+  "numerator": 2,
+  "denominator": 18,
+  "population": "POP_DEPLOY",
+  "source": "scripts/prevalence.py (coder A, primary)",
+  "pct": 11.1111
+ },
+ {
+  "id": "E7_code_available",
+  "label": "code available with a link",
+  "numerator": 4,
+  "denominator": 67,
+  "population": "POP_ALL",
+  "source": "scripts/prevalence.py (coder A, primary)",
+  "pct": 5.9701
+ },
+ {
+  "id": "E8_variance_reported",
+  "label": "variance or multiple runs reported",
+  "numerator": 4,
+  "denominator": 64,
+  "population": "POP_LEARNED",
+  "source": "scripts/prevalence.py (coder A, primary)",
+  "pct": 6.25
+ },
+ {
+  "id": "E9_duplicate_check_done",
+  "label": "duplicate check performed",
+  "numerator": 4,
+  "denominator": 64,
+  "population": "POP_LEARNED",
+  "source": "scripts/prevalence.py (coder A, primary)",
+  "pct": 6.25
+ },
+ {
+  "id": "E10_cross_dataset_eval",
+  "label": "cross-dataset evaluation",
+  "numerator": 10,
+  "denominator": 64,
+  "population": "POP_LEARNED",
+  "source": "scripts/prevalence.py (coder A, primary)",
+  "pct": 15.625
+ },
+ {
+  "id": "E11_leakage_risk",
+  "label": "high leakage risk",
+  "numerator": 11,
+  "denominator": 64,
+  "population": "POP_LEARNED",
+  "source": "scripts/prevalence.py (coder A, primary)",
+  "pct": 17.1875
+ },
+ {
+  "id": "S1_comparison_is_like_for_like",
+  "label": "comparison is like-for-like",
+  "numerator": 35,
+  "denominator": 64,
+  "population": "POP_LEARNED",
+  "source": "scripts/prevalence.py (coder A, primary)",
+  "pct": 54.6875
+ },
+ {
+  "id": "S2_tested_unseen_site_or_season",
+  "label": "tested on unseen site or season",
+  "numerator": 8,
+  "denominator": 64,
+  "population": "POP_LEARNED",
+  "source": "scripts/prevalence.py (coder A, primary)",
+  "pct": 12.5
+ },
+ {
+  "id": "S3_night_or_lowlight_tested",
+  "label": "night or low-light tested",
+  "numerator": 15,
+  "denominator": 64,
+  "population": "POP_LEARNED",
+  "source": "scripts/prevalence.py (coder A, primary)",
+  "pct": 23.4375
+ },
+ {
+  "id": "S4_adverse_weather_tested",
+  "label": "adverse weather tested",
+  "numerator": 14,
+  "denominator": 64,
+  "population": "POP_LEARNED",
+  "source": "scripts/prevalence.py (coder A, primary)",
+  "pct": 21.875
+ },
+ {
+  "id": "S5_hyperparams_full",
+  "label": "hyperparameters fully reported",
+  "numerator": 19,
+  "denominator": 64,
+  "population": "POP_LEARNED",
+  "source": "scripts/prevalence.py (coder A, primary)",
+  "pct": 29.6875
+ }
+]

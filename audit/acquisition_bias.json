@@ -1,0 +1,115 @@
+{
+ "candidates": 169,
+ "retrieved": 115,
+ "not_retrieved": 54,
+ "by_publisher": {
+  "BMC/SpringerOpen": {
+   "retrieved": 0,
+   "candidates": 2
+  },
+  "CSIRO": {
+   "retrieved": 0,
+   "candidates": 1
+  },
+  "Copernicus": {
+   "retrieved": 0,
+   "candidates": 1
+  },
+  "Elsevier": {
+   "retrieved": 12,
+   "candidates": 12
+  },
+  "Frontiers": {
+   "retrieved": 1,
+   "candidates": 2
+  },
+  "Hindawi (Wiley)": {
+   "retrieved": 0,
+   "candidates": 2
+  },
+  "IEEE": {
+   "retrieved": 23,
+   "candidates": 24
+  },
+  "IET (Wiley)": {
+   "retrieved": 0,
+   "candidates": 1
+  },
+  "IOP": {
+   "retrieved": 0,
+   "candidates": 2
+  },
+  "MDPI": {
+   "retrieved": 63,
+   "candidates": 63
+  },
+  "Nature Portfolio": {
+   "retrieved": 5,
+   "candidates": 5
+  },
+  "PLOS": {
+   "retrieved": 2,
+   "candidates": 2
+  },
+  "Springer": {
+   "retrieved": 7,
+   "candidates": 7
+  },
+  "Taylor & Francis": {
+   "retrieved": 0,
+   "candidates": 5
+  },
+  "Wiley": {
+   "retrieved": 0,
+   "candidates": 3
+  },
+  "no DOI": {
+   "retrieved": 0,
+   "candidates": 6
+  },
+  "other/small publisher": {
+   "retrieved": 2,
+   "candidates": 31
+  }
+ },
+ "by_year": {
+  "2020": {
+   "retrieved": 7,
+   "candidates": 12
+  },
+  "2021": {
+   "retrieved": 7,
+   "candidates": 12
+  },
+  "2022": {
+   "retrieved": 16,
+   "candidates": 22
+  },
+  "2023": {
+   "retrieved": 18,
+   "candidates": 25
+  },
+  "2024": {
+   "retrieved": 41,
+   "candidates": 56
+  },
+  "2025": {
+   "retrieved": 17,
+   "candidates": 27
+  },
+  "2026": {
+   "retrieved": 9,
+   "candidates": 15
+  }
+ },
+ "by_oa": {
+  "True": {
+   "retrieved": 104,
+   "candidates": 143
+  },
+  "False": {
+   "retrieved": 11,
+   "candidates": 26
+  }
+ }
+}

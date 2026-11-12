@@ -1,0 +1,64 @@
+0	1	"1% randomly sampled data and split it" - random assignment stated
+1	4	leave-one-out CV stated only for the regression sub-models; the detection model's partition is never stated
+2	2	"divided into the training set and verification set according to the ratio of 8:2" - ratio, no rule
+3	2	"partitioned into training, testing, and validation sets in a ratio of 7:2:1" - ratio, no rule
+4	2	counts only (31,696 / 14,259 / 7,896); "this partitioning strategy" never says how
+5	2	"divided into three sets: a training set (17,518 images), a validation set (5005), test set (2503)" - counts, no rule
+6	2	"split into training (70%), validation (20%), and testing (10%) subsets" - ratio, no rule
+7	2	"split into training, validation, and test sets in a ratio of 8:1:1" - ratio, no rule
+8	2	"divided into training, testing, and validation sets at a ratio of 8:1:1" - ratio, no rule
+9	2	"divided into training, validation, and test sets with a ratio of 8:1:1" - ratio, no rule
+10	2	"divided into training, validation, and test sets with an 8:1:1 distribution ratio" - ratio, no rule
+11	2	"the 6135 images ... are divided into training and testing sets by [ratio]" - ratio, no rule; column interleaving garbles the tail
+12	2	counts + "ratio of the training, validation, and test sets is 7:2:1" - no rule
+13	1	"The training set was formed by randomly selecting 90% of labeled images" - random stated
+14	2	"20% of the dataset (4306 images) was allocated for testing"; remaining "further split" - no rule stated
+15	1	"The dataset is randomly divided into training, validation, and test sets in a 7:2:1 ratio" - random stated
+16	2	"partitioned the dataset of 16 125 images into 12 393 for training and 3732 for validation" - counts, no rule
+17	3	no partition statement anywhere in the complete full text
+18	3	no partition statement anywhere in the complete full text
+19	3	no partition statement anywhere in the complete full text
+20	2	set sizes given for train and test; no allocation rule stated
+21	1	"Eighty percent of the collected data were randomly used as training data" - random stated
+22	1	group-disjoint by fire, stated explicitly: "Splitting the data by fires instead of images ensures that no data related to the test set are in the training set"
+23	4	"divided ... in a ratio of 8:1:1" but the paper elsewhere defers to another work's partitioning; cannot resolve whether a rule is inherited
+24	2	"divided into training set, validation set, and test set in 8:1:1"; augmentation explicitly AFTER allocation - no allocation rule
+25	2	"was divided into training, validation, and testing sets in a ratio" - no rule
+26	2	"divided into training, validation, and test sets at a fixed ratio of 8:1:1" - no rule
+27	2	"In a ratio of 8:1:1, the dataset is split into training, testing, and validation subsets" - no rule
+28	1	"the dataset is randomly divided into the training set, validation set, and test set according to the ratio of 70%, 20%, and 10%" - random stated
+29	2	"partitioned into three subsets: 6856 images for training, 1963 for validation, and 977 for testing" - counts, no rule
+30	2	"all the samples are divided into test sets and training sets in a 1:4 ratio" - no rule
+31	2	test-set size stated (441 images); no allocation rule anywhere
+32	1	group-disjoint stated: "the 7414 images were organized into 486 scene/event groups and divided into train, valid, and test sets"
+33	2	set sizes stated (15,000 total; 4500 held out); no allocation rule
+34	2	"The dataset is separated into 70%, 20%, and 10% for training, validation, and test" - no rule
+35	1	counts identify the benchmark's provided partition (31,515 / 7,878 / 8,617 matches FLAME's designated pool and test set); rule is the supplied split
+36	1	group-disjoint by wildfire event, stated: "test set consists of 18 large wildfires ... not included in the training set"
+37	2	"The proportion of the training set is 80%, that is, 11,520 images ... and 2880 images as the testing set" - no rule
+38	1	"The images are organized in tenfold for the test set, randomly selected" - random stated
+39	2	"we used 80% of the data and 20% for testing"; "training data were split into 80:20" - no rule
+40	2	2300 images expanded to 6500 by augmentation, then divided; counts only, no allocation rule
+41	2	"70% or around 6,300 images ... 20% ... 899 images ... set aside for testing" - counts/ratio, no rule
+42	2	"Our dataset is divided as follows: 70% for training images, 10% for test images, and 20% for validation images" - no rule
+43	1	"the training set is composed of two-class pixel-pattern samples, randomly drawn from the first frame" - random, temporal
+44	2	"split into training, testing, and validation sets. First, the testing data contained 20% of the images (4306)" - no rule
+45	1	"stratified four-fold cross-validation scheme, repeated five times" - mechanism stated
+46	1	"ordered to preserve the chronology ... earlier portion for training and the later portion for validation" - temporal, explicit
+47	2	per-palette training and test frame counts; no allocation rule
+48	1	group-disjoint by wildfire: north-east wildfire for training/validation, south and north-west wildfires as test
+49	2	"divided into training, validation, and test sets in a ratio of 7:1:2" plus counts - no rule
+50	1	"All the images ... are randomly divided into a training set, a verification set, and a test set in a ratio of 8:1:1" - random
+51	1	trained on one corpus and evaluated on separate corpora - cross-dataset design is the mechanism
+52	2	three mutually inconsistent ratios (80/20, 80/5/15, 80/20) and no allocation rule in any of them
+53	1	"we kept the wildfire events disjoints between the train, val, and test" - event-disjoint, explicit
+54	2	"divided into training, validation, and test sets, with a distribution ratio of 8:1:1" - no rule
+55	2	"The dataset was divided as follows: 80% to train and 20% to test our network" - no rule
+56	1	"each validation fold was stratified by ignition date and case number" - stratified by event, explicit
+57	1	"All experiments were conducted using stratified training-validation splits to preserve class distributions" - stratified, explicit
+58	3	no partition statement anywhere in the complete full text (15 candidates, 0 set-language)
+59	2	"The datasets were split into training, validation, and testing sets with [ratio]" - no rule
+60	1	"Among these data, 70% was used for training, and 30% was used for testing. The training and testing data were randomly selected" - random
+61	2	"We split each dataset in the ratio of 70-15-15" - no rule
+62	1	"the set of training image data taken as a randomly selected 80% of all available data" - random
+63	2	"split into training and testing sets, with 6,856 images for training and 2,940 for testing" - counts, no rule

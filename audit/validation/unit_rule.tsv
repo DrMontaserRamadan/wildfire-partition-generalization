@@ -1,0 +1,21 @@
+W4213140935	BOTH	unit=fire ("by fires instead of images"); rule=disjoint
+W7162802855	BOTH	unit=scene/event group ("organized into 486 scene/event groups"); rule=group-disjoint
+W4381250385	BOTH	unit=wildfire ("test set consists of 18 large wildfires"); rule=disjoint, not in training
+W4318206819	BOTH	unit=wildfire region (north-east vs south and north-west); rule=disjoint
+W7168166094	BOTH	unit=chronologically ordered frames; rule=temporal, earlier to train
+W7164802202	BOTH	unit=wildfire event; rule=events kept disjoint across train/val/test
+W4399939400	BOTH	unit=case (ignition date and case number); rule=stratified folds
+W4309091309	BOTH	unit=pixel patterns from the first frame; rule=random draw within that frame
+W3090022951	BOTH	unit=corpus; rule=train on one corpus, evaluate on others
+W4214895504	BOTH	unit=the benchmark's own camera-defined partition; rule=supplied split
+W4390668539	BOTH	unit=labeled images; rule=random selection
+W4205231989	BOTH	unit=images; rule=random selection into tenfold test batches
+W4400779901	BOTH	unit=images; rule=random division
+W4312250248	RULE_ONLY	rule=random sampling; the text does not say what is sampled
+W4403544374	RULE_ONLY	rule=random division; unit unstated
+W4225396518	RULE_ONLY	rule=random; unit is "the collected data", unspecified
+W4224297527	RULE_ONLY	rule=random division; unit unstated
+W4385704549	RULE_ONLY	rule=stratified four-fold CV; neither the unit nor the stratification variable is stated
+W7133182996	RULE_ONLY	rule=stratified to preserve class distribution; assignment unit unstated
+W4207031702	RULE_ONLY	rule=random selection; unit unstated
+W4399615782	RULE_ONLY	rule=random selection of 80% of "all available data"; unit unstated

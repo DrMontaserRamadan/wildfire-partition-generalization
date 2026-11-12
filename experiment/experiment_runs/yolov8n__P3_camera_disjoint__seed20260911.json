@@ -1,0 +1,64 @@
+{
+ "model": "yolov8n",
+ "partition": "P3_camera_disjoint__seed20260911",
+ "pilot": false,
+ "n_train_used": 21995,
+ "n_test": 5614,
+ "n_val": 2929,
+ "train_seconds": 2558.4,
+ "eval_seconds": 56.7,
+ "peak_gpu_gb": 0.9,
+ "metrics": {
+  "map_50": 0.39101696014404297,
+  "map_50_95": 0.1963462233543396,
+  "mar_100": 0.34418994188308716,
+  "precision": 0.4676056338028169,
+  "recall": 0.4883378861105274,
+  "f1": 0.47774694213177094
+ },
+ "operating_point": {
+  "score_threshold": 0.04561528563499451,
+  "val_precision": 0.44321329639889195,
+  "val_recall": 0.329557157569516,
+  "val_f1": 0.37802717070289427,
+  "val_n_gt": 2913,
+  "val_n_pred": 8177
+ },
+ "test_at_operating_point": {
+  "precision": 0.4676056338028169,
+  "recall": 0.4883378861105274,
+  "f1": 0.47774694213177094,
+  "tp": 2324,
+  "fp": 2646,
+  "fn": 2435,
+  "n_gt": 4759
+ },
+ "epochs": 25,
+ "hyper": {
+  "imgsz": 416,
+  "epochs": 25,
+  "batch": 16,
+  "optimizer": "SGD",
+  "momentum": 0.937,
+  "weight_decay": 0.0005,
+  "lr0": 0.01,
+  "lrf": 0.01,
+  "warmup_epochs": 3,
+  "fliplr": 0.5,
+  "pretrained": true,
+  "cos_lr": true
+ },
+ "eval_policy": {
+  "score_floor": 0.001,
+  "nms_iou": 0.5,
+  "max_det": 100,
+  "match_iou": 0.5,
+  "letterbox_fill": 114
+ },
+ "checkpoint": "corpus/checkpoints/yolov8n__P3_camera_disjoint__seed20260911.pt",
+ "checkpoint_bytes": 6204906,
+ "predictions": [
+  "corpus/predictions/yolov8n__P3_camera_disjoint__seed20260911__val.npz",
+  "corpus/predictions/yolov8n__P3_camera_disjoint__seed20260911__test.npz"
+ ]
+}

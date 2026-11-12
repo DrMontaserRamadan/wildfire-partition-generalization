@@ -1,0 +1,64 @@
+{
+ "model": "fasterrcnn",
+ "partition": "P4_partner_lopo__seed20260913",
+ "pilot": false,
+ "n_train_used": 13836,
+ "n_test": 2102,
+ "n_val": 3972,
+ "train_seconds": 2470.3,
+ "eval_seconds": 35.8,
+ "peak_gpu_gb": 1.37,
+ "metrics": {
+  "map_50": 0.007143104448914528,
+  "map_50_95": 0.0017342435894533992,
+  "mar_100": 0.0326291061937809,
+  "precision": 0.07053291536050156,
+  "recall": 0.02640845070422535,
+  "f1": 0.038428693424423566
+ },
+ "operating_point": {
+  "score_threshold": 0.27320730686187744,
+  "val_precision": 0.24317073170731707,
+  "val_recall": 0.24281539210910863,
+  "val_f1": 0.2429929320009749,
+  "val_n_gt": 4106,
+  "val_n_pred": 46052
+ },
+ "test_at_operating_point": {
+  "precision": 0.07053291536050156,
+  "recall": 0.02640845070422535,
+  "f1": 0.038428693424423566,
+  "tp": 45,
+  "fp": 593,
+  "fn": 1659,
+  "n_gt": 1704
+ },
+ "epochs": 25,
+ "hyper": {
+  "imgsz": 416,
+  "epochs": 25,
+  "batch": 16,
+  "optimizer": "SGD",
+  "momentum": 0.937,
+  "weight_decay": 0.0005,
+  "lr0": 0.01,
+  "lrf": 0.01,
+  "warmup_epochs": 3,
+  "fliplr": 0.5,
+  "pretrained": true,
+  "cos_lr": true
+ },
+ "eval_policy": {
+  "score_floor": 0.001,
+  "nms_iou": 0.5,
+  "max_det": 100,
+  "match_iou": 0.5,
+  "letterbox_fill": 114
+ },
+ "checkpoint": "corpus/checkpoints/fasterrcnn__P4_partner_lopo__seed20260913.pt",
+ "checkpoint_bytes": 76017547,
+ "predictions": [
+  "corpus/predictions/fasterrcnn__P4_partner_lopo__seed20260913__val.npz",
+  "corpus/predictions/fasterrcnn__P4_partner_lopo__seed20260913__test.npz"
+ ]
+}

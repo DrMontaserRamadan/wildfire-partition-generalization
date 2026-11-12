@@ -1,0 +1,3939 @@
+{
+ "n_papers": 67,
+ "threshold": 0.8,
+ "fields": {
+  "task": {
+   "raw": 0.9552238805970149,
+   "kappa": 0.9316326530612244,
+   "top_share": 0.5373134328358209,
+   "n_disagree": 3,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 0.9412,
+    "1": 0.9412,
+    "2": 0.9412,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 0.897,
+    "1": 0.9101,
+    "2": 0.8889,
+    "3": 1.0
+   },
+   "shard_spread": 0.0588,
+   "heterogeneous": false,
+   "transitions": {
+    "classification -> anomaly": 1,
+    "segmentation -> anomaly": 1,
+    "detection(bbox) -> multi": 1
+   },
+   "direction": null,
+   "marginal": {
+    "detection(bbox)": 36,
+    "classification": 14,
+    "segmentation": 8,
+    "multi": 6,
+    "anomaly": 2,
+    "unclear": 1
+   }
+  },
+  "target": {
+   "raw": 0.9701492537313433,
+   "kappa": 0.9566623544631307,
+   "top_share": 0.417910447761194,
+   "n_disagree": 2,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.8824,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.8191,
+    "3": 1.0
+   },
+   "shard_spread": 0.1176,
+   "heterogeneous": false,
+   "transitions": {
+    "smoke -> other": 1,
+    "flame -> both": 1
+   },
+   "direction": null,
+   "marginal": {
+    "both": 28,
+    "flame": 23,
+    "smoke": 6,
+    "thermal-hotspot": 6,
+    "other": 3,
+    "unclear": 1
+   }
+  },
+  "datasets_used": {
+   "raw": 0.08955223880597014,
+   "kappa": 0.08813029897367247,
+   "top_share": 0.014925373134328358,
+   "n_disagree": 61,
+   "absence_only_disagreements": 1,
+   "class": "EXCLUDED (free text, P2)",
+   "per_shard_raw": {
+    "0": 0.0,
+    "1": 0.2353,
+    "2": 0.1176,
+    "3": 0.0
+   },
+   "per_shard_kappa": {
+    "0": 0.0,
+    "1": 0.2246,
+    "2": 0.1115,
+    "3": 0.0
+   },
+   "shard_spread": 0.2353,
+   "heterogeneous": false,
+   "transitions": {
+    "training: corsican fire database, firenet, two center for wildfire research datasets, two public smoke datasets; test: own 'fire detection 360-degree dataset' (150 equirectangular images) -> authors' fire detection 360-degree dataset (150 equirectangular images)|corsican fire database (cfdb)|firenet dataset|two center for wildfire research datasets|two public smoke datasets": 1,
+    "bilkent|cair|corsican|dataset i (6,135 images for segmentation)|dataset ii (3,690 training images; 1,631 test images)|foggia -> bilkent (40 videos)|cair|corsican (1135 fire images)|foggia (14 fire / 17 non-fire videos)": 1,
+    "bowfire|fd-dataset|forestryimages|integrated self-assembled forest fire dataset (10,581 images)|visifire -> bowfire|fd-dataset|forestryimages|integrated self-assembled set (10,581 images)|visifire": 1,
+    "dataset 1 (smoke/fog four-class set of khan et al., 72,012 frames from seven videos)|dataset 2 (authors' own 93 uav/cctv videos: burned-area, fire-smoke, fog-area, green-area) -> dataset 1 (72,012 cctv smoke frames from seven videos; four classes isf/icf/isfn/icfn, from khan et al. [35])|dataset 2 (uav imagery from 93 recorded videos; classes iaq/icff/icn/iav)": 1,
+    "self-built 17,840-image smoke dataset ('zheng data set 2021') from cfd-simulated smoke, web-crawled images and authors' own photographs -> zheng data set 2021 (authors' own; cfd-simulated smoke, web-crawled images, author-captured forest fire smoke)": 1,
+    "figlib: 24,800 labelled images from 315 fire sequences across 101 cameras at 30 hpwren stations, june 2016 - july 2021. -> figlib (fire ignition library), 24,800 images, 315 fire sequences from 101 hpwren cameras": 1,
+    "bowfire|firesense|fismo|forestryimages|private/self-collected uav images (1400)|visifire -> 1400 self-collected uav-perspective images|bowfire|firesense|fismo|forestryimages|visifire": 1,
+    "private/self-collected fire dataset (19,819 images, from a fire protection public welfare platform)|self-made small target dataset (370 images) -> self-collected fire dataset (19,819 images from a fire-protection public welfare platform)|self-made small target fire dataset (370 images)": 1,
+    "private/self-collected wsn dataset: 7000 samples of temperature, relative humidity, light intensity and co, gathered in different climatic zones over morning/afternoon/night, including 15 controlled fires. -> private/self-collected (7000 wsn samples: temperature, relative humidity, light intensity, co)": 1,
+    "private/self-collected forest fire dataset (3170 images, used for transfer learning)|private/self-collected small-target forest fire dataset (150 images, primary) -> self-collected forest fire dataset (3170 images)|self-collected small-target forest fire dataset (150 images)": 1,
+    "self-created forest fire dataset (1,900 images: 950 fire / 950 no-fire) -> newly created forest fire dataset (1900 images: 950 fire, 950 no-fire)": 1,
+    "cctvmp4 video|flame video (ieee dataport)|forestavi video -> cctvmp4|flame video (ieee dataport)|forestavi": 1,
+    "bilkent university visifire|keimyung university cvpr laboratory wildfire and smoke dataset|private/self-collected wildfire dataset (14,400 images)|university of split fesb wildfire research center datasets -> self-collected composite dataset of 14,400 images drawn from the keimyung university cvpr laboratory wildfire and smoke dataset, the bilkent university visifire dataset and the split faculty of electrical engineering wildfire research center datasets, plus collected negatives": 1,
+    "flame 2 (self-collected during a prescribed burn; 53,451 rgb/ir frame pairs) + supplemental point cloud/orthomosaic/weather/burn plan -> flame 2 (authors' own drone rgb/ir dataset, ieee dataport)|flame 2 supplemental dataset (point cloud, orthomosaic, weather, burn plan)": 1,
+    " -> not_applicable": 1,
+    "prisma hyperspectral imagery of the 2019/2020 australian wildfires around ben halls gap national park (north-east, south and north-west fire areas), labelled by the authors. -> prisma hyperspectral imagery of the ben halls gap national park (australia) wildfires, labelled by the authors": 1,
+    "custom dataset assembled from other databases, google images and frames captured from internet forest-fire videos: 5200 base images expanded by rotation to 119,600 and by contrast/brightness manipulation to 348,600; 10,120 fire-like images and 13,800 non-fire images added. -> private/self-collected custom fire and non-fire dataset assembled from other databases, google images and frames captured from internet forest-fire videos, then expanded by rotation and contrast/brightness augmentation to 348,600 images": 1,
+    "self-assembled uav fire video set (46 videos x 150 frames from the era dataset; 2 videos from the flame dataset, one pile-burn video with 2003 annotated frames); corsican fire dataset used for cross-dataset evaluation. -> collected uav fire video dataset (self-assembled from the era dataset and the flame dataset)|corsican fire dataset (cross-dataset test only)|era|flame": 1,
+    "himawari wild fire (wlf) product|himawari-8 ahi scenes (southwest china)|viirs active fire product -> himawari-8 imagery over southwest china|viirs product (labels and reference)|wlf product": 1,
+    "self-generated suomi-npp viirs active-fire dataset (153 images, 5 bands, 375 m) from vnp02img/vnp03img; viirs af product as baseline -> authors' suomi-npp viirs wildfire dataset (153 images, five bands, 375 m)|viirs af product (baseline)": 1,
+    "sentinel-1 sar multitemporal acquisitions over one forested boreal area of interest (reference and monitored time series); 2018 labelled data used for the supervised baselines. -> sentinel-1 sar multitemporal image stack over one forested area of interest (dataset never named in the excerpt); 2018 acquisitions used for the supervised baselines": 1,
+    "fy-3d/mersi-ii scenes (australia, dec 2019 - jan 2020; grassland fire case; sun-glint case) -> fy-3d/mersi-ii level-1 observations (case scenes over australia and grassland fire cases)": 1,
+    "coco (used for cross-architecture performance analysis)|flame (non-infrared subset, 2300 images, expanded to 6500 by augmentation) -> coco (used for a general-purpose comparison of the yolo series)|flame (non-infrared subset, 2300 images, expanded to 6500 by augmentation)": 1,
+    "foggia dataset (8,974 images, via roboflow) + a custom-assembled test set of images from independent online sources -> custom-assembled challenge set of freely available internet images|foggia dataset (8,974 images, roboflow)": 1,
+    "unnamed forest fire dataset of 7878 images (5514 train / 788 validation / 1576 test); some images are from drone photography. -> unnamed forest fire image dataset of 7878 images, partly from drone photography (source not identified in the excerpt)": 1,
+    "self-built flame database (stated initial capacity five thousand images); test set of 3885 images (2500 fire, 1385 non-fire) -> authors' self-built flame database (initial capacity five thousand images; test set of 3885 images)": 1,
+    "homemade forest fire dataset (7,061 images fused from multiple sources) -> homemade forest fire dataset (7061 images fused from multiple sources)": 1,
+    "self-collected forest fire dataset of 2590 images (web images, frames extracted from downloaded forest fire videos, and the public bowfire dataset). -> bowfiredataset|private/self-collected forest fire image set (2590 images) built from frames extracted from downloaded forest fire videos plus public fire datasets": 1,
+    "self-collected wildfire image set obtained from a drone flight plus web/agency imagery (credited to wxchasing and bloomberg), segmented into 12 sub-images per 1280x720 frame and augmented; 441 complete images used for testing. -> private/self-collected (real-world imagery obtained by a drone flight, plus third-party fire imagery credited to wxchasing and bloomberg)": 1,
+    "2947 images from a mendeley forest fire dataset plus personally collected data; the authors' combined set is published as mendeley data 'forest fire dataset' (10.17632/fcsjwd9gr6.1). -> authors' own mendeley 'forest fire dataset' (doi 10.17632/fcsjwd9gr6.1)|mendeley 'dataset for forest fire detection' (khan & hassan)|personally collected images": 1,
+    "d-fire (called d-fires in the paper), 10,099 images -> d-fire (10,099 images after filtering)": 1,
+    "120 outdoor experiment images captured by the authors (open-sourced on kaggle)|619-image mixed wildfire dataset (google wildfire images + prelabelled wildfire dataset) -> 120 outdoor-experiment visible-infrared images (open-sourced on kaggle)|prelabeled wildfire dataset + google wildfire images (619-image mixed set)": 1,
+    "modis_smoke_fpt (self-constructed: modis true-colour scenes plus brightness-temperature, elevation and meteorological channels). ustc_smokers and figlib are discussed as prior datasets but not used. -> modis_smoke_fpt (private/self-collected, built by the authors from modis imagery)": 1,
+    "self-assembled dataset (roboflow/bing/flickr/kaggle sources): 7000 images reduced to 6000, expanded to 24,000 by 4x rotation augmentation -> self-collected fire/non-fire image set (7000 collected, 6000 kept, 24,000 after 4x rotation augmentation; sources include roboflow, bing, flickr, kaggle)": 1,
+    "fire and smoke dataset (naseer 2022), 9796 images, hosted on roboflow. -> fire and smoke dataset (naseer 2022), roboflow, 9796 images": 1,
+    "m4sfwd synthetic digital-twin dataset + a public fire dataset (11,303 images) + self-collected yuxi wildfire dataset (876 images); 16,125 images total -> m4sfwd synthetic digital-twin forest fire dataset (3946/3974 images)|public fire dataset (11,303 images)|yuxi wildfire dataset (876 images from 14 dji mavic air 2 videos, on github)": 1,
+    "flame dataset [29] (rgb aerial images) for the classifier; own field tests for the iot nodes -> authors' own iot sensing-node field test data|flame (rgb subset)": 1,
+    "flame (3281 images)|m4sfwd (primary; 3180/397/397 images)|sursff (self-constructed; 110 real images augmented to 550) -> flame|m4sfwd (primary)|sursff (self-constructed, 110 real images augmented)": 1,
+    "gk-2a ami geostationary imagery (level 2 cloud mask and ndvi), modis mcd12q1 land cover, dem, modis/viirs active fire products, and korea forest service wildfire records: 62 noncloud-contaminated wildfires, july 2019 - july 2022. -> dem|gk-2a ami level 1b radiances plus ami level 2 cloud mask and ndvi|korea forest service (kfs) wildfire records, 62 noncloud-contaminated wildfires july 2019-july 2022|modis and viirs active fire products (fire reference)|modis mcd12q1 v6.1 land cover|sentinel-2 l2a (visualisation)|southwestern china cases (transferability test)": 1,
+    "private/self-collected forest fire dataset (15,000 images) -> private/self-collected dataset of 15,000 forest fire images (provenance not stated)": 1,
+    "self-assembled 2876-image forest/grassland fire dataset (news sources, public forest fire datasets, drone imagery, visifire, forestry images) -> forestry images|self-assembled forest and grassland fire image set (2876 images from news sources, public forest fire datasets and drone aerial imagery)|visifire": 1,
+    "corsican (1122 images), flame (2003 images from repository 9), combined (3125), and a self-assembled smoke dataset (2848 images). -> combined corsican+flame (3125 images)|corsican (1122 images, primary)|flame (2003 images, repository 9)|smoke dataset (2848 images)": 1,
+    "publicly available mountain-fire datasets (unnamed)|self-collected uav imagery including simulated fire scenes (25,026 images in total) -> self-collected uav mountain-fire imagery (video frames)|simulated fire-scene imagery collected by drone|unnamed publicly available datasets": 1,
+    "self-organised 3603-image forest fire dataset (3468 fire/smoke images + 135 cloud background negatives) -> self-built forest fire and smoke dataset (3603 images, including 135 cloud background negatives)": 1,
+    "an unnamed public uav wildfire dataset [35]|q-fire (custom, 10,135 images after augmentation and screening)|web-scraped images incl. kaggle and mivia (2060 images) -> q-fire (custom, 10,135 images; built from a public uav wildfire dataset [35] plus images scraped from kaggle, mivia, cameras and websites)": 1,
+    "flame dataset (described by the authors as containing images and videos of forest, industrial and urban fires). -> flame": 1,
+    "flame dataset [30,31] (primary) + custom multi-sensor drone dataset (optical/ir/sar) -> custom drone-collected multi-sensor wildfire dataset (private/self-collected)|flame dataset [30,31]|other publicly available wildfire datasets": 1,
+    "landsat-8/9 oli/oli2 l1tp scenes|lfta operational product (comparator)|sentinel-2 msi l1c scenes|wfigs / ems / nafi fire perimeters (reference) -> landsat-8/9 oli/oli2 l1tp|lfta product|nafi hotspot products|nasa-firms viirs|sentinel-2 msi l1c|wfigs and ems fire perimeters": 1,
+    "d-fire dataset (17,221 train + 4,306 test) merged with 436 self-captured local forest-park images; 21,963 images total -> 436 self-captured local forest park images|d-fire dataset (17,221 training + 4,306 test images)": 1,
+    "publicly available satellite data: landsat, sentinel-1, sentinel-2 (plus environmental/meteorological covariates) -> environmental/meteorological covariates|landsat|sentinel-1|sentinel-2 multispectral imagery": 1,
+    "self-collected synchronized visible + infrared uav dataset (2752 images/pairs) from preburn/during-burn/postburn experimental sites -> authors' synchronized uav visible + infrared image pairs (2752 images) captured at experimental burn sites": 1,
+    "landsat 8 imagery (wolgan valley, nsw, australia, december 2019)|modis products (used as validation reference) -> landsat 8 imagery over wolgan valley, nsw, australia (december 2019 event)|modis (used for validation)": 1,
+    "forest-fire-detection-qkpap_dataset (roboflow, 7,514 images) -> forest-fire-detection-qkpap_dataset (roboflow, 7514 images)": 1,
+    "ffs dataset (42,900 images, kaggle forest-fire-smoke-and-non-fire)|forest fire classifier dataset (additional test set)|wd dataset (2,700 images, the wildfire dataset) -> ffs dataset (42,900 images; kaggle forest-fire-smoke-and-non-fire-image-dataset)|forest fire classifier dataset (test)|wd dataset (2,700 images; the wildfire dataset)": 1,
+    "forest fire detection dataset introduced in [19] (2603 images from online sources) -> forest fire detection dataset introduced in [19] (2603 images collected from online sources)": 1,
+    "firestage (791 images, three classes)|flame (39,375 images, primary) -> firestage (791 images, three classes)|flame (39,375 images; ieee dataport flame 2 link given)": 1,
+    "private/self-collected 5,118-image fire dataset (roboflow resources, social media, news reports, surveillance-video keyframes)|try123-v4 (roboflow, 2,967 images) -> self-built forest fire dataset (5118 annotated images)|try123-v4 (roboflow, 2967 images)": 1,
+    "m4sfwd (4312 images)|merged and curated wildfire dataset (7414 images, 486 scene/event groups)|roboflow forest-fire_dataset (3102 images) -> m4sfwd (4312 images)|roboflow forest-fire_dataset (3102 images)": 1,
+    "pyronear2025 (in-house pyronear stations + alertwildfire/hpwren scraping + google-scraped images + blender synthetic smoke); nemo; smokeframes-50k; fuego; aiformankind; figlib -> aiformankind|figlib (re-annotated)|fuego/hpwren|nemo|pyronear2025 (new; alertwildfire scrapes, in-house pyronear tower cameras, web images, blender synthetic smoke)|smokeframes-50k": 1,
+    "author-released yolo-format flame derivative with fire-tracking annotations|flame (ninth flame repository, 2003 frames) -> flame (ninth flame repository, 2003 frames) converted by the authors to a yolo-format bounding-box dataset": 1,
+    "uffs (uav-perspective forest fire smoke), 5012 smoke-positive images assembled by the authors; public wildfire smoke v1 used for a cross-dataset test; a 178-image hard-positive small-smoke subset drawn from the uffs test set. -> uffs (uav-perspective forest fire smoke), self-constructed, 5012 smoke-positive images|wildfire smoke v1 (public, cross-dataset evaluation only)": 1
+   },
+   "direction": null,
+   "marginal": {
+    "training: corsican fire database, firenet, two center for wildfire research datasets, two public smoke datasets; test: own 'fire detection 360-degree dataset' (150 equirectangular images)": 1,
+    "bilkent|cair|corsican|dataset i (6,135 images for segmentation)|dataset ii (3,690 training images; 1,631 test images)|foggia": 1,
+    "bowfire|fd-dataset|forestryimages|integrated self-assembled forest fire dataset (10,581 images)|visifire": 1,
+    "dataset 1 (smoke/fog four-class set of khan et al., 72,012 frames from seven videos)|dataset 2 (authors' own 93 uav/cctv videos: burned-area, fire-smoke, fog-area, green-area)": 1,
+    "self-built 17,840-image smoke dataset ('zheng data set 2021') from cfd-simulated smoke, web-crawled images and authors' own photographs": 1,
+    "figlib: 24,800 labelled images from 315 fire sequences across 101 cameras at 30 hpwren stations, june 2016 - july 2021.": 1,
+    "bowfire|firesense|fismo|forestryimages|private/self-collected uav images (1400)|visifire": 1,
+    "flame": 1,
+    "private/self-collected fire dataset (19,819 images, from a fire protection public welfare platform)|self-made small target dataset (370 images)": 1,
+    "private/self-collected wsn dataset: 7000 samples of temperature, relative humidity, light intensity and co, gathered in different climatic zones over morning/afternoon/night, including 15 controlled fires.": 1,
+    "private/self-collected forest fire dataset (3170 images, used for transfer learning)|private/self-collected small-target forest fire dataset (150 images, primary)": 1,
+    "self-created forest fire dataset (1,900 images: 950 fire / 950 no-fire)": 1,
+    "cctvmp4 video|flame video (ieee dataport)|forestavi video": 1,
+    "bilkent university visifire|keimyung university cvpr laboratory wildfire and smoke dataset|private/self-collected wildfire dataset (14,400 images)|university of split fesb wildfire research center datasets": 1,
+    "flame 2 (self-collected during a prescribed burn; 53,451 rgb/ir frame pairs) + supplemental point cloud/orthomosaic/weather/burn plan": 1,
+    "": 1,
+    "prisma hyperspectral imagery of the 2019/2020 australian wildfires around ben halls gap national park (north-east, south and north-west fire areas), labelled by the authors.": 1,
+    "custom dataset assembled from other databases, google images and frames captured from internet forest-fire videos: 5200 base images expanded by rotation to 119,600 and by contrast/brightness manipulation to 348,600; 10,120 fire-like images and 13,800 non-fire images added.": 1,
+    "self-assembled uav fire video set (46 videos x 150 frames from the era dataset; 2 videos from the flame dataset, one pile-burn video with 2003 annotated frames); corsican fire dataset used for cross-dataset evaluation.": 1,
+    "himawari wild fire (wlf) product|himawari-8 ahi scenes (southwest china)|viirs active fire product": 1,
+    "self-generated suomi-npp viirs active-fire dataset (153 images, 5 bands, 375 m) from vnp02img/vnp03img; viirs af product as baseline": 1,
+    "sentinel-1 sar multitemporal acquisitions over one forested boreal area of interest (reference and monitored time series); 2018 labelled data used for the supervised baselines.": 1,
+    "fy-3d/mersi-ii scenes (australia, dec 2019 - jan 2020; grassland fire case; sun-glint case)": 1,
+    "coco (used for cross-architecture performance analysis)|flame (non-infrared subset, 2300 images, expanded to 6500 by augmentation)": 1,
+    "foggia dataset (8,974 images, via roboflow) + a custom-assembled test set of images from independent online sources": 1,
+    "unnamed forest fire dataset of 7878 images (5514 train / 788 validation / 1576 test); some images are from drone photography.": 1,
+    "self-built flame database (stated initial capacity five thousand images); test set of 3885 images (2500 fire, 1385 non-fire)": 1,
+    "homemade forest fire dataset (7,061 images fused from multiple sources)": 1,
+    "flame|flame2": 1,
+    "self-collected forest fire dataset of 2590 images (web images, frames extracted from downloaded forest fire videos, and the public bowfire dataset).": 1,
+    "self-collected wildfire image set obtained from a drone flight plus web/agency imagery (credited to wxchasing and bloomberg), segmented into 12 sub-images per 1280x720 frame and augmented; 441 complete images used for testing.": 1,
+    "2947 images from a mendeley forest fire dataset plus personally collected data; the authors' combined set is published as mendeley data 'forest fire dataset' (10.17632/fcsjwd9gr6.1).": 1,
+    "d-fire (called d-fires in the paper), 10,099 images": 1,
+    "d-fire (21,527 images)|wsdy / wildfire smoke dataset yolo (737 smoke images)": 1,
+    "120 outdoor experiment images captured by the authors (open-sourced on kaggle)|619-image mixed wildfire dataset (google wildfire images + prelabelled wildfire dataset)": 1,
+    "modis_smoke_fpt (self-constructed: modis true-colour scenes plus brightness-temperature, elevation and meteorological channels). ustc_smokers and figlib are discussed as prior datasets but not used.": 1,
+    "self-assembled dataset (roboflow/bing/flickr/kaggle sources): 7000 images reduced to 6000, expanded to 24,000 by 4x rotation augmentation": 1,
+    "fire and smoke dataset (naseer 2022), 9796 images, hosted on roboflow.": 1,
+    "m4sfwd synthetic digital-twin dataset + a public fire dataset (11,303 images) + self-collected yuxi wildfire dataset (876 images); 16,125 images total": 1,
+    "flame dataset [29] (rgb aerial images) for the classifier; own field tests for the iot nodes": 1,
+    "flame (3281 images)|m4sfwd (primary; 3180/397/397 images)|sursff (self-constructed; 110 real images augmented to 550)": 1,
+    "gk-2a ami geostationary imagery (level 2 cloud mask and ndvi), modis mcd12q1 land cover, dem, modis/viirs active fire products, and korea forest service wildfire records: 62 noncloud-contaminated wildfires, july 2019 - july 2022.": 1,
+    "private/self-collected forest fire dataset (15,000 images)": 1,
+    "self-assembled 2876-image forest/grassland fire dataset (news sources, public forest fire datasets, drone imagery, visifire, forestry images)": 1,
+    "corsican (1122 images), flame (2003 images from repository 9), combined (3125), and a self-assembled smoke dataset (2848 images).": 1,
+    "publicly available mountain-fire datasets (unnamed)|self-collected uav imagery including simulated fire scenes (25,026 images in total)": 1,
+    "self-organised 3603-image forest fire dataset (3468 fire/smoke images + 135 cloud background negatives)": 1,
+    "flame (normal-spectrum, thermal-fusion, white-hot and green-hot palettes)": 1,
+    "an unnamed public uav wildfire dataset [35]|q-fire (custom, 10,135 images after augmentation and screening)|web-scraped images incl. kaggle and mivia (2060 images)": 1,
+    "flame dataset (described by the authors as containing images and videos of forest, industrial and urban fires).": 1,
+    "flame dataset [30,31] (primary) + custom multi-sensor drone dataset (optical/ir/sar)": 1,
+    "landsat-8/9 oli/oli2 l1tp scenes|lfta operational product (comparator)|sentinel-2 msi l1c scenes|wfigs / ems / nafi fire perimeters (reference)": 1,
+    "d-fire (21,527 images)|smoke and fire dataset (11,667 rgb images)": 1,
+    "d-fire dataset (17,221 train + 4,306 test) merged with 436 self-captured local forest-park images; 21,963 images total": 1,
+    "publicly available satellite data: landsat, sentinel-1, sentinel-2 (plus environmental/meteorological covariates)": 1,
+    "self-collected synchronized visible + infrared uav dataset (2752 images/pairs) from preburn/during-burn/postburn experimental sites": 1,
+    "landsat 8 imagery (wolgan valley, nsw, australia, december 2019)|modis products (used as validation reference)": 1,
+    "fire and smoke dataset (roboflow: aamir-naseer-widhl/fire-and-smoke-5)": 1,
+    "forest-fire-detection-qkpap_dataset (roboflow, 7,514 images)": 1,
+    "ffs dataset (42,900 images, kaggle forest-fire-smoke-and-non-fire)|forest fire classifier dataset (additional test set)|wd dataset (2,700 images, the wildfire dataset)": 1,
+    "forest fire detection dataset introduced in [19] (2603 images from online sources)": 1,
+    "firestage (791 images, three classes)|flame (39,375 images, primary)": 1,
+    "private/self-collected 5,118-image fire dataset (roboflow resources, social media, news reports, surveillance-video keyframes)|try123-v4 (roboflow, 2,967 images)": 1,
+    "m4sfwd (4312 images)|merged and curated wildfire dataset (7414 images, 486 scene/event groups)|roboflow forest-fire_dataset (3102 images)": 1,
+    "pyronear2025 (in-house pyronear stations + alertwildfire/hpwren scraping + google-scraped images + blender synthetic smoke); nemo; smokeframes-50k; fuego; aiformankind; figlib": 1,
+    "author-released yolo-format flame derivative with fire-tracking annotations|flame (ninth flame repository, 2003 frames)": 1,
+    "uffs (uav-perspective forest fire smoke), 5012 smoke-positive images assembled by the authors; public wildfire smoke v1 used for a cross-dataset test; a 178-image hard-positive small-smoke subset drawn from the uffs test set.": 1
+   }
+  },
+  "dataset_public": {
+   "raw": 0.8656716417910447,
+   "kappa": 0.7991339107261826,
+   "top_share": 0.3880597014925373,
+   "n_disagree": 9,
+   "absence_only_disagreements": 0,
+   "class": "SECONDARY-QUALIFIED",
+   "per_shard_raw": {
+    "0": 0.8235,
+    "1": 0.8824,
+    "2": 0.9412,
+    "3": 0.8125
+   },
+   "per_shard_kappa": {
+    "0": 0.7273,
+    "1": 0.7733,
+    "2": 0.911,
+    "3": 0.7363
+   },
+   "shard_spread": 0.1287,
+   "heterogeneous": false,
+   "transitions": {
+    "partly -> yes": 3,
+    "yes -> partly": 2,
+    "not_reported -> yes": 2,
+    "not_reported -> partly": 2
+   },
+   "direction": null,
+   "marginal": {
+    "yes": 26,
+    "not_reported": 26,
+    "partly": 12,
+    "no": 2,
+    "not_applicable": 1
+   }
+  },
+  "n_train": {
+   "raw": 0.9701492537313433,
+   "kappa": 0.9554817275747509,
+   "top_share": 0.582089552238806,
+   "n_disagree": 2,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 0.875
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 0.7576
+   },
+   "shard_spread": 0.125,
+   "heterogeneous": false,
+   "transitions": {
+    "not_reported -> 5600": 1,
+    "not_reported -> 2072": 1
+   },
+   "direction": null,
+   "marginal": {
+    "not_reported": 39,
+    "not_applicable": 3,
+    "6856": 2,
+    "8185": 1,
+    "14402": 1,
+    "11300": 1,
+    "31515": 1,
+    "11520": 1,
+    "6300": 1,
+    "5514": 1,
+    "15498": 1,
+    "500": 1,
+    "16800": 1,
+    "12393": 1,
+    "4493": 1,
+    "3180": 1,
+    "10500": 1,
+    "17518": 1,
+    "43375": 1,
+    "8494": 1,
+    "5262": 1,
+    "31696": 1,
+    "2083": 1,
+    "31500": 1,
+    "4096": 1,
+    "5189": 1
+   }
+  },
+  "n_val": {
+   "raw": 0.9402985074626866,
+   "kappa": 0.8971998465669353,
+   "top_share": 0.6716417910447762,
+   "n_disagree": 4,
+   "absence_only_disagreements": 3,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.8235,
+    "3": 0.9375
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.7671,
+    "3": 0.8351
+   },
+   "shard_spread": 0.1765,
+   "heterogeneous": false,
+   "transitions": {
+    "not_reported -> not_applicable": 3,
+    "not_reported -> 518": 1
+   },
+   "direction": null,
+   "marginal": {
+    "not_reported": 45,
+    "not_applicable": 3,
+    "7878": 1,
+    "1800": 1,
+    "788": 1,
+    "1723": 1,
+    "59": 1,
+    "1963": 1,
+    "3732": 1,
+    "561": 1,
+    "397": 1,
+    "4500": 1,
+    "5005": 1,
+    "2114": 1,
+    "1502": 1,
+    "14259": 1,
+    "260": 1,
+    "7875": 1,
+    "511": 1,
+    "1482": 1,
+    "401": 1
+   }
+  },
+  "n_test": {
+   "raw": 0.8955223880597015,
+   "kappa": 0.8284564740307243,
+   "top_share": 0.6268656716417911,
+   "n_disagree": 7,
+   "absence_only_disagreements": 5,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 0.9412,
+    "1": 0.9412,
+    "2": 0.7647,
+    "3": 0.9375
+   },
+   "per_shard_kappa": {
+    "0": 0.8882,
+    "1": 0.9187,
+    "2": 0.6531,
+    "3": 0.8351
+   },
+   "shard_spread": 0.1765,
+   "heterogeneous": false,
+   "transitions": {
+    "not_reported -> not_applicable": 3,
+    "not_applicable -> not_reported": 2,
+    "not_reported -> 1400": 1,
+    "89 -> not_reported": 1
+   },
+   "direction": null,
+   "marginal": {
+    "not_reported": 42,
+    "not_applicable": 3,
+    "150": 1,
+    "476": 1,
+    "8617": 1,
+    "2880": 1,
+    "899": 1,
+    "1576": 1,
+    "3885": 1,
+    "441": 1,
+    "4306": 1,
+    "977": 1,
+    "561": 1,
+    "397": 1,
+    "2503": 1,
+    "12353": 1,
+    "1059": 1,
+    "89": 1,
+    "2940": 1,
+    "750": 1,
+    "7896": 1,
+    "260": 1,
+    "511": 1,
+    "743": 1
+   }
+  },
+  "data_source_type": {
+   "raw": 0.9104477611940298,
+   "kappa": 0.8802145411203813,
+   "top_share": 0.373134328358209,
+   "n_disagree": 6,
+   "absence_only_disagreements": 1,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 0.9412,
+    "1": 0.8235,
+    "2": 1.0,
+    "3": 0.875
+   },
+   "per_shard_kappa": {
+    "0": 0.9146,
+    "1": 0.7548,
+    "2": 1.0,
+    "3": 0.8408
+   },
+   "shard_spread": 0.1765,
+   "heterogeneous": false,
+   "transitions": {
+    "not_reported -> mixed": 2,
+    "independent stills -> not_reported": 1,
+    "not_reported -> unclear": 1,
+    "independent stills -> mixed": 1,
+    "not_reported -> independent stills": 1
+   },
+   "direction": null,
+   "marginal": {
+    "mixed": 25,
+    "not_reported": 14,
+    "video-derived frames": 13,
+    "satellite scenes": 10,
+    "independent stills": 3,
+    "sensor time-series": 2
+   }
+  },
+  "split_protocol": {
+   "raw": 0.9701492537313433,
+   "kappa": 0.9584367245657567,
+   "top_share": 0.4925373134328358,
+   "n_disagree": 2,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 0.9412,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 0.9375
+   },
+   "per_shard_kappa": {
+    "0": 0.9217,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 0.9053
+   },
+   "shard_spread": 0.0625,
+   "heterogeneous": false,
+   "transitions": {
+    "ratio_only_mechanism_unstated -> internally_inconsistent": 2
+   },
+   "direction": null,
+   "marginal": {
+    "ratio_only_mechanism_unstated": 33,
+    "explicitly_random": 10,
+    "group_disjoint": 9,
+    "augment_then_split": 5,
+    "no_split_statement": 5,
+    "not_applicable": 3,
+    "cross_dataset": 1,
+    "k_fold_random": 1
+   }
+  },
+  "leakage_risk": {
+   "raw": 0.9253731343283582,
+   "kappa": 0.8630976706170822,
+   "top_share": 0.6567164179104478,
+   "n_disagree": 5,
+   "absence_only_disagreements": 2,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 0.9412,
+    "1": 0.8824,
+    "2": 0.8824,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 0.9066,
+    "1": 0.7821,
+    "2": 0.7875,
+    "3": 1.0
+   },
+   "shard_spread": 0.1176,
+   "heterogeneous": false,
+   "transitions": {
+    "medium -> high": 3,
+    "none_verifiable -> not_applicable": 2
+   },
+   "direction": null,
+   "marginal": {
+    "medium": 44,
+    "high": 11,
+    "low": 9,
+    "none_verifiable": 3
+   }
+  },
+  "leakage_acknowledged": {
+   "raw": 0.9701492537313433,
+   "kappa": 0.9053003533568905,
+   "top_share": 0.8059701492537313,
+   "n_disagree": 2,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 0.8824,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 0.7094,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0
+   },
+   "shard_spread": 0.1176,
+   "heterogeneous": false,
+   "transitions": {
+    "yes -> no": 1,
+    "unclear -> yes": 1
+   },
+   "direction": null,
+   "marginal": {
+    "no": 54,
+    "yes": 10,
+    "not_applicable": 2,
+    "unclear": 1
+   }
+  },
+  "duplicate_check_done": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.9104477611940298,
+   "n_disagree": 0,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": null,
+    "2": 1.0,
+    "3": 1.0
+   },
+   "shard_spread": 0.0,
+   "heterogeneous": false,
+   "transitions": {},
+   "direction": null,
+   "marginal": {
+    "no": 61,
+    "yes": 4,
+    "not_applicable": 2
+   }
+  },
+  "flame_official_test_used": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.8059701492537313,
+   "n_disagree": 0,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0
+   },
+   "shard_spread": 0.0,
+   "heterogeneous": false,
+   "transitions": {},
+   "direction": null,
+   "marginal": {
+    "not_applicable": 54,
+    "no": 10,
+    "unclear": 2,
+    "yes": 1
+   }
+  },
+  "flame_n_images_used": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.8059701492537313,
+   "n_disagree": 0,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0
+   },
+   "shard_spread": 0.0,
+   "heterogeneous": false,
+   "transitions": {},
+   "direction": null,
+   "marginal": {
+    "not_applicable": 54,
+    "not_reported": 3,
+    "2003": 3,
+    "48010": 1,
+    "2300": 1,
+    "5092": 1,
+    "5615": 1,
+    "3281": 1,
+    "55728": 1,
+    "39375": 1
+   }
+  },
+  "flame_reported_accuracy": {
+   "raw": 0.9850746268656716,
+   "kappa": 0.9556878306878306,
+   "top_share": 0.8059701492537313,
+   "n_disagree": 1,
+   "absence_only_disagreements": 1,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 0.9375
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 0.8025
+   },
+   "shard_spread": 0.0625,
+   "heterogeneous": false,
+   "transitions": {
+    "not_reported -> unclear": 1
+   },
+   "direction": null,
+   "marginal": {
+    "not_applicable": 54,
+    "not_reported": 8,
+    "85.12": 1,
+    "99.46": 1,
+    "90.1": 1,
+    "91.0": 1,
+    "99.66": 1
+   }
+  },
+  "headline_metric": {
+   "raw": 0.29850746268656714,
+   "kappa": 0.28900428990742827,
+   "top_share": 0.07462686567164178,
+   "n_disagree": 47,
+   "absence_only_disagreements": 0,
+   "class": "EXCLUDED (free text, P2)",
+   "per_shard_raw": {
+    "0": 0.3529,
+    "1": 0.7059,
+    "2": 0.1176,
+    "3": 0.0
+   },
+   "per_shard_kappa": {
+    "0": 0.3345,
+    "1": 0.6816,
+    "2": 0.1084,
+    "3": 0.0
+   },
+   "shard_spread": 0.7059,
+   "heterogeneous": true,
+   "transitions": {
+    "f-score (fire event, flame or smoke) -> f-score (fire event detected through either flame or smoke)": 1,
+    "acc (fire recognition) / segmentation scores in tables 2 and 4 -> acc (accuracy)": 1,
+    "false positive rate (on the fire-like image set) -> false positive rate (fpr)": 1,
+    "average accuracy (efficientdet) -> average accuracy (efficientdet, best of four compared detectors)": 1,
+    "image accuracy (smokeynet, resnet34 backbone, two frames) -> image accuracy (%) on the held-out test fires; f1 82.59% alongside": 1,
+    "share of flame-containing frames detected in the field video (%) -> frame-level detection rate on the flight-test video (reported as accuracy)": 1,
+    "accuracy (classification ensemble) -> accuracy": 1,
+    "accuracy (multiple linear regression model on the 20% test split) -> accuracy (theoretical, ml model on the 20% test partition)": 1,
+    "map@0.5-s improvement over the yolov5s baseline (percentage points) -> map@0.5-s (only the improvement over the baseline is given, not the absolute value)": 1,
+    "accuracy (wild flame detection) -> accuracy rate (wild flame detection)": 1,
+    "per-frame fire classification accuracy -> classification accuracy on the test set (numeric value in table 7, not present in the excerpt)": 1,
+    "average daily current consumption of the hub node (ma) -> average current consumption of the hub node over one day (ma)": 1,
+    "accuracy (values are in table 9, which the excerpt does not reproduce) -> accuracy (reported in table 9; the value itself is not present in the excerpt)": 1,
+    "accuracy (mask_rcnn_50_fpn_3x after the three-layer upgrade) -> accuracy (%)": 1,
+    "iou (ffs-unet, collected uav video dataset) -> iou (fire segmentation, own collected dataset); accuracy also reported": 1,
+    "commission error rate -> commission error rate (omission error rate 0.66 also reported)": 1,
+    "f1-score -> f1-score (per-wildfire average; overall test f1 not present in the excerpt)": 1,
+    "auc score (ftae-20d, unsupervised) -> auc (ftae-20d unsupervised autoencoder); f1 0.76 reported alongside": 1,
+    "share of detected fire pixels passing the accuracy test (%) -> percentage of fire pixels passing the distance-based accuracy test": 1,
+    "map (segmentation) -> map (segmentation comparison table)": 1,
+    "recall (best global model, yolov5s) -> recall (yolov5s, named the 'best global model' of the yolov5 variants)": 1,
+    "map50 (sps-yolov5) -> map@0.5 (%), with 43 fps": 1,
+    "precision (the excerpt gives 85.81% for the intermediate convnextv2-yolov7; the foregrounded cntcb-yolov7 value is not in the excerpt) -> accuracy/precision (%); the excerpt carries 85.81% for the intermediate convnextv2-yolov7 but no numeric value for the final cntcb-yolov7": 1,
+    "test accuracy (segnet, after l2 regularisation) -> test accuracy (%)": 1,
+    "accuracy (cnn-rcnn classification) -> accuracy (%) for the proposed cnn-rcnn classifier": 1,
+    "map@0.5 -> map0.5": 1,
+    "precision (smoke detection, modis_smoke_fpt) -> precision (smoke detection)": 1,
+    "accuracy (boosted yolov8 + transdet) -> accuracy (boosted aggregation of yolov8 and transdet)": 1,
+    "precision / recall (all classes, final c4 yolov8l model) -> recall across all classes for the final tuned c4 yolov8l configuration (precision 0.876, f1 0.848 alongside)": 1,
+    "map (832 x 832 input) -> map at 832 x 832 input": 1,
+    "map -> map (m4sfwd)": 1,
+    "f1-score (lgbm with ace and acs features) -> f1-score (%) for lgbm with ace and acs features; precision 98.56% and recall 97.78% alongside": 1,
+    "precision on raspberry pi 4b -> precision of yolo-ulnet on the raspberry pi 4b (yolo-lnet reaches map@0.5 of 71.2% on the computer)": 1,
+    "map (improvement over yolo v5; absolute value in table 1, not in excerpt) -> map and map@0.5:0.95, reported only as improvements over yolo v5 (absolute values are in table 1, not in the excerpt)": 1,
+    "iou (mobilevit_s-deeplabv3+ with combo loss, corsican dataset) -> iou (binary fire segmentation, mobilevit_s-deeplabv3+ with combo loss on corsican); f1 0.9332 and mpa 0.9876 in the same row": 1,
+    "accuracy (ensemble of resnet50v2 and inceptionv3) -> accuracy (ensemble, normal-spectrum palette)": 1,
+    "ap50 (modified miti-detr on flame) -> ap50 (average precision at iou 0.5) on flame": 1,
+    "precision -> precision (flame, table 3); iou 92.1% on the same table": 1,
+    "share of reference fire pixels flagged -> percentage of fire pixels flagged": 1,
+    "precision -> precision (yolov11x, smoke and fire dataset)": 1,
+    "map@0.5 -> map@0.5 (ffdm-f)": 1,
+    "overall accuracy and f1-score -> overall accuracy and f1-score (no numeric value given in the excerpt)": 1,
+    "accuracy -> accuracy (densenet121 + rgb on flame)": 1,
+    "map50 -> map50 (the full asca-yolo value is not stated in the excerpt; far 0.130 and mdr 0.191 are)": 1,
+    "f1 score -> f1 score on the test sets (per-dataset values are in table 2, not present in the excerpt)": 1,
+    "event-level recall -> event-level detection probability p_all at the selected operating point": 1,
+    "map50 (lrm-yolo on uffs) -> map@0.5 (%) on the uffs test set; map50-95 68.2% alongside": 1
+   },
+   "direction": null,
+   "marginal": {
+    "map": 5,
+    "accuracy": 4,
+    "map@0.5": 4,
+    "precision": 3,
+    "map@50": 2,
+    "map50": 2,
+    "f-score (fire event, flame or smoke)": 1,
+    "acc (fire recognition) / segmentation scores in tables 2 and 4": 1,
+    "false positive rate (on the fire-like image set)": 1,
+    "average accuracy (efficientdet)": 1,
+    "image accuracy (smokeynet, resnet34 backbone, two frames)": 1,
+    "share of flame-containing frames detected in the field video (%)": 1,
+    "accuracy (classification ensemble)": 1,
+    "accuracy (small target fire dataset)": 1,
+    "accuracy (multiple linear regression model on the 20% test split)": 1,
+    "map@0.5-s improvement over the yolov5s baseline (percentage points)": 1,
+    "fire detection rate (tp) and error warning rate (fp)": 1,
+    "accuracy (wild flame detection)": 1,
+    "per-frame fire classification accuracy": 1,
+    "average daily current consumption of the hub node (ma)": 1,
+    "accuracy (values are in table 9, which the excerpt does not reproduce)": 1,
+    "accuracy (mask_rcnn_50_fpn_3x after the three-layer upgrade)": 1,
+    "iou (ffs-unet, collected uav video dataset)": 1,
+    "commission error rate": 1,
+    "f1-score": 1,
+    "auc score (ftae-20d, unsupervised)": 1,
+    "share of detected fire pixels passing the accuracy test (%)": 1,
+    "map (segmentation)": 1,
+    "recall (best global model, yolov5s)": 1,
+    "map50 (sps-yolov5)": 1,
+    "ap@0.5": 1,
+    "precision (the excerpt gives 85.81% for the intermediate convnextv2-yolov7; the foregrounded cntcb-yolov7 value is not in the excerpt)": 1,
+    "test accuracy (segnet, after l2 regularisation)": 1,
+    "accuracy (cnn-rcnn classification)": 1,
+    "micro f1-score": 1,
+    "precision (smoke detection, modis_smoke_fpt)": 1,
+    "accuracy (boosted yolov8 + transdet)": 1,
+    "precision / recall (all classes, final c4 yolov8l model)": 1,
+    "map (832 x 832 input)": 1,
+    "classification accuracy": 1,
+    "f1-score (lgbm with ace and acs features)": 1,
+    "precision on raspberry pi 4b": 1,
+    "map (improvement over yolo v5; absolute value in table 1, not in excerpt)": 1,
+    "iou (mobilevit_s-deeplabv3+ with combo loss, corsican dataset)": 1,
+    "accuracy (ensemble of resnet50v2 and inceptionv3)": 1,
+    "ap50 (modified miti-detr on flame)": 1,
+    "share of reference fire pixels flagged": 1,
+    "detection accuracy (cnn)": 1,
+    "overall accuracy and f1-score": 1,
+    "map@50:95": 1,
+    "f1 score": 1,
+    "event-level recall": 1,
+    "map50 (lrm-yolo on uffs)": 1
+   }
+  },
+  "headline_value": {
+   "raw": 0.8507462686567164,
+   "kappa": 0.8451225150254277,
+   "top_share": 0.1791044776119403,
+   "n_disagree": 10,
+   "absence_only_disagreements": 2,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 0.9412,
+    "1": 0.9412,
+    "2": 0.8824,
+    "3": 0.625
+   },
+   "per_shard_kappa": {
+    "0": 0.9356,
+    "1": 0.9363,
+    "2": 0.8727,
+    "3": 0.6098
+   },
+   "shard_spread": 0.3162,
+   "heterogeneous": true,
+   "transitions": {
+    "not_reported -> unclear": 2,
+    "81 -> 81.0": 1,
+    "10.1 -> not_reported": 1,
+    "not_reported -> 0.799": 1,
+    "93 -> 0.93": 1,
+    "96 -> 96.0": 1,
+    "0.876 -> 0.821": 1,
+    "97.0 -> 91.0": 1,
+    "not_reported -> 1.0": 1
+   },
+   "direction": null,
+   "marginal": {
+    "not_reported": 12,
+    "97.0": 3,
+    "86.3": 2,
+    "94.6": 1,
+    "0.3": 1,
+    "98.97": 1,
+    "95.7": 1,
+    "83.49": 1,
+    "89.34": 1,
+    "85.12": 1,
+    "75.48": 1,
+    "81": 1,
+    "10.1": 1,
+    "98.42": 1,
+    "90.5": 1,
+    "1.4": 1,
+    "99.3": 1,
+    "0.868": 1,
+    "0.23": 1,
+    "93": 1,
+    "88.69": 1,
+    "0.908": 1,
+    "79.8": 1,
+    "95.8": 1,
+    "79.6": 1,
+    "98.2": 1,
+    "96": 1,
+    "88.8": 1,
+    "80.4": 1,
+    "96.703": 1,
+    "0.8912": 1,
+    "0.876": 1,
+    "71.0": 1,
+    "99.46": 1,
+    "98.17": 1,
+    "74.5": 1,
+    "0.8773": 1,
+    "90.85": 1,
+    "98.8": 1,
+    "54.78": 1,
+    "98.0": 1,
+    "99.0": 1,
+    "90.4": 1,
+    "93.57": 1,
+    "82.0": 1,
+    "0.954": 1,
+    "0.661": 1,
+    "79.2": 1,
+    "0.901": 1,
+    "68.5": 1,
+    "99.66": 1,
+    "94.8": 1,
+    "95.1": 1
+   }
+  },
+  "metrics_reported": {
+   "raw": 0.8208955223880597,
+   "kappa": 0.8105114305915626,
+   "top_share": 0.13432835820895522,
+   "n_disagree": 12,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 0.6471,
+    "2": 0.8235,
+    "3": 0.8125
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 0.6165,
+    "2": 0.809,
+    "3": 0.7949
+   },
+   "shard_spread": 0.3529,
+   "heterogeneous": true,
+   "transitions": {
+    "accuracy|auc|fpr -> accuracy|auc": 1,
+    "accuracy|fpr|map -> accuracy|fpr|map|precision|recall": 1,
+    "f1|precision|recall -> f1": 1,
+    " -> accuracy": 1,
+    "accuracy|map|precision|recall -> map|precision|recall": 1,
+    "ap|map -> map": 1,
+    "map -> ap|map": 1,
+    "auc|f1|precision|recall -> ap|auc|f1|precision|recall": 1,
+    "accuracy|f1|map|precision|recall -> f1|map|precision|recall": 1,
+    "f1|precision|recall -> csi (critical success index; not one of the rubric's listed metrics)|f1|precision|recall": 1,
+    "accuracy|auc|f1|precision|recall -> accuracy|auc|precision": 1,
+    "precision|recall -> fdr|fnr|precision": 1
+   },
+   "direction": null,
+   "marginal": {
+    "map|precision|recall": 9,
+    "f1|map|precision|recall": 7,
+    "accuracy|f1|precision|recall": 4,
+    "map": 4,
+    "f1|iou|precision|recall": 3,
+    "accuracy|f1|fpr|precision|recall": 3,
+    "accuracy|f1|map|precision|recall": 3,
+    "f1|precision|recall": 3,
+    "accuracy|auc|f1|precision|recall": 3,
+    "accuracy|map": 2,
+    "accuracy|f1": 2,
+    "accuracy": 2,
+    "": 2,
+    "accuracy|map|precision|recall": 2,
+    "map|precision": 2,
+    "precision|recall": 2,
+    "accuracy|auc|fpr": 1,
+    "accuracy|fpr|map": 1,
+    "fpr|recall": 1,
+    "accuracy|f1|iou|precision|recall": 1,
+    "accuracy|precision": 1,
+    "ap|map": 1,
+    "auc|f1|precision|recall": 1,
+    "accuracy|f1|iou|mcc|precision|recall": 1,
+    "accuracy|map|precision": 1,
+    "iou|map|precision|recall": 1,
+    "accuracy|f1|precision": 1,
+    "accuracy|map|recall": 1,
+    "fpr|map|precision|recall": 1,
+    "map|recall": 1
+   }
+  },
+  "class_balance_reported": {
+   "raw": 0.9402985074626866,
+   "kappa": 0.8835794960903565,
+   "top_share": 0.5223880597014925,
+   "n_disagree": 4,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 0.9412,
+    "2": 0.9412,
+    "3": 0.875
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 0.8828,
+    "2": 0.891,
+    "3": 0.75
+   },
+   "shard_spread": 0.125,
+   "heterogeneous": false,
+   "transitions": {
+    "no -> yes": 2,
+    "yes -> no": 2
+   },
+   "direction": null,
+   "marginal": {
+    "no": 35,
+    "yes": 31,
+    "not_applicable": 1
+   }
+  },
+  "variance_reported": {
+   "raw": 0.9701492537313433,
+   "kappa": 0.739299610894942,
+   "top_share": 0.9552238805970149,
+   "n_disagree": 2,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 0.875
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": null,
+    "3": 0.4483
+   },
+   "shard_spread": 0.125,
+   "heterogeneous": false,
+   "transitions": {
+    "no -> unclear": 2
+   },
+   "direction": null,
+   "marginal": {
+    "no": 64,
+    "yes": 2,
+    "unclear": 1
+   }
+  },
+  "n_runs": {
+   "raw": 0.9701492537313433,
+   "kappa": 0.7886435331230286,
+   "top_share": 0.9253731343283582,
+   "n_disagree": 2,
+   "absence_only_disagreements": 2,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 0.9412,
+    "2": 0.9412,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 0.6458,
+    "2": 0.0,
+    "3": 1.0
+   },
+   "shard_spread": 0.0588,
+   "heterogeneous": false,
+   "transitions": {
+    "not_reported -> not_applicable": 1,
+    "not_applicable -> not_reported": 1
+   },
+   "direction": null,
+   "marginal": {
+    "not_reported": 62,
+    "5": 3,
+    "10": 1,
+    "not_applicable": 1
+   }
+  },
+  "statistical_test_vs_baseline": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.9850746268656716,
+   "n_disagree": 0,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": null,
+    "2": null,
+    "3": null
+   },
+   "shard_spread": 0.0,
+   "heterogeneous": false,
+   "transitions": {},
+   "direction": null,
+   "marginal": {
+    "no": 66,
+    "yes": 1
+   }
+  },
+  "ablation_present": {
+   "raw": 0.9701492537313433,
+   "kappa": 0.9323232323232323,
+   "top_share": 0.6716417910447762,
+   "n_disagree": 2,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 0.9412,
+    "1": 0.9412,
+    "2": 1.0,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 0.8496,
+    "1": 0.8828,
+    "2": 1.0,
+    "3": 1.0
+   },
+   "shard_spread": 0.0588,
+   "heterogeneous": false,
+   "transitions": {
+    "no -> yes": 1,
+    "yes -> no": 1
+   },
+   "direction": null,
+   "marginal": {
+    "yes": 45,
+    "no": 22
+   }
+  },
+  "comparison_is_like_for_like": {
+   "raw": 0.9104477611940298,
+   "kappa": 0.8513313609467456,
+   "top_share": 0.5522388059701493,
+   "n_disagree": 6,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 0.8824,
+    "2": 0.8824,
+    "3": 0.875
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 0.7952,
+    "2": 0.8201,
+    "3": 0.8072
+   },
+   "shard_spread": 0.125,
+   "heterogeneous": false,
+   "transitions": {
+    "no -> yes": 2,
+    "yes -> unclear": 2,
+    "unclear -> yes": 1,
+    "no -> unclear": 1
+   },
+   "direction": null,
+   "marginal": {
+    "yes": 37,
+    "no": 15,
+    "unclear": 13,
+    "not_applicable": 2
+   }
+  },
+  "cross_dataset_eval": {
+   "raw": 0.9850746268656716,
+   "kappa": 0.9483821263482279,
+   "top_share": 0.8208955223880597,
+   "n_disagree": 1,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.9412,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.6458,
+    "3": 1.0
+   },
+   "shard_spread": 0.0588,
+   "heterogeneous": false,
+   "transitions": {
+    "yes -> no": 1
+   },
+   "direction": null,
+   "marginal": {
+    "no": 55,
+    "yes": 11,
+    "not_applicable": 1
+   }
+  },
+  "cross_dataset_delta": {
+   "raw": 0.9701492537313433,
+   "kappa": 0.9220023282887079,
+   "top_share": 0.7611940298507462,
+   "n_disagree": 2,
+   "absence_only_disagreements": 1,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.9412,
+    "3": 0.9375
+   },
+   "per_shard_kappa": {
+    "0": null,
+    "1": null,
+    "2": 0.0,
+    "3": 0.0
+   },
+   "shard_spread": 0.0625,
+   "heterogeneous": false,
+   "transitions": {
+    "not_reported -> -2.0 iou points (0.868 on the collected set vs 0.848 on corsican); accuracy 97.9% vs 94.89%. derived by the coder from two reported numbers; the paper states no delta.": 1,
+    "not_reported -> not_applicable": 1
+   },
+   "direction": null,
+   "marginal": {
+    "not_reported": 51,
+    "not_applicable": 16
+   }
+  },
+  "tested_unseen_site_or_season": {
+   "raw": 0.9253731343283582,
+   "kappa": 0.7681660899653979,
+   "top_share": 0.835820895522388,
+   "n_disagree": 5,
+   "absence_only_disagreements": 0,
+   "class": "SECONDARY-QUALIFIED",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.8235,
+    "3": 0.875
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.5446,
+    "3": 0.6832
+   },
+   "shard_spread": 0.1765,
+   "heterogeneous": false,
+   "transitions": {
+    "no -> unclear": 2,
+    "no -> yes": 2,
+    "unclear -> yes": 1
+   },
+   "direction": null,
+   "marginal": {
+    "no": 56,
+    "yes": 10,
+    "unclear": 1
+   }
+  },
+  "night_or_lowlight_tested": {
+   "raw": 0.9253731343283582,
+   "kappa": 0.8233122362869199,
+   "top_share": 0.7164179104477612,
+   "n_disagree": 5,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 0.9412,
+    "1": 1.0,
+    "2": 0.8824,
+    "3": 0.875
+   },
+   "per_shard_kappa": {
+    "0": 0.8712,
+    "1": 1.0,
+    "2": 0.6852,
+    "3": 0.6596
+   },
+   "shard_spread": 0.125,
+   "heterogeneous": false,
+   "transitions": {
+    "not_applicable -> no": 1,
+    "unclear -> yes": 1,
+    "no -> not_applicable": 1,
+    "no -> yes": 1,
+    "unclear -> no": 1
+   },
+   "direction": null,
+   "marginal": {
+    "no": 48,
+    "yes": 16,
+    "unclear": 2,
+    "not_applicable": 1
+   }
+  },
+  "smoke_only_early_stage_tested": {
+   "raw": 0.8805970149253731,
+   "kappa": 0.7338629592850049,
+   "top_share": 0.7611940298507462,
+   "n_disagree": 8,
+   "absence_only_disagreements": 0,
+   "class": "SECONDARY-QUALIFIED",
+   "per_shard_raw": {
+    "0": 0.8824,
+    "1": 0.8235,
+    "2": 0.9412,
+    "3": 0.875
+   },
+   "per_shard_kappa": {
+    "0": 0.6047,
+    "1": 0.5487,
+    "2": 0.891,
+    "3": 0.6952
+   },
+   "shard_spread": 0.1176,
+   "heterogeneous": false,
+   "transitions": {
+    "no -> yes": 5,
+    "no -> not_applicable": 2,
+    "yes -> no": 1
+   },
+   "direction": null,
+   "marginal": {
+    "no": 51,
+    "yes": 9,
+    "not_applicable": 7
+   }
+  },
+  "adverse_weather_tested": {
+   "raw": 0.9402985074626866,
+   "kappa": 0.8359853121175032,
+   "top_share": 0.7761194029850746,
+   "n_disagree": 4,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 0.9412,
+    "1": 1.0,
+    "2": 0.8824,
+    "3": 0.9375
+   },
+   "per_shard_kappa": {
+    "0": 0.8211,
+    "1": 1.0,
+    "2": 0.4516,
+    "3": 0.871
+   },
+   "shard_spread": 0.1176,
+   "heterogeneous": false,
+   "transitions": {
+    "no -> yes": 3,
+    "yes -> no": 1
+   },
+   "direction": null,
+   "marginal": {
+    "no": 52,
+    "yes": 15
+   }
+  },
+  "false_positive_sources_analysed": {
+   "raw": 0.9701492537313433,
+   "kappa": 0.9338598223099704,
+   "top_share": 0.6716417910447762,
+   "n_disagree": 2,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 0.9412,
+    "2": 1.0,
+    "3": 0.9375
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 0.8496,
+    "2": 1.0,
+    "3": 0.8621
+   },
+   "shard_spread": 0.0625,
+   "heterogeneous": false,
+   "transitions": {
+    "yes -> no": 2
+   },
+   "direction": null,
+   "marginal": {
+    "yes": 45,
+    "no": 22
+   }
+  },
+  "deployment_level": {
+   "raw": 0.9850746268656716,
+   "kappa": 0.9659033078880406,
+   "top_share": 0.7313432835820896,
+   "n_disagree": 1,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.9412,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.8741,
+    "3": 1.0
+   },
+   "shard_spread": 0.0588,
+   "heterogeneous": false,
+   "transitions": {
+    "l3 -> unclear": 1
+   },
+   "direction": null,
+   "marginal": {
+    "l0": 49,
+    "l1": 9,
+    "l2": 6,
+    "l3": 3
+   }
+  },
+  "deployment_duration_days": {
+   "raw": 0.44776119402985076,
+   "kappa": -0.34072471606273635,
+   "top_share": 0.7910447761194029,
+   "n_disagree": 37,
+   "absence_only_disagreements": 37,
+   "class": "UNRELIABLE-REMOVE",
+   "per_shard_raw": {
+    "0": 0.4118,
+    "1": 1.0,
+    "2": 0.2941,
+    "3": 0.0625
+   },
+   "per_shard_kappa": {
+    "0": 0.0,
+    "1": null,
+    "2": 0.0,
+    "3": -0.0619
+   },
+   "shard_spread": 0.9375,
+   "heterogeneous": true,
+   "transitions": {
+    "not_reported -> not_applicable": 22,
+    "not_applicable -> not_reported": 14,
+    "not_reported -> unclear": 1
+   },
+   "direction": null,
+   "marginal": {
+    "not_reported": 53,
+    "not_applicable": 14
+   }
+  },
+  "n_nodes_or_cameras": {
+   "raw": 0.417910447761194,
+   "kappa": -0.05320435308343415,
+   "top_share": 0.7014925373134329,
+   "n_disagree": 39,
+   "absence_only_disagreements": 34,
+   "class": "UNRELIABLE-REMOVE",
+   "per_shard_raw": {
+    "0": 0.2941,
+    "1": 1.0,
+    "2": 0.2941,
+    "3": 0.0625
+   },
+   "per_shard_kappa": {
+    "0": 0.157,
+    "1": 1.0,
+    "2": 0.0893,
+    "3": 0.0551
+   },
+   "shard_spread": 0.9375,
+   "heterogeneous": true,
+   "transitions": {
+    "not_reported -> not_applicable": 21,
+    "not_applicable -> not_reported": 13,
+    "not_reported -> 1": 2,
+    "not_applicable -> 101": 1,
+    "1 -> unclear": 1,
+    "not_reported -> 2": 1
+   },
+   "direction": null,
+   "marginal": {
+    "not_reported": 47,
+    "not_applicable": 14,
+    "1": 4,
+    "5": 1,
+    "51": 1
+   }
+  },
+  "area_covered_km2": {
+   "raw": 0.7014925373134329,
+   "kappa": 0.13156189241736885,
+   "top_share": 0.9552238805970149,
+   "n_disagree": 20,
+   "absence_only_disagreements": 19,
+   "class": "UNRELIABLE-REMOVE",
+   "per_shard_raw": {
+    "0": 0.4118,
+    "1": 0.9412,
+    "2": 0.4706,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 0.1146,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 1.0
+   },
+   "shard_spread": 0.5882,
+   "heterogeneous": true,
+   "transitions": {
+    "not_reported -> not_applicable": 19,
+    "10000.0 -> not_reported": 1
+   },
+   "direction": {
+    "a": "not_reported",
+    "b": "not_applicable",
+    "n_ab": 19,
+    "n_ba": 0,
+    "p": 3.814697265625e-06
+   },
+   "marginal": {
+    "not_reported": 64,
+    "25.0": 1,
+    "5.0": 1,
+    "10000.0": 1
+   }
+  },
+  "real_wildfire_detected": {
+   "raw": 0.9701492537313433,
+   "kappa": 0.9506990434142755,
+   "top_share": 0.582089552238806,
+   "n_disagree": 2,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 0.9412,
+    "2": 0.9412,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 0.8867,
+    "2": 0.8828,
+    "3": 1.0
+   },
+   "shard_spread": 0.0588,
+   "heterogeneous": false,
+   "transitions": {
+    "test burns only -> yes": 1,
+    "no -> test burns only": 1
+   },
+   "direction": null,
+   "marginal": {
+    "no": 39,
+    "not_reported": 13,
+    "test burns only": 8,
+    "yes": 7
+   }
+  },
+  "failure_modes_reported": {
+   "raw": 0.9552238805970149,
+   "kappa": 0.8880222841225627,
+   "top_share": 0.7313432835820896,
+   "n_disagree": 3,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 0.9412,
+    "1": 0.9412,
+    "2": 0.9412,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 0.7671,
+    "1": 0.8811,
+    "2": 0.8661,
+    "3": 1.0
+   },
+   "shard_spread": 0.0588,
+   "heterogeneous": false,
+   "transitions": {
+    "yes -> no": 2,
+    "no -> yes": 1
+   },
+   "direction": null,
+   "marginal": {
+    "yes": 49,
+    "no": 18
+   }
+  },
+  "false_alarms_per_unit_time": {
+   "raw": 1.0,
+   "kappa": null,
+   "top_share": 1.0,
+   "n_disagree": 0,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": null,
+    "1": null,
+    "2": null,
+    "3": null
+   },
+   "shard_spread": 0.0,
+   "heterogeneous": false,
+   "transitions": {},
+   "direction": null,
+   "marginal": {
+    "not_reported": 67
+   }
+  },
+  "time_to_detection": {
+   "raw": 0.9552238805970149,
+   "kappa": 0.48854961832061083,
+   "top_share": 0.9552238805970149,
+   "n_disagree": 3,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 0.8824,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 0.9375
+   },
+   "per_shard_kappa": {
+    "0": 0.4688,
+    "1": null,
+    "2": null,
+    "3": 0.4839
+   },
+   "shard_spread": 0.1176,
+   "heterogeneous": false,
+   "transitions": {
+    "3.12 min (average) -> 3.12 min average time to detection": 1,
+    "1-5 min after fire ignition (iot sensing nodes, 10 repeated ignition tests) -> 1-5 min after fire ignition (iot sensing node alarm; test repeated 10 times)": 1,
+    "measured as seconds between annotated ignition and the first automated positive prediction; numeric value not present in the excerpt -> reported in seconds as the gap between the manual ignition mark and the first automated positive prediction sequence (numeric values not in the excerpt)": 1
+   },
+   "direction": null,
+   "marginal": {
+    "not_reported": 64,
+    "3.12 min (average)": 1,
+    "1-5 min after fire ignition (iot sensing nodes, 10 repeated ignition tests)": 1,
+    "measured as seconds between annotated ignition and the first automated positive prediction; numeric value not present in the excerpt": 1
+   }
+  },
+  "min_detectable_fire_size": {
+   "raw": 0.9552238805970149,
+   "kappa": 0.24150943396226524,
+   "top_share": 0.9850746268656716,
+   "n_disagree": 3,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.9412,
+    "3": 0.875
+   },
+   "per_shard_kappa": {
+    "0": null,
+    "1": null,
+    "2": 0.4848,
+    "3": 0.0
+   },
+   "shard_spread": 0.125,
+   "heterogeneous": false,
+   "transitions": {
+    "fires smaller than about 6 hectares (1.5% of a pixel) were missed -> approximately 6 hectares (all missed fire cases burned less than 6 ha, about 1.5% of a pixel)": 1,
+    "not_reported -> not directly reported; the evaluated case set was restricted to wildfires damaging at least 1 hectare, most of them under 10 hectares": 1,
+    "not_reported -> relative only: hard-positive subset defined as annotated smoke boxes covering less than 1% of image area (178 images); no physical fire size reported": 1
+   },
+   "direction": null,
+   "marginal": {
+    "not_reported": 66,
+    "fires smaller than about 6 hectares (1.5% of a pixel) were missed": 1
+   }
+  },
+  "detection_range": {
+   "raw": 0.9253731343283582,
+   "kappa": 0.2701525054466227,
+   "top_share": 0.9701492537313433,
+   "n_disagree": 5,
+   "absence_only_disagreements": 3,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 0.9412,
+    "2": 0.8235,
+    "3": 0.9375
+   },
+   "per_shard_kappa": {
+    "0": null,
+    "1": 0.4848,
+    "2": 0.0,
+    "3": 0.4839
+   },
+   "shard_spread": 0.1765,
+   "heterogeneous": false,
+   "transitions": {
+    "not_reported -> not_applicable": 3,
+    "node placed 1 m from the fire in the test configuration -> 1 m (sensor node placed one metre from a fire created in a 1 m2 area during the trials)": 1,
+    "17.1-51.2 m (ground-truth camera-to-fire distances in the five flight tests) -> uav-to-fire ground-truth distances of 17.1-51.2 m tested": 1
+   },
+   "direction": null,
+   "marginal": {
+    "not_reported": 65,
+    "node placed 1 m from the fire in the test configuration": 1,
+    "17.1-51.2 m (ground-truth camera-to-fire distances in the five flight tests)": 1
+   }
+  },
+  "power_measured": {
+   "raw": 0.9552238805970149,
+   "kappa": 0.8082061068702289,
+   "top_share": 0.8955223880597015,
+   "n_disagree": 3,
+   "absence_only_disagreements": 3,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.8235,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.5234,
+    "3": 1.0
+   },
+   "shard_spread": 0.1765,
+   "heterogeneous": false,
+   "transitions": {
+    "not_reported -> not_applicable": 3
+   },
+   "direction": null,
+   "marginal": {
+    "not_reported": 60,
+    "measured": 4,
+    "estimated": 2,
+    "unclear": 1
+   }
+  },
+  "latency_measured_on_target_hw": {
+   "raw": 0.9701492537313433,
+   "kappa": 0.8621399176954734,
+   "top_share": 0.8955223880597015,
+   "n_disagree": 2,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.8824,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 0.7069,
+    "3": 1.0
+   },
+   "shard_spread": 0.1176,
+   "heterogeneous": false,
+   "transitions": {
+    "no -> unclear": 2
+   },
+   "direction": null,
+   "marginal": {
+    "no": 60,
+    "yes": 6,
+    "not_applicable": 1
+   }
+  },
+  "target_hardware_named": {
+   "raw": 0.835820895522388,
+   "kappa": 0.6369458128078818,
+   "top_share": 0.7313432835820896,
+   "n_disagree": 11,
+   "absence_only_disagreements": 0,
+   "class": "EXCLUDED (free text, P2)",
+   "per_shard_raw": {
+    "0": 0.8824,
+    "1": 0.7647,
+    "2": 0.8235,
+    "3": 0.875
+   },
+   "per_shard_kappa": {
+    "0": 0.7606,
+    "1": 0.3645,
+    "2": 0.6434,
+    "3": 0.7091
+   },
+   "shard_spread": 0.1176,
+   "heterogeneous": false,
+   "transitions": {
+    "nvidia jetson nano (4 gb); also gtx 1650 and tesla t4 -> nvidia jetson nano (4 gb ram, 128 cuda cores), used with a uav/cctv edge configuration": 1,
+    "raspberry pi controller (four-core arm-a73) with oak-d camera and gps module, on a uav with 40 min max flight time -> raspberry pi controller (four-core arm-a73) with an oak-d camera and gps module, carried on a uav": 1,
+    "nrf24l01 transceiver on every sensor node, cluster head and base node; 18650 li-ion cells with a 5 w solar panel (compute platform not named) -> nrf24l01 transceiver on sensor nodes, cluster heads and base node; 18650 li-ion cells plus a 5 w solar panel. no mcu or inference platform named in the excerpt.": 1,
+    "cn0537 optical smoke-sensor board; scd30 co2 sensor; 915 mhz lora transceiver with 2 dbi antenna; lte modem shield with iot data sim -> cn0537 optical smoke-sensor board, scd30 co2 sensor, 915 mhz lora transceiver, lte modem shield (mcu model not named in the excerpt)": 1,
+    "intel movidius myriad 2 vpu, nvidia jetson nano, nvidia jetson tx2 (candidate cubesat onboard accelerators) -> intel movidius myriad 2 vpu, nvidia jetson nano, nvidia jetson tx2 (training on an nvidia rtx2060 pc)": 1,
+    "icrest2.0 (nvidia jetson xavier nx) onboard computer -> icrest2.0 (nvidia jetson xavier nx) onboard computer; dji m300 uav with zenmuse h20t": 1,
+    "nvidia jetson xavier nx (edge); nvidia rtx 4080 (server) -> nvidia jetson xavier nx (edge) and nvidia rtx 4080; dji mavic series uav": 1,
+    "iot sensing node (microcontroller with ulp co-processor + lora module); raspberry pi hq 12 mp camera module on the drone -> custom lora iot sensing node (2-layer pcb, ulp co-processor, air-quality sensor); drone with raspberry pi hq 12 mp camera module": 1,
+    "google earth engine (beta nhi-f tool) -> not_reported": 1,
+    "nvidia jetson nano (named as the planned platform only; never used for measurement) -> nvidia jetson nano (named as the intended platform; not yet deployed)": 1,
+    "raspberry pi 4 with 8 gb ram running raspberry pi os (64-bit); nvidia jetson nano named only as future work -> raspberry pi 4 with 8 gb ram running raspberry pi os (64-bit)": 1
+   },
+   "direction": null,
+   "marginal": {
+    "not_reported": 49,
+    "raspberry pi 3b+": 2,
+    "nvidia jetson nano (4 gb); also gtx 1650 and tesla t4": 1,
+    "raspberry pi controller (four-core arm-a73) with oak-d camera and gps module, on a uav with 40 min max flight time": 1,
+    "nrf24l01 transceiver on every sensor node, cluster head and base node; 18650 li-ion cells with a 5 w solar panel (compute platform not named)": 1,
+    "cn0537 optical smoke-sensor board; scd30 co2 sensor; 915 mhz lora transceiver with 2 dbi antenna; lte modem shield with iot data sim": 1,
+    "intel movidius myriad 2 vpu, nvidia jetson nano, nvidia jetson tx2 (candidate cubesat onboard accelerators)": 1,
+    "nvidia jetson xavier nx onboard computer; codev flight controller based on pixhawk v5": 1,
+    "nvidia jetson nano (onboard), with raspberry pi and navio2 flight controller": 1,
+    "icrest2.0 (nvidia jetson xavier nx) onboard computer": 1,
+    "nvidia jetson xavier nx (edge); nvidia rtx 4080 (server)": 1,
+    "iot sensing node (microcontroller with ulp co-processor + lora module); raspberry pi hq 12 mp camera module on the drone": 1,
+    "raspberry pi 4b": 1,
+    "nvidia jetson agx xavier (8-core arm cpu, 512-core volta gpu, 32 gb ram)": 1,
+    "google earth engine (beta nhi-f tool)": 1,
+    "nvidia jetson nano (named as the planned platform only; never used for measurement)": 1,
+    "raspberry pi 4 with 8 gb ram running raspberry pi os (64-bit); nvidia jetson nano named only as future work": 1,
+    "pyronear station: camera + raspberry pi + 4g usb key": 1
+   }
+  },
+  "code_available": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.9402985074626866,
+   "n_disagree": 0,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": null,
+    "1": 1.0,
+    "2": null,
+    "3": 1.0
+   },
+   "shard_spread": 0.0,
+   "heterogeneous": false,
+   "transitions": {},
+   "direction": null,
+   "marginal": {
+    "no": 63,
+    "yes+link": 4
+   }
+  },
+  "weights_available": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.9552238805970149,
+   "n_disagree": 0,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": null,
+    "1": 1.0,
+    "2": 1.0,
+    "3": null
+   },
+   "shard_spread": 0.0,
+   "heterogeneous": false,
+   "transitions": {},
+   "direction": null,
+   "marginal": {
+    "no": 64,
+    "not_applicable": 3
+   }
+  },
+  "link_resolves": {
+   "raw": 0.835820895522388,
+   "kappa": 0.0,
+   "top_share": 0.835820895522388,
+   "n_disagree": 11,
+   "absence_only_disagreements": 11,
+   "class": "UNRELIABLE-REMOVE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 0.3529,
+    "2": 1.0,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": null,
+    "1": 0.0,
+    "2": null,
+    "3": null
+   },
+   "shard_spread": 0.6471,
+   "heterogeneous": true,
+   "transitions": {
+    "not_applicable -> not_checked": 11
+   },
+   "direction": {
+    "a": "not_applicable",
+    "b": "not_checked",
+    "n_ab": 11,
+    "n_ba": 0,
+    "p": 0.0009765625
+   },
+   "marginal": {
+    "not_checked": 56,
+    "not_applicable": 11
+   }
+  },
+  "hyperparams_full": {
+   "raw": 0.7910447761194029,
+   "kappa": 0.6836424957841484,
+   "top_share": 0.417910447761194,
+   "n_disagree": 14,
+   "absence_only_disagreements": 0,
+   "class": "SECONDARY-QUALIFIED",
+   "per_shard_raw": {
+    "0": 0.8824,
+    "1": 0.8235,
+    "2": 0.7647,
+    "3": 0.6875
+   },
+   "per_shard_kappa": {
+    "0": 0.8247,
+    "1": 0.4396,
+    "2": 0.6777,
+    "3": 0.5531
+   },
+   "shard_spread": 0.1949,
+   "heterogeneous": false,
+   "transitions": {
+    "yes -> partial": 6,
+    "partial -> yes": 3,
+    "no -> partial": 3,
+    "partial -> unclear": 1,
+    "not_applicable -> yes": 1
+   },
+   "direction": null,
+   "marginal": {
+    "partial": 28,
+    "yes": 20,
+    "no": 17,
+    "not_applicable": 2
+   }
+  },
+  "seed_reported": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.9104477611940298,
+   "n_disagree": 0,
+   "absence_only_disagreements": 0,
+   "class": "PRIMARY-SAFE",
+   "per_shard_raw": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0
+   },
+   "per_shard_kappa": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": null
+   },
+   "shard_spread": 0.0,
+   "heterogeneous": false,
+   "transitions": {},
+   "direction": null,
+   "marginal": {
+    "no": 61,
+    "not_applicable": 3,
+    "yes": 3
+   }
+  }
+ },
+ "disagreements": {
+  "task": [
+   [
+    "W4386251007",
+    "classification",
+    "anomaly"
+   ],
+   [
+    "W4406322764",
+    "segmentation",
+    "anomaly"
+   ],
+   [
+    "W7164802202",
+    "detection(bbox)",
+    "multi"
+   ]
+  ],
+  "target": [
+   [
+    "W4317934269",
+    "smoke",
+    "other"
+   ],
+   [
+    "W7133182996",
+    "flame",
+    "both"
+   ]
+  ],
+  "datasets_used": [
+   [
+    "W3090022951",
+    "training: corsican fire database, firenet, two center for wildfire research datasets, two public smoke datasets; test: own 'fire detection 360-degree dataset' (150 equirectangular images)",
+    "authors' fire detection 360-degree dataset (150 equirectangular images)|corsican fire database (cfdb)|firenet dataset|two center for wildfire research datasets|two public smoke datasets"
+   ],
+   [
+    "W3120107013",
+    "bilkent|cair|corsican|dataset i (6,135 images for segmentation)|dataset ii (3,690 training images; 1,631 test images)|foggia",
+    "bilkent (40 videos)|cair|corsican (1135 fire images)|foggia (14 fire / 17 non-fire videos)"
+   ],
+   [
+    "W3132971810",
+    "bowfire|fd-dataset|forestryimages|integrated self-assembled forest fire dataset (10,581 images)|visifire",
+    "bowfire|fd-dataset|forestryimages|integrated self-assembled set (10,581 images)|visifire"
+   ],
+   [
+    "W4205231989",
+    "dataset 1 (smoke/fog four-class set of khan et al., 72,012 frames from seven videos)|dataset 2 (authors' own 93 uav/cctv videos: burned-area, fire-smoke, fog-area, green-area)",
+    "dataset 1 (72,012 cctv smoke frames from seven videos; four classes isf/icf/isfn/icfn, from khan et al. [35])|dataset 2 (uav imagery from 93 recorded videos; classes iaq/icff/icn/iav)"
+   ],
+   [
+    "W4207031702",
+    "self-built 17,840-image smoke dataset ('zheng data set 2021') from cfd-simulated smoke, web-crawled images and authors' own photographs",
+    "zheng data set 2021 (authors' own; cfd-simulated smoke, web-crawled images, author-captured forest fire smoke)"
+   ],
+   [
+    "W4213140935",
+    "figlib: 24,800 labelled images from 315 fire sequences across 101 cameras at 30 hpwren stations, june 2016 - july 2021.",
+    "figlib (fire ignition library), 24,800 images, 315 fire sequences from 101 hpwren cameras"
+   ],
+   [
+    "W4214663719",
+    "bowfire|firesense|fismo|forestryimages|private/self-collected uav images (1400)|visifire",
+    "1400 self-collected uav-perspective images|bowfire|firesense|fismo|forestryimages|visifire"
+   ],
+   [
+    "W4224297527",
+    "private/self-collected fire dataset (19,819 images, from a fire protection public welfare platform)|self-made small target dataset (370 images)",
+    "self-collected fire dataset (19,819 images from a fire-protection public welfare platform)|self-made small target fire dataset (370 images)"
+   ],
+   [
+    "W4225396518",
+    "private/self-collected wsn dataset: 7000 samples of temperature, relative humidity, light intensity and co, gathered in different climatic zones over morning/afternoon/night, including 15 controlled fires.",
+    "private/self-collected (7000 wsn samples: temperature, relative humidity, light intensity, co)"
+   ],
+   [
+    "W4297537745",
+    "private/self-collected forest fire dataset (3170 images, used for transfer learning)|private/self-collected small-target forest fire dataset (150 images, primary)",
+    "self-collected forest fire dataset (3170 images)|self-collected small-target forest fire dataset (150 images)"
+   ],
+   [
+    "W4306404511",
+    "self-created forest fire dataset (1,900 images: 950 fire / 950 no-fire)",
+    "newly created forest fire dataset (1900 images: 950 fire, 950 no-fire)"
+   ],
+   [
+    "W4309091309",
+    "cctvmp4 video|flame video (ieee dataport)|forestavi video",
+    "cctvmp4|flame video (ieee dataport)|forestavi"
+   ],
+   [
+    "W4310379056",
+    "bilkent university visifire|keimyung university cvpr laboratory wildfire and smoke dataset|private/self-collected wildfire dataset (14,400 images)|university of split fesb wildfire research center datasets",
+    "self-collected composite dataset of 14,400 images drawn from the keimyung university cvpr laboratory wildfire and smoke dataset, the bilkent university visifire dataset and the split faculty of electrical engineering wildfire research center datasets, plus collected negatives"
+   ],
+   [
+    "W4312250248",
+    "flame 2 (self-collected during a prescribed burn; 53,451 rgb/ir frame pairs) + supplemental point cloud/orthomosaic/weather/burn plan",
+    "flame 2 (authors' own drone rgb/ir dataset, ieee dataport)|flame 2 supplemental dataset (point cloud, orthomosaic, weather, burn plan)"
+   ],
+   [
+    "W4317934269",
+    "",
+    "not_applicable"
+   ],
+   [
+    "W4318206819",
+    "prisma hyperspectral imagery of the 2019/2020 australian wildfires around ben halls gap national park (north-east, south and north-west fire areas), labelled by the authors.",
+    "prisma hyperspectral imagery of the ben halls gap national park (australia) wildfires, labelled by the authors"
+   ],
+   [
+    "W4318464214",
+    "custom dataset assembled from other databases, google images and frames captured from internet forest-fire videos: 5200 base images expanded by rotation to 119,600 and by contrast/brightness manipulation to 348,600; 10,120 fire-like images and 13,800 non-fire images added.",
+    "private/self-collected custom fire and non-fire dataset assembled from other databases, google images and frames captured from internet forest-fire videos, then expanded by rotation and contrast/brightness augmentation to 348,600 images"
+   ],
+   [
+    "W4324056332",
+    "self-assembled uav fire video set (46 videos x 150 frames from the era dataset; 2 videos from the flame dataset, one pile-burn video with 2003 annotated frames); corsican fire dataset used for cross-dataset evaluation.",
+    "collected uav fire video dataset (self-assembled from the era dataset and the flame dataset)|corsican fire dataset (cross-dataset test only)|era|flame"
+   ],
+   [
+    "W4367310935",
+    "himawari wild fire (wlf) product|himawari-8 ahi scenes (southwest china)|viirs active fire product",
+    "himawari-8 imagery over southwest china|viirs product (labels and reference)|wlf product"
+   ],
+   [
+    "W4381250385",
+    "self-generated suomi-npp viirs active-fire dataset (153 images, 5 bands, 375 m) from vnp02img/vnp03img; viirs af product as baseline",
+    "authors' suomi-npp viirs wildfire dataset (153 images, five bands, 375 m)|viirs af product (baseline)"
+   ],
+   [
+    "W4385704549",
+    "sentinel-1 sar multitemporal acquisitions over one forested boreal area of interest (reference and monitored time series); 2018 labelled data used for the supervised baselines.",
+    "sentinel-1 sar multitemporal image stack over one forested area of interest (dataset never named in the excerpt); 2018 acquisitions used for the supervised baselines"
+   ],
+   [
+    "W4386251007",
+    "fy-3d/mersi-ii scenes (australia, dec 2019 - jan 2020; grassland fire case; sun-glint case)",
+    "fy-3d/mersi-ii level-1 observations (case scenes over australia and grassland fire cases)"
+   ],
+   [
+    "W4386432155",
+    "coco (used for cross-architecture performance analysis)|flame (non-infrared subset, 2300 images, expanded to 6500 by augmentation)",
+    "coco (used for a general-purpose comparison of the yolo series)|flame (non-infrared subset, 2300 images, expanded to 6500 by augmentation)"
+   ],
+   [
+    "W4386453639",
+    "foggia dataset (8,974 images, via roboflow) + a custom-assembled test set of images from independent online sources",
+    "custom-assembled challenge set of freely available internet images|foggia dataset (8,974 images, roboflow)"
+   ],
+   [
+    "W4389737478",
+    "unnamed forest fire dataset of 7878 images (5514 train / 788 validation / 1576 test); some images are from drone photography.",
+    "unnamed forest fire image dataset of 7878 images, partly from drone photography (source not identified in the excerpt)"
+   ],
+   [
+    "W4390668539",
+    "self-built flame database (stated initial capacity five thousand images); test set of 3885 images (2500 fire, 1385 non-fire)",
+    "authors' self-built flame database (initial capacity five thousand images; test set of 3885 images)"
+   ],
+   [
+    "W4391034444",
+    "homemade forest fire dataset (7,061 images fused from multiple sources)",
+    "homemade forest fire dataset (7061 images fused from multiple sources)"
+   ],
+   [
+    "W4391754623",
+    "self-collected forest fire dataset of 2590 images (web images, frames extracted from downloaded forest fire videos, and the public bowfire dataset).",
+    "bowfiredataset|private/self-collected forest fire image set (2590 images) built from frames extracted from downloaded forest fire videos plus public fire datasets"
+   ],
+   [
+    "W4392303500",
+    "self-collected wildfire image set obtained from a drone flight plus web/agency imagery (credited to wxchasing and bloomberg), segmented into 12 sub-images per 1280x720 frame and augmented; 441 complete images used for testing.",
+    "private/self-collected (real-world imagery obtained by a drone flight, plus third-party fire imagery credited to wxchasing and bloomberg)"
+   ],
+   [
+    "W4392699928",
+    "2947 images from a mendeley forest fire dataset plus personally collected data; the authors' combined set is published as mendeley data 'forest fire dataset' (10.17632/fcsjwd9gr6.1).",
+    "authors' own mendeley 'forest fire dataset' (doi 10.17632/fcsjwd9gr6.1)|mendeley 'dataset for forest fire detection' (khan & hassan)|personally collected images"
+   ],
+   [
+    "W4392911314",
+    "d-fire (called d-fires in the paper), 10,099 images",
+    "d-fire (10,099 images after filtering)"
+   ],
+   [
+    "W4396605531",
+    "120 outdoor experiment images captured by the authors (open-sourced on kaggle)|619-image mixed wildfire dataset (google wildfire images + prelabelled wildfire dataset)",
+    "120 outdoor-experiment visible-infrared images (open-sourced on kaggle)|prelabeled wildfire dataset + google wildfire images (619-image mixed set)"
+   ],
+   [
+    "W4396937715",
+    "modis_smoke_fpt (self-constructed: modis true-colour scenes plus brightness-temperature, elevation and meteorological channels). ustc_smokers and figlib are discussed as prior datasets but not used.",
+    "modis_smoke_fpt (private/self-collected, built by the authors from modis imagery)"
+   ],
+   [
+    "W4398141901",
+    "self-assembled dataset (roboflow/bing/flickr/kaggle sources): 7000 images reduced to 6000, expanded to 24,000 by 4x rotation augmentation",
+    "self-collected fire/non-fire image set (7000 collected, 6000 kept, 24,000 after 4x rotation augmentation; sources include roboflow, bing, flickr, kaggle)"
+   ],
+   [
+    "W4399244718",
+    "fire and smoke dataset (naseer 2022), 9796 images, hosted on roboflow.",
+    "fire and smoke dataset (naseer 2022), roboflow, 9796 images"
+   ],
+   [
+    "W4399527364",
+    "m4sfwd synthetic digital-twin dataset + a public fire dataset (11,303 images) + self-collected yuxi wildfire dataset (876 images); 16,125 images total",
+    "m4sfwd synthetic digital-twin forest fire dataset (3946/3974 images)|public fire dataset (11,303 images)|yuxi wildfire dataset (876 images from 14 dji mavic air 2 videos, on github)"
+   ],
+   [
+    "W4399615782",
+    "flame dataset [29] (rgb aerial images) for the classifier; own field tests for the iot nodes",
+    "authors' own iot sensing-node field test data|flame (rgb subset)"
+   ],
+   [
+    "W4399749893",
+    "flame (3281 images)|m4sfwd (primary; 3180/397/397 images)|sursff (self-constructed; 110 real images augmented to 550)",
+    "flame|m4sfwd (primary)|sursff (self-constructed, 110 real images augmented)"
+   ],
+   [
+    "W4399939400",
+    "gk-2a ami geostationary imagery (level 2 cloud mask and ndvi), modis mcd12q1 land cover, dem, modis/viirs active fire products, and korea forest service wildfire records: 62 noncloud-contaminated wildfires, july 2019 - july 2022.",
+    "dem|gk-2a ami level 1b radiances plus ami level 2 cloud mask and ndvi|korea forest service (kfs) wildfire records, 62 noncloud-contaminated wildfires july 2019-july 2022|modis and viirs active fire products (fire reference)|modis mcd12q1 v6.1 land cover|sentinel-2 l2a (visualisation)|southwestern china cases (transferability test)"
+   ],
+   [
+    "W4400071697",
+    "private/self-collected forest fire dataset (15,000 images)",
+    "private/self-collected dataset of 15,000 forest fire images (provenance not stated)"
+   ],
+   [
+    "W4400779901",
+    "self-assembled 2876-image forest/grassland fire dataset (news sources, public forest fire datasets, drone imagery, visifire, forestry images)",
+    "forestry images|self-assembled forest and grassland fire image set (2876 images from news sources, public forest fire datasets and drone aerial imagery)|visifire"
+   ],
+   [
+    "W4400909140",
+    "corsican (1122 images), flame (2003 images from repository 9), combined (3125), and a self-assembled smoke dataset (2848 images).",
+    "combined corsican+flame (3125 images)|corsican (1122 images, primary)|flame (2003 images, repository 9)|smoke dataset (2848 images)"
+   ],
+   [
+    "W4402123810",
+    "publicly available mountain-fire datasets (unnamed)|self-collected uav imagery including simulated fire scenes (25,026 images in total)",
+    "self-collected uav mountain-fire imagery (video frames)|simulated fire-scene imagery collected by drone|unnamed publicly available datasets"
+   ],
+   [
+    "W4402820476",
+    "self-organised 3603-image forest fire dataset (3468 fire/smoke images + 135 cloud background negatives)",
+    "self-built forest fire and smoke dataset (3603 images, including 135 cloud background negatives)"
+   ],
+   [
+    "W4403544374",
+    "an unnamed public uav wildfire dataset [35]|q-fire (custom, 10,135 images after augmentation and screening)|web-scraped images incl. kaggle and mivia (2060 images)",
+    "q-fire (custom, 10,135 images; built from a public uav wildfire dataset [35] plus images scraped from kaggle, mivia, cameras and websites)"
+   ],
+   [
+    "W4404817293",
+    "flame dataset (described by the authors as containing images and videos of forest, industrial and urban fires).",
+    "flame"
+   ],
+   [
+    "W4405322211",
+    "flame dataset [30,31] (primary) + custom multi-sensor drone dataset (optical/ir/sar)",
+    "custom drone-collected multi-sensor wildfire dataset (private/self-collected)|flame dataset [30,31]|other publicly available wildfire datasets"
+   ],
+   [
+    "W4406322764",
+    "landsat-8/9 oli/oli2 l1tp scenes|lfta operational product (comparator)|sentinel-2 msi l1c scenes|wfigs / ems / nafi fire perimeters (reference)",
+    "landsat-8/9 oli/oli2 l1tp|lfta product|nafi hotspot products|nasa-firms viirs|sentinel-2 msi l1c|wfigs and ems fire perimeters"
+   ],
+   [
+    "W4406576829",
+    "d-fire dataset (17,221 train + 4,306 test) merged with 436 self-captured local forest-park images; 21,963 images total",
+    "436 self-captured local forest park images|d-fire dataset (17,221 training + 4,306 test images)"
+   ],
+   [
+    "W4406661759",
+    "publicly available satellite data: landsat, sentinel-1, sentinel-2 (plus environmental/meteorological covariates)",
+    "environmental/meteorological covariates|landsat|sentinel-1|sentinel-2 multispectral imagery"
+   ],
+   [
+    "W4407450811",
+    "self-collected synchronized visible + infrared uav dataset (2752 images/pairs) from preburn/during-burn/postburn experimental sites",
+    "authors' synchronized uav visible + infrared image pairs (2752 images) captured at experimental burn sites"
+   ],
+   [
+    "W4408215048",
+    "landsat 8 imagery (wolgan valley, nsw, australia, december 2019)|modis products (used as validation reference)",
+    "landsat 8 imagery over wolgan valley, nsw, australia (december 2019 event)|modis (used for validation)"
+   ],
+   [
+    "W4410239778",
+    "forest-fire-detection-qkpap_dataset (roboflow, 7,514 images)",
+    "forest-fire-detection-qkpap_dataset (roboflow, 7514 images)"
+   ],
+   [
+    "W4410259472",
+    "ffs dataset (42,900 images, kaggle forest-fire-smoke-and-non-fire)|forest fire classifier dataset (additional test set)|wd dataset (2,700 images, the wildfire dataset)",
+    "ffs dataset (42,900 images; kaggle forest-fire-smoke-and-non-fire-image-dataset)|forest fire classifier dataset (test)|wd dataset (2,700 images; the wildfire dataset)"
+   ],
+   [
+    "W4413480292",
+    "forest fire detection dataset introduced in [19] (2603 images from online sources)",
+    "forest fire detection dataset introduced in [19] (2603 images collected from online sources)"
+   ],
+   [
+    "W7133182996",
+    "firestage (791 images, three classes)|flame (39,375 images, primary)",
+    "firestage (791 images, three classes)|flame (39,375 images; ieee dataport flame 2 link given)"
+   ],
+   [
+    "W7133343035",
+    "private/self-collected 5,118-image fire dataset (roboflow resources, social media, news reports, surveillance-video keyframes)|try123-v4 (roboflow, 2,967 images)",
+    "self-built forest fire dataset (5118 annotated images)|try123-v4 (roboflow, 2967 images)"
+   ],
+   [
+    "W7162802855",
+    "m4sfwd (4312 images)|merged and curated wildfire dataset (7414 images, 486 scene/event groups)|roboflow forest-fire_dataset (3102 images)",
+    "m4sfwd (4312 images)|roboflow forest-fire_dataset (3102 images)"
+   ],
+   [
+    "W7164802202",
+    "pyronear2025 (in-house pyronear stations + alertwildfire/hpwren scraping + google-scraped images + blender synthetic smoke); nemo; smokeframes-50k; fuego; aiformankind; figlib",
+    "aiformankind|figlib (re-annotated)|fuego/hpwren|nemo|pyronear2025 (new; alertwildfire scrapes, in-house pyronear tower cameras, web images, blender synthetic smoke)|smokeframes-50k"
+   ],
+   [
+    "W7168166094",
+    "author-released yolo-format flame derivative with fire-tracking annotations|flame (ninth flame repository, 2003 frames)",
+    "flame (ninth flame repository, 2003 frames) converted by the authors to a yolo-format bounding-box dataset"
+   ],
+   [
+    "W7172270256",
+    "uffs (uav-perspective forest fire smoke), 5012 smoke-positive images assembled by the authors; public wildfire smoke v1 used for a cross-dataset test; a 178-image hard-positive small-smoke subset drawn from the uffs test set.",
+    "uffs (uav-perspective forest fire smoke), self-constructed, 5012 smoke-positive images|wildfire smoke v1 (public, cross-dataset evaluation only)"
+   ]
+  ],
+  "dataset_public": [
+   [
+    "W3090022951",
+    "partly",
+    "yes"
+   ],
+   [
+    "W3132971810",
+    "yes",
+    "partly"
+   ],
+   [
+    "W4386432155",
+    "not_reported",
+    "yes"
+   ],
+   [
+    "W4396605531",
+    "yes",
+    "partly"
+   ],
+   [
+    "W4399939400",
+    "partly",
+    "yes"
+   ],
+   [
+    "W4400779901",
+    "not_reported",
+    "partly"
+   ],
+   [
+    "W4400909140",
+    "not_reported",
+    "partly"
+   ],
+   [
+    "W4404817293",
+    "not_reported",
+    "yes"
+   ],
+   [
+    "W4406576829",
+    "partly",
+    "yes"
+   ]
+  ],
+  "n_train": [
+   [
+    "W4225396518",
+    "not_reported",
+    "5600"
+   ],
+   [
+    "W4391754623",
+    "not_reported",
+    "2072"
+   ]
+  ],
+  "n_val": [
+   [
+    "W4310379056",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4367310935",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4391754623",
+    "not_reported",
+    "518"
+   ],
+   [
+    "W4409359674",
+    "not_reported",
+    "not_applicable"
+   ]
+  ],
+  "n_test": [
+   [
+    "W4225396518",
+    "not_reported",
+    "1400"
+   ],
+   [
+    "W4386251007",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4400071697",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4406322764",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4407450811",
+    "89",
+    "not_reported"
+   ],
+   [
+    "W7133182996",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W7168166094",
+    "not_reported",
+    "not_applicable"
+   ]
+  ],
+  "data_source_type": [
+   [
+    "W4224297527",
+    "independent stills",
+    "not_reported"
+   ],
+   [
+    "W4389737478",
+    "not_reported",
+    "unclear"
+   ],
+   [
+    "W4391034444",
+    "not_reported",
+    "mixed"
+   ],
+   [
+    "W4394819366",
+    "not_reported",
+    "mixed"
+   ],
+   [
+    "W4400909140",
+    "independent stills",
+    "mixed"
+   ],
+   [
+    "W4413480292",
+    "not_reported",
+    "independent stills"
+   ]
+  ],
+  "split_protocol": [
+   [
+    "W4392699928",
+    "ratio_only_mechanism_unstated",
+    "internally_inconsistent"
+   ],
+   [
+    "W4406661759",
+    "ratio_only_mechanism_unstated",
+    "internally_inconsistent"
+   ]
+  ],
+  "leakage_risk": [
+   [
+    "W3120107013",
+    "medium",
+    "high"
+   ],
+   [
+    "W4317934269",
+    "none_verifiable",
+    "not_applicable"
+   ],
+   [
+    "W4386251007",
+    "none_verifiable",
+    "not_applicable"
+   ],
+   [
+    "W4390668539",
+    "medium",
+    "high"
+   ],
+   [
+    "W4391216347",
+    "medium",
+    "high"
+   ]
+  ],
+  "leakage_acknowledged": [
+   [
+    "W4381250385",
+    "yes",
+    "no"
+   ],
+   [
+    "W4399615782",
+    "unclear",
+    "yes"
+   ]
+  ],
+  "flame_reported_accuracy": [
+   [
+    "W4400909140",
+    "not_reported",
+    "unclear"
+   ]
+  ],
+  "headline_metric": [
+   [
+    "W3090022951",
+    "f-score (fire event, flame or smoke)",
+    "f-score (fire event detected through either flame or smoke)"
+   ],
+   [
+    "W3120107013",
+    "acc (fire recognition) / segmentation scores in tables 2 and 4",
+    "acc (accuracy)"
+   ],
+   [
+    "W3132971810",
+    "false positive rate (on the fire-like image set)",
+    "false positive rate (fpr)"
+   ],
+   [
+    "W4207031702",
+    "average accuracy (efficientdet)",
+    "average accuracy (efficientdet, best of four compared detectors)"
+   ],
+   [
+    "W4213140935",
+    "image accuracy (smokeynet, resnet34 backbone, two frames)",
+    "image accuracy (%) on the held-out test fires; f1 82.59% alongside"
+   ],
+   [
+    "W4214663719",
+    "share of flame-containing frames detected in the field video (%)",
+    "frame-level detection rate on the flight-test video (reported as accuracy)"
+   ],
+   [
+    "W4214895504",
+    "accuracy (classification ensemble)",
+    "accuracy"
+   ],
+   [
+    "W4225396518",
+    "accuracy (multiple linear regression model on the 20% test split)",
+    "accuracy (theoretical, ml model on the 20% test partition)"
+   ],
+   [
+    "W4297537745",
+    "map@0.5-s improvement over the yolov5s baseline (percentage points)",
+    "map@0.5-s (only the improvement over the baseline is given, not the absolute value)"
+   ],
+   [
+    "W4310379056",
+    "accuracy (wild flame detection)",
+    "accuracy rate (wild flame detection)"
+   ],
+   [
+    "W4312250248",
+    "per-frame fire classification accuracy",
+    "classification accuracy on the test set (numeric value in table 7, not present in the excerpt)"
+   ],
+   [
+    "W4317934269",
+    "average daily current consumption of the hub node (ma)",
+    "average current consumption of the hub node over one day (ma)"
+   ],
+   [
+    "W4318206819",
+    "accuracy (values are in table 9, which the excerpt does not reproduce)",
+    "accuracy (reported in table 9; the value itself is not present in the excerpt)"
+   ],
+   [
+    "W4318464214",
+    "accuracy (mask_rcnn_50_fpn_3x after the three-layer upgrade)",
+    "accuracy (%)"
+   ],
+   [
+    "W4324056332",
+    "iou (ffs-unet, collected uav video dataset)",
+    "iou (fire segmentation, own collected dataset); accuracy also reported"
+   ],
+   [
+    "W4367310935",
+    "commission error rate",
+    "commission error rate (omission error rate 0.66 also reported)"
+   ],
+   [
+    "W4381250385",
+    "f1-score",
+    "f1-score (per-wildfire average; overall test f1 not present in the excerpt)"
+   ],
+   [
+    "W4385704549",
+    "auc score (ftae-20d, unsupervised)",
+    "auc (ftae-20d unsupervised autoencoder); f1 0.76 reported alongside"
+   ],
+   [
+    "W4386251007",
+    "share of detected fire pixels passing the accuracy test (%)",
+    "percentage of fire pixels passing the distance-based accuracy test"
+   ],
+   [
+    "W4386432155",
+    "map (segmentation)",
+    "map (segmentation comparison table)"
+   ],
+   [
+    "W4386453639",
+    "recall (best global model, yolov5s)",
+    "recall (yolov5s, named the 'best global model' of the yolov5 variants)"
+   ],
+   [
+    "W4389737478",
+    "map50 (sps-yolov5)",
+    "map@0.5 (%), with 43 fps"
+   ],
+   [
+    "W4391754623",
+    "precision (the excerpt gives 85.81% for the intermediate convnextv2-yolov7; the foregrounded cntcb-yolov7 value is not in the excerpt)",
+    "accuracy/precision (%); the excerpt carries 85.81% for the intermediate convnextv2-yolov7 but no numeric value for the final cntcb-yolov7"
+   ],
+   [
+    "W4392303500",
+    "test accuracy (segnet, after l2 regularisation)",
+    "test accuracy (%)"
+   ],
+   [
+    "W4392699928",
+    "accuracy (cnn-rcnn classification)",
+    "accuracy (%) for the proposed cnn-rcnn classifier"
+   ],
+   [
+    "W4392911314",
+    "map@0.5",
+    "map0.5"
+   ],
+   [
+    "W4396937715",
+    "precision (smoke detection, modis_smoke_fpt)",
+    "precision (smoke detection)"
+   ],
+   [
+    "W4398141901",
+    "accuracy (boosted yolov8 + transdet)",
+    "accuracy (boosted aggregation of yolov8 and transdet)"
+   ],
+   [
+    "W4399244718",
+    "precision / recall (all classes, final c4 yolov8l model)",
+    "recall across all classes for the final tuned c4 yolov8l configuration (precision 0.876, f1 0.848 alongside)"
+   ],
+   [
+    "W4399527364",
+    "map (832 x 832 input)",
+    "map at 832 x 832 input"
+   ],
+   [
+    "W4399749893",
+    "map",
+    "map (m4sfwd)"
+   ],
+   [
+    "W4399939400",
+    "f1-score (lgbm with ace and acs features)",
+    "f1-score (%) for lgbm with ace and acs features; precision 98.56% and recall 97.78% alongside"
+   ],
+   [
+    "W4400071697",
+    "precision on raspberry pi 4b",
+    "precision of yolo-ulnet on the raspberry pi 4b (yolo-lnet reaches map@0.5 of 71.2% on the computer)"
+   ],
+   [
+    "W4400779901",
+    "map (improvement over yolo v5; absolute value in table 1, not in excerpt)",
+    "map and map@0.5:0.95, reported only as improvements over yolo v5 (absolute values are in table 1, not in the excerpt)"
+   ],
+   [
+    "W4400909140",
+    "iou (mobilevit_s-deeplabv3+ with combo loss, corsican dataset)",
+    "iou (binary fire segmentation, mobilevit_s-deeplabv3+ with combo loss on corsican); f1 0.9332 and mpa 0.9876 in the same row"
+   ],
+   [
+    "W4403079437",
+    "accuracy (ensemble of resnet50v2 and inceptionv3)",
+    "accuracy (ensemble, normal-spectrum palette)"
+   ],
+   [
+    "W4404817293",
+    "ap50 (modified miti-detr on flame)",
+    "ap50 (average precision at iou 0.5) on flame"
+   ],
+   [
+    "W4405322211",
+    "precision",
+    "precision (flame, table 3); iou 92.1% on the same table"
+   ],
+   [
+    "W4406322764",
+    "share of reference fire pixels flagged",
+    "percentage of fire pixels flagged"
+   ],
+   [
+    "W4406324697",
+    "precision",
+    "precision (yolov11x, smoke and fire dataset)"
+   ],
+   [
+    "W4407450811",
+    "map@0.5",
+    "map@0.5 (ffdm-f)"
+   ],
+   [
+    "W4408215048",
+    "overall accuracy and f1-score",
+    "overall accuracy and f1-score (no numeric value given in the excerpt)"
+   ],
+   [
+    "W7133182996",
+    "accuracy",
+    "accuracy (densenet121 + rgb on flame)"
+   ],
+   [
+    "W7162802855",
+    "map50",
+    "map50 (the full asca-yolo value is not stated in the excerpt; far 0.130 and mdr 0.191 are)"
+   ],
+   [
+    "W7164802202",
+    "f1 score",
+    "f1 score on the test sets (per-dataset values are in table 2, not present in the excerpt)"
+   ],
+   [
+    "W7168166094",
+    "event-level recall",
+    "event-level detection probability p_all at the selected operating point"
+   ],
+   [
+    "W7172270256",
+    "map50 (lrm-yolo on uffs)",
+    "map@0.5 (%) on the uffs test set; map50-95 68.2% alongside"
+   ]
+  ],
+  "headline_value": [
+   [
+    "W4225396518",
+    "81",
+    "81.0"
+   ],
+   [
+    "W4297537745",
+    "10.1",
+    "not_reported"
+   ],
+   [
+    "W4318206819",
+    "not_reported",
+    "unclear"
+   ],
+   [
+    "W4381250385",
+    "not_reported",
+    "0.799"
+   ],
+   [
+    "W4385704549",
+    "93",
+    "0.93"
+   ],
+   [
+    "W4391754623",
+    "not_reported",
+    "unclear"
+   ],
+   [
+    "W4392699928",
+    "96",
+    "96.0"
+   ],
+   [
+    "W4399244718",
+    "0.876",
+    "0.821"
+   ],
+   [
+    "W4403079437",
+    "97.0",
+    "91.0"
+   ],
+   [
+    "W7168166094",
+    "not_reported",
+    "1.0"
+   ]
+  ],
+  "metrics_reported": [
+   [
+    "W3120107013",
+    "accuracy|auc|fpr",
+    "accuracy|auc"
+   ],
+   [
+    "W3132971810",
+    "accuracy|fpr|map",
+    "accuracy|fpr|map|precision|recall"
+   ],
+   [
+    "W4367310935",
+    "f1|precision|recall",
+    "f1"
+   ],
+   [
+    "W4386251007",
+    "",
+    "accuracy"
+   ],
+   [
+    "W4391754623",
+    "accuracy|map|precision|recall",
+    "map|precision|recall"
+   ],
+   [
+    "W4392911314",
+    "ap|map",
+    "map"
+   ],
+   [
+    "W4394819366",
+    "map",
+    "ap|map"
+   ],
+   [
+    "W4396605531",
+    "auc|f1|precision|recall",
+    "ap|auc|f1|precision|recall"
+   ],
+   [
+    "W4399244718",
+    "accuracy|f1|map|precision|recall",
+    "f1|map|precision|recall"
+   ],
+   [
+    "W4399939400",
+    "f1|precision|recall",
+    "csi (critical success index; not one of the rubric's listed metrics)|f1|precision|recall"
+   ],
+   [
+    "W4403079437",
+    "accuracy|auc|f1|precision|recall",
+    "accuracy|auc|precision"
+   ],
+   [
+    "W4406322764",
+    "precision|recall",
+    "fdr|fnr|precision"
+   ]
+  ],
+  "class_balance_reported": [
+   [
+    "W4214663719",
+    "no",
+    "yes"
+   ],
+   [
+    "W4309091309",
+    "no",
+    "yes"
+   ],
+   [
+    "W4324056332",
+    "yes",
+    "no"
+   ],
+   [
+    "W7172270256",
+    "yes",
+    "no"
+   ]
+  ],
+  "variance_reported": [
+   [
+    "W4213140935",
+    "no",
+    "unclear"
+   ],
+   [
+    "W4399939400",
+    "no",
+    "unclear"
+   ]
+  ],
+  "n_runs": [
+   [
+    "W4386251007",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4406322764",
+    "not_applicable",
+    "not_reported"
+   ]
+  ],
+  "ablation_present": [
+   [
+    "W4396605531",
+    "no",
+    "yes"
+   ],
+   [
+    "W4398141901",
+    "yes",
+    "no"
+   ]
+  ],
+  "comparison_is_like_for_like": [
+   [
+    "W3120107013",
+    "no",
+    "yes"
+   ],
+   [
+    "W4213140935",
+    "no",
+    "yes"
+   ],
+   [
+    "W4214895504",
+    "unclear",
+    "yes"
+   ],
+   [
+    "W4367310935",
+    "yes",
+    "unclear"
+   ],
+   [
+    "W4386432155",
+    "no",
+    "unclear"
+   ],
+   [
+    "W4404817293",
+    "yes",
+    "unclear"
+   ]
+  ],
+  "cross_dataset_eval": [
+   [
+    "W4408215048",
+    "yes",
+    "no"
+   ]
+  ],
+  "cross_dataset_delta": [
+   [
+    "W4324056332",
+    "not_reported",
+    "-2.0 iou points (0.868 on the collected set vs 0.848 on corsican); accuracy 97.9% vs 94.89%. derived by the coder from two reported numbers; the paper states no delta."
+   ],
+   [
+    "W4408215048",
+    "not_reported",
+    "not_applicable"
+   ]
+  ],
+  "tested_unseen_site_or_season": [
+   [
+    "W4214663719",
+    "unclear",
+    "yes"
+   ],
+   [
+    "W4225396518",
+    "no",
+    "unclear"
+   ],
+   [
+    "W4310379056",
+    "no",
+    "unclear"
+   ],
+   [
+    "W4386432155",
+    "no",
+    "yes"
+   ],
+   [
+    "W7172270256",
+    "no",
+    "yes"
+   ]
+  ],
+  "night_or_lowlight_tested": [
+   [
+    "W4317934269",
+    "not_applicable",
+    "no"
+   ],
+   [
+    "W4318464214",
+    "unclear",
+    "yes"
+   ],
+   [
+    "W4385704549",
+    "no",
+    "not_applicable"
+   ],
+   [
+    "W4403544374",
+    "no",
+    "yes"
+   ],
+   [
+    "W4405322211",
+    "unclear",
+    "no"
+   ]
+  ],
+  "smoke_only_early_stage_tested": [
+   [
+    "W4385704549",
+    "no",
+    "not_applicable"
+   ],
+   [
+    "W4396605531",
+    "yes",
+    "no"
+   ],
+   [
+    "W4399615782",
+    "no",
+    "yes"
+   ],
+   [
+    "W4400909140",
+    "no",
+    "yes"
+   ],
+   [
+    "W4402123810",
+    "no",
+    "yes"
+   ],
+   [
+    "W4407450811",
+    "no",
+    "yes"
+   ],
+   [
+    "W4408215048",
+    "no",
+    "not_applicable"
+   ],
+   [
+    "W4410259472",
+    "no",
+    "yes"
+   ]
+  ],
+  "adverse_weather_tested": [
+   [
+    "W4310379056",
+    "no",
+    "yes"
+   ],
+   [
+    "W4318464214",
+    "yes",
+    "no"
+   ],
+   [
+    "W4406324697",
+    "no",
+    "yes"
+   ],
+   [
+    "W7164802202",
+    "no",
+    "yes"
+   ]
+  ],
+  "false_positive_sources_analysed": [
+   [
+    "W4309091309",
+    "yes",
+    "no"
+   ],
+   [
+    "W4324056332",
+    "yes",
+    "no"
+   ]
+  ],
+  "deployment_level": [
+   [
+    "W4386432155",
+    "l3",
+    "unclear"
+   ]
+  ],
+  "deployment_duration_days": [
+   [
+    "W3090022951",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4207031702",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4213140935",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4225396518",
+    "not_reported",
+    "unclear"
+   ],
+   [
+    "W4297537745",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4310379056",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4318206819",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4318464214",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4324056332",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4367310935",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4381250385",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4385704549",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4386251007",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4386453639",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4389737478",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4390668539",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4391754623",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4392303500",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4392911314",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4396937715",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4399244718",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4399749893",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4399939400",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4400779901",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4400909140",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4402820476",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4403544374",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4404817293",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4406324697",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4406576829",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4406661759",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4408215048",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4409359674",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4413480292",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W7133182996",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W7168166094",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W7172270256",
+    "not_applicable",
+    "not_reported"
+   ]
+  ],
+  "n_nodes_or_cameras": [
+   [
+    "W3090022951",
+    "not_reported",
+    "1"
+   ],
+   [
+    "W4207031702",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4213140935",
+    "not_applicable",
+    "101"
+   ],
+   [
+    "W4225396518",
+    "1",
+    "unclear"
+   ],
+   [
+    "W4297537745",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4310379056",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4312250248",
+    "not_reported",
+    "2"
+   ],
+   [
+    "W4318206819",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4318464214",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4324056332",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4367310935",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4381250385",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4385704549",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4386251007",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4386453639",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4389737478",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4390668539",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4391754623",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4392303500",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4392911314",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4396937715",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4399244718",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4399527364",
+    "not_reported",
+    "1"
+   ],
+   [
+    "W4399749893",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4399939400",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4400779901",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4400909140",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4402820476",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4403544374",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4404817293",
+    "not_applicable",
+    "not_reported"
+   ],
+   [
+    "W4406324697",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4406576829",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4406661759",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4408215048",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4409359674",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4413480292",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W7133182996",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W7168166094",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W7172270256",
+    "not_applicable",
+    "not_reported"
+   ]
+  ],
+  "area_covered_km2": [
+   [
+    "W3090022951",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4207031702",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4297537745",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4310379056",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4381250385",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4386453639",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4390668539",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4392911314",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4399749893",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4400779901",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4402820476",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4403544374",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4406322764",
+    "10000.0",
+    "not_reported"
+   ],
+   [
+    "W4406324697",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4406576829",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4406661759",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4409359674",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4413480292",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W7133182996",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W7168166094",
+    "not_reported",
+    "not_applicable"
+   ]
+  ],
+  "real_wildfire_detected": [
+   [
+    "W4402123810",
+    "test burns only",
+    "yes"
+   ],
+   [
+    "W7168166094",
+    "no",
+    "test burns only"
+   ]
+  ],
+  "failure_modes_reported": [
+   [
+    "W4402123810",
+    "no",
+    "yes"
+   ],
+   [
+    "W4402820476",
+    "yes",
+    "no"
+   ],
+   [
+    "W4406324697",
+    "yes",
+    "no"
+   ]
+  ],
+  "time_to_detection": [
+   [
+    "W4213140935",
+    "3.12 min (average)",
+    "3.12 min average time to detection"
+   ],
+   [
+    "W4399615782",
+    "1-5 min after fire ignition (iot sensing nodes, 10 repeated ignition tests)",
+    "1-5 min after fire ignition (iot sensing node alarm; test repeated 10 times)"
+   ],
+   [
+    "W7164802202",
+    "measured as seconds between annotated ignition and the first automated positive prediction; numeric value not present in the excerpt",
+    "reported in seconds as the gap between the manual ignition mark and the first automated positive prediction sequence (numeric values not in the excerpt)"
+   ]
+  ],
+  "min_detectable_fire_size": [
+   [
+    "W4367310935",
+    "fires smaller than about 6 hectares (1.5% of a pixel) were missed",
+    "approximately 6 hectares (all missed fire cases burned less than 6 ha, about 1.5% of a pixel)"
+   ],
+   [
+    "W4399939400",
+    "not_reported",
+    "not directly reported; the evaluated case set was restricted to wildfires damaging at least 1 hectare, most of them under 10 hectares"
+   ],
+   [
+    "W7172270256",
+    "not_reported",
+    "relative only: hard-positive subset defined as annotated smoke boxes covering less than 1% of image area (178 images); no physical fire size reported"
+   ]
+  ],
+  "detection_range": [
+   [
+    "W4225396518",
+    "node placed 1 m from the fire in the test configuration",
+    "1 m (sensor node placed one metre from a fire created in a 1 m2 area during the trials)"
+   ],
+   [
+    "W4367310935",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4386251007",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4396605531",
+    "17.1-51.2 m (ground-truth camera-to-fire distances in the five flight tests)",
+    "uav-to-fire ground-truth distances of 17.1-51.2 m tested"
+   ],
+   [
+    "W4408215048",
+    "not_reported",
+    "not_applicable"
+   ]
+  ],
+  "power_measured": [
+   [
+    "W4367310935",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4386251007",
+    "not_reported",
+    "not_applicable"
+   ],
+   [
+    "W4408215048",
+    "not_reported",
+    "not_applicable"
+   ]
+  ],
+  "latency_measured_on_target_hw": [
+   [
+    "W4214663719",
+    "no",
+    "unclear"
+   ],
+   [
+    "W4386432155",
+    "no",
+    "unclear"
+   ]
+  ],
+  "target_hardware_named": [
+   [
+    "W4205231989",
+    "nvidia jetson nano (4 gb); also gtx 1650 and tesla t4",
+    "nvidia jetson nano (4 gb ram, 128 cuda cores), used with a uav/cctv edge configuration"
+   ],
+   [
+    "W4214663719",
+    "raspberry pi controller (four-core arm-a73) with oak-d camera and gps module, on a uav with 40 min max flight time",
+    "raspberry pi controller (four-core arm-a73) with an oak-d camera and gps module, carried on a uav"
+   ],
+   [
+    "W4225396518",
+    "nrf24l01 transceiver on every sensor node, cluster head and base node; 18650 li-ion cells with a 5 w solar panel (compute platform not named)",
+    "nrf24l01 transceiver on sensor nodes, cluster heads and base node; 18650 li-ion cells plus a 5 w solar panel. no mcu or inference platform named in the excerpt."
+   ],
+   [
+    "W4317934269",
+    "cn0537 optical smoke-sensor board; scd30 co2 sensor; 915 mhz lora transceiver with 2 dbi antenna; lte modem shield with iot data sim",
+    "cn0537 optical smoke-sensor board, scd30 co2 sensor, 915 mhz lora transceiver, lte modem shield (mcu model not named in the excerpt)"
+   ],
+   [
+    "W4318206819",
+    "intel movidius myriad 2 vpu, nvidia jetson nano, nvidia jetson tx2 (candidate cubesat onboard accelerators)",
+    "intel movidius myriad 2 vpu, nvidia jetson nano, nvidia jetson tx2 (training on an nvidia rtx2060 pc)"
+   ],
+   [
+    "W4396605531",
+    "icrest2.0 (nvidia jetson xavier nx) onboard computer",
+    "icrest2.0 (nvidia jetson xavier nx) onboard computer; dji m300 uav with zenmuse h20t"
+   ],
+   [
+    "W4399527364",
+    "nvidia jetson xavier nx (edge); nvidia rtx 4080 (server)",
+    "nvidia jetson xavier nx (edge) and nvidia rtx 4080; dji mavic series uav"
+   ],
+   [
+    "W4399615782",
+    "iot sensing node (microcontroller with ulp co-processor + lora module); raspberry pi hq 12 mp camera module on the drone",
+    "custom lora iot sensing node (2-layer pcb, ulp co-processor, air-quality sensor); drone with raspberry pi hq 12 mp camera module"
+   ],
+   [
+    "W4406322764",
+    "google earth engine (beta nhi-f tool)",
+    "not_reported"
+   ],
+   [
+    "W4410239778",
+    "nvidia jetson nano (named as the planned platform only; never used for measurement)",
+    "nvidia jetson nano (named as the intended platform; not yet deployed)"
+   ],
+   [
+    "W7162802855",
+    "raspberry pi 4 with 8 gb ram running raspberry pi os (64-bit); nvidia jetson nano named only as future work",
+    "raspberry pi 4 with 8 gb ram running raspberry pi os (64-bit)"
+   ]
+  ],
+  "link_resolves": [
+   [
+    "W3120107013",
+    "not_applicable",
+    "not_checked"
+   ],
+   [
+    "W3132971810",
+    "not_applicable",
+    "not_checked"
+   ],
+   [
+    "W4214895504",
+    "not_applicable",
+    "not_checked"
+   ],
+   [
+    "W4224297527",
+    "not_applicable",
+    "not_checked"
+   ],
+   [
+    "W4306404511",
+    "not_applicable",
+    "not_checked"
+   ],
+   [
+    "W4391034444",
+    "not_applicable",
+    "not_checked"
+   ],
+   [
+    "W4394819366",
+    "not_applicable",
+    "not_checked"
+   ],
+   [
+    "W4402123810",
+    "not_applicable",
+    "not_checked"
+   ],
+   [
+    "W4406322764",
+    "not_applicable",
+    "not_checked"
+   ],
+   [
+    "W4410239778",
+    "not_applicable",
+    "not_checked"
+   ],
+   [
+    "W7133343035",
+    "not_applicable",
+    "not_checked"
+   ]
+  ],
+  "hyperparams_full": [
+   [
+    "W4214663719",
+    "partial",
+    "yes"
+   ],
+   [
+    "W4297537745",
+    "partial",
+    "unclear"
+   ],
+   [
+    "W4324056332",
+    "yes",
+    "partial"
+   ],
+   [
+    "W4386453639",
+    "no",
+    "partial"
+   ],
+   [
+    "W4391216347",
+    "yes",
+    "partial"
+   ],
+   [
+    "W4391754623",
+    "yes",
+    "partial"
+   ],
+   [
+    "W4392699928",
+    "yes",
+    "partial"
+   ],
+   [
+    "W4394819366",
+    "yes",
+    "partial"
+   ],
+   [
+    "W4399615782",
+    "no",
+    "partial"
+   ],
+   [
+    "W4399939400",
+    "no",
+    "partial"
+   ],
+   [
+    "W4404817293",
+    "yes",
+    "partial"
+   ],
+   [
+    "W4406322764",
+    "not_applicable",
+    "yes"
+   ],
+   [
+    "W4409359674",
+    "partial",
+    "yes"
+   ],
+   [
+    "W7168166094",
+    "partial",
+    "yes"
+   ]
+  ]
+ }
+}

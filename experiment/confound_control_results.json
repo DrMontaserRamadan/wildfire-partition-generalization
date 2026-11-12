@@ -1,0 +1,272 @@
+[
+ {
+  "mode": "full",
+  "seed": 0,
+  "n_train": 1800,
+  "recall_all": 0.8446215139442231,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.7253521126760564,
+  "gap": 0.27464788732394363
+ },
+ {
+  "mode": "full",
+  "seed": 1,
+  "n_train": 1800,
+  "recall_all": 0.8167330677290837,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.676056338028169,
+  "gap": 0.323943661971831
+ },
+ {
+  "mode": "full",
+  "seed": 2,
+  "n_train": 1800,
+  "recall_all": 0.8207171314741036,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6830985915492958,
+  "gap": 0.31690140845070425
+ },
+ {
+  "mode": "full",
+  "seed": 3,
+  "n_train": 1800,
+  "recall_all": 0.8027888446215139,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6514084507042254,
+  "gap": 0.3485915492957746
+ },
+ {
+  "mode": "full",
+  "seed": 4,
+  "n_train": 1800,
+  "recall_all": 0.8227091633466136,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6866197183098591,
+  "gap": 0.31338028169014087
+ },
+ {
+  "mode": "full",
+  "seed": 5,
+  "n_train": 1800,
+  "recall_all": 0.8147410358565738,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6725352112676056,
+  "gap": 0.3274647887323944
+ },
+ {
+  "mode": "full",
+  "seed": 6,
+  "n_train": 1800,
+  "recall_all": 0.7948207171314741,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6373239436619719,
+  "gap": 0.36267605633802813
+ },
+ {
+  "mode": "full",
+  "seed": 7,
+  "n_train": 1800,
+  "recall_all": 0.7928286852589641,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6338028169014085,
+  "gap": 0.3661971830985915
+ },
+ {
+  "mode": "full",
+  "seed": 8,
+  "n_train": 1800,
+  "recall_all": 0.8207171314741036,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6830985915492958,
+  "gap": 0.31690140845070425
+ },
+ {
+  "mode": "full",
+  "seed": 9,
+  "n_train": 1800,
+  "recall_all": 0.8007968127490039,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.647887323943662,
+  "gap": 0.352112676056338
+ },
+ {
+  "mode": "no_twins",
+  "seed": 0,
+  "n_train": 1583,
+  "recall_all": 0.8147410358565738,
+  "recall_contaminated": 0.9954128440366973,
+  "recall_clean": 0.676056338028169,
+  "gap": 0.3193565060085283
+ },
+ {
+  "mode": "no_twins",
+  "seed": 1,
+  "n_train": 1583,
+  "recall_all": 0.8346613545816733,
+  "recall_contaminated": 0.9954128440366973,
+  "recall_clean": 0.7112676056338029,
+  "gap": 0.2841452384028944
+ },
+ {
+  "mode": "no_twins",
+  "seed": 2,
+  "n_train": 1583,
+  "recall_all": 0.8007968127490039,
+  "recall_contaminated": 0.9862385321100917,
+  "recall_clean": 0.6584507042253521,
+  "gap": 0.3277878278847396
+ },
+ {
+  "mode": "no_twins",
+  "seed": 3,
+  "n_train": 1583,
+  "recall_all": 0.8067729083665338,
+  "recall_contaminated": 0.9862385321100917,
+  "recall_clean": 0.6690140845070423,
+  "gap": 0.31722444760304946
+ },
+ {
+  "mode": "no_twins",
+  "seed": 4,
+  "n_train": 1583,
+  "recall_all": 0.7828685258964143,
+  "recall_contaminated": 0.9770642201834863,
+  "recall_clean": 0.6338028169014085,
+  "gap": 0.34326140328207777
+ },
+ {
+  "mode": "no_twins",
+  "seed": 5,
+  "n_train": 1583,
+  "recall_all": 0.8067729083665338,
+  "recall_contaminated": 0.9724770642201835,
+  "recall_clean": 0.6795774647887324,
+  "gap": 0.29289959943145116
+ },
+ {
+  "mode": "no_twins",
+  "seed": 6,
+  "n_train": 1583,
+  "recall_all": 0.8027888446215139,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6514084507042254,
+  "gap": 0.3485915492957746
+ },
+ {
+  "mode": "no_twins",
+  "seed": 7,
+  "n_train": 1583,
+  "recall_all": 0.7430278884462151,
+  "recall_contaminated": 0.9724770642201835,
+  "recall_clean": 0.5669014084507042,
+  "gap": 0.4055756557694793
+ },
+ {
+  "mode": "no_twins",
+  "seed": 8,
+  "n_train": 1583,
+  "recall_all": 0.7868525896414342,
+  "recall_contaminated": 0.981651376146789,
+  "recall_clean": 0.6373239436619719,
+  "gap": 0.3443274324848171
+ },
+ {
+  "mode": "no_twins",
+  "seed": 9,
+  "n_train": 1583,
+  "recall_all": 0.7569721115537849,
+  "recall_contaminated": 0.963302752293578,
+  "recall_clean": 0.5985915492957746,
+  "gap": 0.36471120299780335
+ },
+ {
+  "mode": "random",
+  "seed": 0,
+  "n_train": 1583,
+  "recall_all": 0.8266932270916335,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6936619718309859,
+  "gap": 0.3063380281690141
+ },
+ {
+  "mode": "random",
+  "seed": 1,
+  "n_train": 1583,
+  "recall_all": 0.8306772908366534,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.7007042253521126,
+  "gap": 0.29929577464788737
+ },
+ {
+  "mode": "random",
+  "seed": 2,
+  "n_train": 1583,
+  "recall_all": 0.8167330677290837,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.676056338028169,
+  "gap": 0.323943661971831
+ },
+ {
+  "mode": "random",
+  "seed": 3,
+  "n_train": 1583,
+  "recall_all": 0.7928286852589641,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6338028169014085,
+  "gap": 0.3661971830985915
+ },
+ {
+  "mode": "random",
+  "seed": 4,
+  "n_train": 1583,
+  "recall_all": 0.8027888446215139,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6514084507042254,
+  "gap": 0.3485915492957746
+ },
+ {
+  "mode": "random",
+  "seed": 5,
+  "n_train": 1583,
+  "recall_all": 0.8227091633466136,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6866197183098591,
+  "gap": 0.31338028169014087
+ },
+ {
+  "mode": "random",
+  "seed": 6,
+  "n_train": 1583,
+  "recall_all": 0.798804780876494,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6443661971830986,
+  "gap": 0.3556338028169014
+ },
+ {
+  "mode": "random",
+  "seed": 7,
+  "n_train": 1583,
+  "recall_all": 0.7749003984063745,
+  "recall_contaminated": 0.9954128440366973,
+  "recall_clean": 0.6056338028169014,
+  "gap": 0.3897790412197959
+ },
+ {
+  "mode": "random",
+  "seed": 8,
+  "n_train": 1583,
+  "recall_all": 0.8266932270916335,
+  "recall_contaminated": 0.9954128440366973,
+  "recall_clean": 0.6971830985915493,
+  "gap": 0.298229745445148
+ },
+ {
+  "mode": "random",
+  "seed": 9,
+  "n_train": 1583,
+  "recall_all": 0.8027888446215139,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6514084507042254,
+  "gap": 0.3485915492957746
+ }
+]

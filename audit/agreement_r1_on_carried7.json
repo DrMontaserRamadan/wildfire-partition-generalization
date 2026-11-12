@@ -1,0 +1,695 @@
+{
+ "n": 7,
+ "reliable": [
+  "metrics_reported",
+  "leakage_acknowledged",
+  "duplicate_check_done",
+  "variance_reported",
+  "n_runs",
+  "statistical_test_vs_baseline",
+  "smoke_only_early_stage_tested",
+  "false_alarms_per_unit_time",
+  "min_detectable_fire_size",
+  "detection_range",
+  "latency_measured_on_target_hw",
+  "code_available",
+  "weights_available",
+  "seed_reported",
+  "task",
+  "target",
+  "n_train",
+  "n_val",
+  "n_test",
+  "class_balance_reported",
+  "cross_dataset_eval",
+  "tested_unseen_site_or_season",
+  "adverse_weather_tested",
+  "false_positive_sources_analysed",
+  "n_nodes_or_cameras",
+  "failure_modes_reported",
+  "time_to_detection",
+  "power_measured",
+  "hyperparams_full"
+ ],
+ "needs_work": [
+  "headline_value",
+  "deployment_duration_days",
+  "leakage_note",
+  "comparison_is_like_for_like",
+  "dataset_public",
+  "deployment_level",
+  "leakage_risk",
+  "data_source_type"
+ ],
+ "hand_code": [
+  "doi",
+  "coder",
+  "coding_convention",
+  "datasets_used",
+  "split_protocol",
+  "target_hardware_named",
+  "headline_metric",
+  "night_or_lowlight_tested",
+  "real_wildfire_detected"
+ ],
+ "table": [
+  {
+   "field": "doi",
+   "raw": 0.0,
+   "kappa": 0.0,
+   "top_share": 0.14285714285714285,
+   "n_disagree": 7
+  },
+  {
+   "field": "coder",
+   "raw": 0.0,
+   "kappa": 0.0,
+   "top_share": 1.0,
+   "n_disagree": 7
+  },
+  {
+   "field": "coding_convention",
+   "raw": 0.0,
+   "kappa": 0.0,
+   "top_share": 0.8571428571428571,
+   "n_disagree": 7
+  },
+  {
+   "field": "datasets_used",
+   "raw": 0.2857142857142857,
+   "kappa": 0.2553191489361702,
+   "top_share": 0.14285714285714285,
+   "n_disagree": 5
+  },
+  {
+   "field": "split_protocol",
+   "raw": 0.42857142857142855,
+   "kappa": 0.1515151515151515,
+   "top_share": 0.8571428571428571,
+   "n_disagree": 4
+  },
+  {
+   "field": "target_hardware_named",
+   "raw": 0.5714285714285714,
+   "kappa": 0.4615384615384615,
+   "top_share": 0.42857142857142855,
+   "n_disagree": 3
+  },
+  {
+   "field": "headline_metric",
+   "raw": 0.5714285714285714,
+   "kappa": 0.5116279069767441,
+   "top_share": 0.2857142857142857,
+   "n_disagree": 3
+  },
+  {
+   "field": "night_or_lowlight_tested",
+   "raw": 0.7142857142857143,
+   "kappa": 0.0,
+   "top_share": 0.7142857142857143,
+   "n_disagree": 2
+  },
+  {
+   "field": "real_wildfire_detected",
+   "raw": 0.7142857142857143,
+   "kappa": 0.26315789473684215,
+   "top_share": 0.8571428571428571,
+   "n_disagree": 2
+  },
+  {
+   "field": "headline_value",
+   "raw": 0.7142857142857143,
+   "kappa": 0.6818181818181819,
+   "top_share": 0.14285714285714285,
+   "n_disagree": 2
+  },
+  {
+   "field": "deployment_duration_days",
+   "raw": 0.8571428571428571,
+   "kappa": 0.0,
+   "top_share": 1.0,
+   "n_disagree": 1
+  },
+  {
+   "field": "leakage_note",
+   "raw": 0.8571428571428571,
+   "kappa": 0.0,
+   "top_share": 1.0,
+   "n_disagree": 1
+  },
+  {
+   "field": "comparison_is_like_for_like",
+   "raw": 0.8571428571428571,
+   "kappa": 0.7407407407407407,
+   "top_share": 0.5714285714285714,
+   "n_disagree": 1
+  },
+  {
+   "field": "dataset_public",
+   "raw": 0.8571428571428571,
+   "kappa": 0.7586206896551724,
+   "top_share": 0.5714285714285714,
+   "n_disagree": 1
+  },
+  {
+   "field": "deployment_level",
+   "raw": 0.8571428571428571,
+   "kappa": 0.7586206896551724,
+   "top_share": 0.5714285714285714,
+   "n_disagree": 1
+  },
+  {
+   "field": "leakage_risk",
+   "raw": 0.8571428571428571,
+   "kappa": 0.7666666666666667,
+   "top_share": 0.5714285714285714,
+   "n_disagree": 1
+  },
+  {
+   "field": "data_source_type",
+   "raw": 0.8571428571428571,
+   "kappa": 0.7999999999999999,
+   "top_share": 0.42857142857142855,
+   "n_disagree": 1
+  },
+  {
+   "field": "metrics_reported",
+   "raw": 0.8571428571428571,
+   "kappa": 0.8333333333333331,
+   "top_share": 0.14285714285714285,
+   "n_disagree": 1
+  },
+  {
+   "field": "leakage_acknowledged",
+   "raw": 1.0,
+   "kappa": null,
+   "top_share": 1.0,
+   "n_disagree": 0
+  },
+  {
+   "field": "duplicate_check_done",
+   "raw": 1.0,
+   "kappa": null,
+   "top_share": 1.0,
+   "n_disagree": 0
+  },
+  {
+   "field": "variance_reported",
+   "raw": 1.0,
+   "kappa": null,
+   "top_share": 1.0,
+   "n_disagree": 0
+  },
+  {
+   "field": "n_runs",
+   "raw": 1.0,
+   "kappa": null,
+   "top_share": 1.0,
+   "n_disagree": 0
+  },
+  {
+   "field": "statistical_test_vs_baseline",
+   "raw": 1.0,
+   "kappa": null,
+   "top_share": 1.0,
+   "n_disagree": 0
+  },
+  {
+   "field": "smoke_only_early_stage_tested",
+   "raw": 1.0,
+   "kappa": null,
+   "top_share": 1.0,
+   "n_disagree": 0
+  },
+  {
+   "field": "false_alarms_per_unit_time",
+   "raw": 1.0,
+   "kappa": null,
+   "top_share": 1.0,
+   "n_disagree": 0
+  },
+  {
+   "field": "min_detectable_fire_size",
+   "raw": 1.0,
+   "kappa": null,
+   "top_share": 1.0,
+   "n_disagree": 0
+  },
+  {
+   "field": "detection_range",
+   "raw": 1.0,
+   "kappa": null,
+   "top_share": 1.0,
+   "n_disagree": 0
+  },
+  {
+   "field": "latency_measured_on_target_hw",
+   "raw": 1.0,
+   "kappa": null,
+   "top_share": 1.0,
+   "n_disagree": 0
+  },
+  {
+   "field": "code_available",
+   "raw": 1.0,
+   "kappa": null,
+   "top_share": 1.0,
+   "n_disagree": 0
+  },
+  {
+   "field": "weights_available",
+   "raw": 1.0,
+   "kappa": null,
+   "top_share": 1.0,
+   "n_disagree": 0
+  },
+  {
+   "field": "seed_reported",
+   "raw": 1.0,
+   "kappa": null,
+   "top_share": 1.0,
+   "n_disagree": 0
+  },
+  {
+   "field": "task",
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.5714285714285714,
+   "n_disagree": 0
+  },
+  {
+   "field": "target",
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.42857142857142855,
+   "n_disagree": 0
+  },
+  {
+   "field": "n_train",
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.5714285714285714,
+   "n_disagree": 0
+  },
+  {
+   "field": "n_val",
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.8571428571428571,
+   "n_disagree": 0
+  },
+  {
+   "field": "n_test",
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.7142857142857143,
+   "n_disagree": 0
+  },
+  {
+   "field": "class_balance_reported",
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.5714285714285714,
+   "n_disagree": 0
+  },
+  {
+   "field": "cross_dataset_eval",
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.8571428571428571,
+   "n_disagree": 0
+  },
+  {
+   "field": "tested_unseen_site_or_season",
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.8571428571428571,
+   "n_disagree": 0
+  },
+  {
+   "field": "adverse_weather_tested",
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.8571428571428571,
+   "n_disagree": 0
+  },
+  {
+   "field": "false_positive_sources_analysed",
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.7142857142857143,
+   "n_disagree": 0
+  },
+  {
+   "field": "n_nodes_or_cameras",
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.8571428571428571,
+   "n_disagree": 0
+  },
+  {
+   "field": "failure_modes_reported",
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.5714285714285714,
+   "n_disagree": 0
+  },
+  {
+   "field": "time_to_detection",
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.8571428571428571,
+   "n_disagree": 0
+  },
+  {
+   "field": "power_measured",
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.7142857142857143,
+   "n_disagree": 0
+  },
+  {
+   "field": "hyperparams_full",
+   "raw": 1.0,
+   "kappa": 1.0,
+   "top_share": 0.5714285714285714,
+   "n_disagree": 0
+  }
+ ],
+ "disagreements": {
+  "doi": [
+   [
+    "W4310379056",
+    "10.3390/su142315690",
+    "not_reported"
+   ],
+   [
+    "W4317934269",
+    "10.3390/iot4010001",
+    "not_reported"
+   ],
+   [
+    "W4324056332",
+    "10.3390/f14030563",
+    "not_reported"
+   ],
+   [
+    "W4398141901",
+    "10.3390/pr12051039",
+    "not_reported"
+   ],
+   [
+    "W4399615782",
+    "10.1016/j.iot.2024.101248",
+    "not_reported"
+   ],
+   [
+    "W4403544374",
+    "10.3390/f15101823",
+    "not_reported"
+   ],
+   [
+    "W4410239778",
+    "10.3390/s25102989",
+    "not_reported"
+   ]
+  ],
+  "coder": [
+   [
+    "W4310379056",
+    "a",
+    "b"
+   ],
+   [
+    "W4317934269",
+    "a",
+    "b"
+   ],
+   [
+    "W4324056332",
+    "a",
+    "b"
+   ],
+   [
+    "W4398141901",
+    "a",
+    "b"
+   ],
+   [
+    "W4399615782",
+    "a",
+    "b"
+   ],
+   [
+    "W4403544374",
+    "a",
+    "b"
+   ],
+   [
+    "W4410239778",
+    "a",
+    "b"
+   ]
+  ],
+  "coding_convention": [
+   [
+    "W4310379056",
+    "quotes verbatim from the `excerpt`, normalised only for line-break/whitespace. 'absent: no statement in excerpt' marks codes of `no` based on absence of any statement.",
+    "not_reported"
+   ],
+   [
+    "W4317934269",
+    "quotes verbatim from the `excerpt`, normalised only for line-break/whitespace. 'absent: no statement in excerpt' marks codes of `no` based on absence of any statement.",
+    "not_reported"
+   ],
+   [
+    "W4324056332",
+    "quotes verbatim from the `excerpt`, normalised only for line-break/whitespace. 'absent: no statement in excerpt' marks codes of `no` based on absence of any statement.",
+    "not_reported"
+   ],
+   [
+    "W4398141901",
+    "quotes verbatim from the `excerpt`, normalised only for line-break/whitespace. 'absent: no statement in excerpt' marks codes of `no` based on absence of any statement.",
+    "not_reported"
+   ],
+   [
+    "W4399615782",
+    "quotes are verbatim from the `excerpt` field, normalised only for pdf line-break hyphenation/whitespace. fields coded `no` purely because the excerpt contains no statement at all carry the quote marker 'absent: no statement in excerpt'.",
+    "not_reported"
+   ],
+   [
+    "W4403544374",
+    "quotes verbatim from the `excerpt`, normalised only for line-break/whitespace. 'absent: no statement in excerpt' marks codes of `no` based on absence of any statement.",
+    "not_reported"
+   ],
+   [
+    "W4410239778",
+    "quotes verbatim from the `excerpt`, normalised only for line-break/whitespace. 'absent: no statement in excerpt' marks codes of `no` based on absence of any statement.",
+    "not_reported"
+   ]
+  ],
+  "task": [],
+  "target": [],
+  "datasets_used": [
+   [
+    "W4310379056",
+    "images collected on public websites|private_self_collected (14,400-image composite)|visifire (bilkent university)|wildfire and smoke dataset, cvpr laboratory, keimyung university|wildfire and smoke datasets, wildfire research center, split faculty of electrical engineering",
+    "private_self_collected (web-collected smoke and negative images)|visifire dataset (bilkent university)|wildfire and smoke dataset from the cvpr laboratory at keimyung university|wildfire and smoke datasets from split faculty of electrical engineering university wildfire research center"
+   ],
+   [
+    "W4317934269",
+    "not_applicable",
+    "private_self_collected"
+   ],
+   [
+    "W4324056332",
+    "corsican fire dataset (cross-dataset test only)|era dataset|flame dataset",
+    "corsican fire dataset|era dataset|flame dataset"
+   ],
+   [
+    "W4398141901",
+    "private_self_collected (web-scraped from roboflow, bing, flickr, kaggle)",
+    "private_self_collected (internet images/videos via roboflow, bing, flickr, kaggle)"
+   ],
+   [
+    "W4403544374",
+    "kaggle / mivia / web-scraped images|private_self_collected (q-fire)|public uav wildfire dataset cited as [35] (not named)",
+    "private_self_collected (kaggle, mivia, web scraping) - custom dataset q-fire|public uav wildfire dataset cited as reference [35] (not named in text)"
+   ]
+  ],
+  "dataset_public": [
+   [
+    "W4410239778",
+    "no",
+    "yes"
+   ]
+  ],
+  "n_train": [],
+  "n_val": [],
+  "n_test": [],
+  "data_source_type": [
+   [
+    "W4310379056",
+    "not_reported",
+    "mixed"
+   ]
+  ],
+  "split_protocol": [
+   [
+    "W4310379056",
+    "not_reported",
+    "random_resplit"
+   ],
+   [
+    "W4324056332",
+    "not_reported",
+    "random_resplit"
+   ],
+   [
+    "W4398141901",
+    "not_reported",
+    "random_resplit"
+   ],
+   [
+    "W4410239778",
+    "not_reported",
+    "official"
+   ]
+  ],
+  "leakage_risk": [
+   [
+    "W4324056332",
+    "medium",
+    "high"
+   ]
+  ],
+  "leakage_acknowledged": [],
+  "duplicate_check_done": [],
+  "headline_metric": [
+   [
+    "W4310379056",
+    "ap0.5",
+    "ap0.5 (map@0.5)"
+   ],
+   [
+    "W4317934269",
+    "average current consumption (hub node, 24 h)",
+    "not_reported"
+   ],
+   [
+    "W4410239778",
+    "map50",
+    "map@0.5"
+   ]
+  ],
+  "headline_value": [
+   [
+    "W4317934269",
+    "1.4",
+    "not_reported"
+   ],
+   [
+    "W4324056332",
+    "0.868",
+    "86.8"
+   ]
+  ],
+  "metrics_reported": [
+   [
+    "W4403544374",
+    "accuracy|map|precision|recall",
+    "map|precision|recall"
+   ]
+  ],
+  "class_balance_reported": [],
+  "variance_reported": [],
+  "n_runs": [],
+  "statistical_test_vs_baseline": [],
+  "comparison_is_like_for_like": [
+   [
+    "W4317934269",
+    "unclear",
+    "no_comparison"
+   ]
+  ],
+  "cross_dataset_eval": [],
+  "tested_unseen_site_or_season": [],
+  "night_or_lowlight_tested": [
+   [
+    "W4398141901",
+    "yes",
+    "no"
+   ],
+   [
+    "W4403544374",
+    "yes",
+    "no"
+   ]
+  ],
+  "smoke_only_early_stage_tested": [],
+  "adverse_weather_tested": [],
+  "false_positive_sources_analysed": [],
+  "deployment_level": [
+   [
+    "W4399615782",
+    "l3_short_field_pilot_under_30d",
+    "l2_controlled_outdoor_burn"
+   ]
+  ],
+  "deployment_duration_days": [
+   [
+    "W4317934269",
+    "not_reported",
+    "1"
+   ]
+  ],
+  "n_nodes_or_cameras": [],
+  "real_wildfire_detected": [
+   [
+    "W4317934269",
+    "no",
+    "test_burns_only"
+   ],
+   [
+    "W4399615782",
+    "not_reported",
+    "test_burns_only"
+   ]
+  ],
+  "failure_modes_reported": [],
+  "false_alarms_per_unit_time": [],
+  "time_to_detection": [],
+  "min_detectable_fire_size": [],
+  "detection_range": [],
+  "power_measured": [],
+  "latency_measured_on_target_hw": [],
+  "target_hardware_named": [
+   [
+    "W4317934269",
+    "lora32u4 ii board (atmega32u4 mcu + hpd13 915 mhz lora transceiver); cn0537/adpd188bi smoke sensor; scd30; sim7000 lte shield",
+    "lora32u4 ii board (atmega32u4 mcu + hpd13 915 mhz lora); cn0537/adpd188bi smoke sensor; scd30; sim7000 lte shield"
+   ],
+   [
+    "W4399615782",
+    "esp32 microcontroller + rak3172 lorawan module + bme688 air quality sensor (iot sensing node)",
+    "esp32 microcontroller; rak3172 lorawan module; bme688 air quality sensor (iot sensing node)"
+   ],
+   [
+    "W4410239778",
+    "nvidia jetson nano (named as intended deployment target only; not used for any reported measurement)",
+    "nvidia jetson nano (named only as intended future platform; all timings on rtx 3090 ti)"
+   ]
+  ],
+  "code_available": [],
+  "weights_available": [],
+  "hyperparams_full": [],
+  "seed_reported": [],
+  "leakage_note": [
+   [
+    "W4310379056",
+    "not_reported",
+    "constituent sources include the visifire video corpus, but the paper calls them 'fire image datasets', so frame provenance is not verifiable from the text."
+   ]
+  ]
+ }
+}

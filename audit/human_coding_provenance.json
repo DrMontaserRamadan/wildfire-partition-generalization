@@ -1,0 +1,99 @@
+{
+ "coder_A": {
+  "sha256": "4e9b1ddb757344577c212c7fc75a7d5154f081d3c81a1ceb679beba3110df754",
+  "received": "2026-09-20"
+ },
+ "coder_B": {
+  "sha256": "4a0fa978a9201f89a492f4d14f299885c9032dc390b6e65c80faf72b3eb4eac9",
+  "received": "2026-09-20"
+ },
+ "workbooks_verified_against_arrival_hashes": true,
+ "pre_consensus": {
+  "n": 79,
+  "agreement_count": 65,
+  "raw_agreement": 0.8227848101265823,
+  "cohens_kappa": 0.7033261802575109,
+  "n_disagreements": 14,
+  "note": "Frozen. The consensus round does not alter these."
+ },
+ "consensus": {
+  "n_cases": 14,
+  "decided": {
+   "W3090022951": 1,
+   "W3186499362": 3,
+   "W4207031702": 1,
+   "W4213193982": 1,
+   "W4309091309": 1,
+   "W4312250248": 2,
+   "W4386453639": 2,
+   "W4396605531": 2,
+   "W4399361386": 1,
+   "W4400071697": 1,
+   "W4400354193": 1,
+   "W7133383941": 2
+  },
+  "referred_unresolved": [
+   "W4399615782",
+   "W4413480292"
+  ],
+  "coder_codes": {
+   "W3090022951": {
+    "A": 1,
+    "B": 3
+   },
+   "W3186499362": {
+    "A": 3,
+    "B": 2
+   },
+   "W4207031702": {
+    "A": 1,
+    "B": 3
+   },
+   "W4213193982": {
+    "A": 1,
+    "B": 2
+   },
+   "W4309091309": {
+    "A": 1,
+    "B": 3
+   },
+   "W4312250248": {
+    "A": 2,
+    "B": 1
+   },
+   "W4386453639": {
+    "A": 3,
+    "B": 1
+   },
+   "W4396605531": {
+    "A": 2,
+    "B": 4
+   },
+   "W4399361386": {
+    "A": 1,
+    "B": 2
+   },
+   "W4399615782": {
+    "A": 1,
+    "B": 4
+   },
+   "W4400071697": {
+    "A": 1,
+    "B": 2
+   },
+   "W4400354193": {
+    "A": 1,
+    "B": 2
+   },
+   "W4413480292": {
+    "A": 4,
+    "B": 2
+   },
+   "W7133383941": {
+    "A": 2,
+    "B": 4
+   }
+  },
+  "note": "Referred cases were sent back to the two coders for independent resolution. Neither the earlier author classification nor any party's reading was disclosed to them."
+ }
+}

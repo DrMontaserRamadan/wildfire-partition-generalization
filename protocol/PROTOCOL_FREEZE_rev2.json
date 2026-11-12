@@ -1,0 +1,29 @@
+{
+ "frozen_at": "2026-09-11",
+ "purpose": "partition-granularity experiment, pre-training freeze (rev 2)",
+ "supersedes": {
+  "PARTITION_GRANULARITY_PROTOCOL.md": "63d2176f0b6c85098f0df0fb4b5b6f1a1cb55d0455fcdca02f75c7d98a8848ef",
+  "HUMAN_CODING_PROTOCOL.md": "3633711c896f1781611d31c2d9791b8853d90cc7f24e0c96f12b5bfe94abc743",
+  "NOVELTY_AUDIT_PARTITION_EXPERIMENT.md": "18d7281df50181d8d5068afe6b708c03794a422a84cd0d0940225797bd27be90",
+  "corpus/pyrosdis_partitions.json": "2302eb976c88274473e0208ffd2d0f23ad17ff067ac1f55f3c94d860d689bc0d",
+  "corpus/pyrosdis_profile.json": "fa33cd2d019842385114edd5a8c7ff643ce58847005f43c471658fbbe7c88a65",
+  "corpus/pyrosdis_rows.json": "fd0b28118344360c7978bfbc40f0caceadfdc4f91c0948b919c782229bc1aebe",
+  "scripts/pyrosdis_partitions.py": "6e8ac41ab34289ec873240311109ca1c9a25b8be7a19c46f944ccc0c2865e750",
+  "scripts/pyrosdis_profile.py": "0af66bc058a0ae4ceed507629ecc0ec06ee9a5213b915991789d7fcd94ba277f"
+ },
+ "revision_reason": "three approved corrections: human-kappa interpretation withdrawn; shipped-split interpretation removed; 94% stated as a measurement",
+ "files": {
+  "PARTITION_GRANULARITY_PROTOCOL.md": "85092ec750354a71fa087d682e6c36f0994e3521519561a651ca499ed938562c",
+  "HUMAN_CODING_PROTOCOL.md": "566189138920bead096ccc4a8d2443bf51e583f18817d576ee4ec7eed84838ad",
+  "NOVELTY_AUDIT_PARTITION_EXPERIMENT.md": "18d7281df50181d8d5068afe6b708c03794a422a84cd0d0940225797bd27be90",
+  "corpus/pyrosdis_partitions.json": "2302eb976c88274473e0208ffd2d0f23ad17ff067ac1f55f3c94d860d689bc0d",
+  "corpus/pyrosdis_profile.json": "fa33cd2d019842385114edd5a8c7ff643ce58847005f43c471658fbbe7c88a65",
+  "corpus/pyrosdis_rows.json": "fd0b28118344360c7978bfbc40f0caceadfdc4f91c0948b919c782229bc1aebe",
+  "scripts/pyrosdis_partitions.py": "6e8ac41ab34289ec873240311109ca1c9a25b8be7a19c46f944ccc0c2865e750",
+  "scripts/pyrosdis_profile.py": "0af66bc058a0ae4ceed507629ecc0ec06ee9a5213b915991789d7fcd94ba277f",
+  "corpus/split_manifest.json": "8463e20cbfbc93d398d7d9c3f2fc632c856265c6bd05a9d3c705f1cfebc8c783",
+  "scripts/split_manifest.py": "f1f5f73bc4efc746e1d434c03059a2d19e6d127c46e81d6bf1d4bef19fc7ad71",
+  "scripts/run_experiment.py": "af96658ccc4947b7987006eb8c951950ea60cbfdec0eb6347e6812be0a72dbb6",
+  "scripts/pyrosdis_extract.py": "b88f190640c041c1c8ea923da9a1f0da4e12f695bafb8b65d29f8fd21ac32218"
+ }
+}

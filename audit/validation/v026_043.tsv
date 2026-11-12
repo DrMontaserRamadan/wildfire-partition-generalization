@@ -1,0 +1,18 @@
+26	2	"divided into training, validation, and test sets at a fixed ratio of 8:1:1" - no rule
+27	2	"In a ratio of 8:1:1, the dataset is split into training, testing, and validation subsets" - no rule
+28	1	"the dataset is randomly divided into the training set, validation set, and test set according to the ratio of 70%, 20%, and 10%" - random stated
+29	2	"partitioned into three subsets: 6856 images for training, 1963 for validation, and 977 for testing" - counts, no rule
+30	2	"all the samples are divided into test sets and training sets in a 1:4 ratio" - no rule
+31	2	test-set size stated (441 images); no allocation rule anywhere
+32	1	group-disjoint stated: "the 7414 images were organized into 486 scene/event groups and divided into train, valid, and test sets"
+33	2	set sizes stated (15,000 total; 4500 held out); no allocation rule
+34	2	"The dataset is separated into 70%, 20%, and 10% for training, validation, and test" - no rule
+35	1	counts identify the benchmark's provided partition (31,515 / 7,878 / 8,617 matches FLAME's designated pool and test set); rule is the supplied split
+36	1	group-disjoint by wildfire event, stated: "test set consists of 18 large wildfires ... not included in the training set"
+37	2	"The proportion of the training set is 80%, that is, 11,520 images ... and 2880 images as the testing set" - no rule
+38	1	"The images are organized in tenfold for the test set, randomly selected" - random stated
+39	2	"we used 80% of the data and 20% for testing"; "training data were split into 80:20" - no rule
+40	2	2300 images expanded to 6500 by augmentation, then divided; counts only, no allocation rule
+41	2	"70% or around 6,300 images ... 20% ... 899 images ... set aside for testing" - counts/ratio, no rule
+42	2	"Our dataset is divided as follows: 70% for training images, 10% for test images, and 20% for validation images" - no rule
+43	1	"the training set is composed of two-class pixel-pattern samples, randomly drawn from the first frame" - random, temporal

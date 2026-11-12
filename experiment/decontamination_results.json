@@ -1,0 +1,92 @@
+[
+ {
+  "arch": "resnet18",
+  "seed": 0,
+  "recall_all": 0.7928286852589641,
+  "recall_contaminated": 0.9678899082568807,
+  "recall_clean": 0.6584507042253521,
+  "gap": 0.3094392040315286,
+  "n_contaminated": 218,
+  "n_clean": 284
+ },
+ {
+  "arch": "resnet18",
+  "seed": 1,
+  "recall_all": 0.8366533864541833,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.7112676056338029,
+  "gap": 0.28873239436619713,
+  "n_contaminated": 218,
+  "n_clean": 284
+ },
+ {
+  "arch": "resnet18",
+  "seed": 2,
+  "recall_all": 0.8147410358565738,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6725352112676056,
+  "gap": 0.3274647887323944,
+  "n_contaminated": 218,
+  "n_clean": 284
+ },
+ {
+  "arch": "mobilenet_v3_small",
+  "seed": 0,
+  "recall_all": 0.8087649402390438,
+  "recall_contaminated": 0.9954128440366973,
+  "recall_clean": 0.6654929577464789,
+  "gap": 0.3299198862902184,
+  "n_contaminated": 218,
+  "n_clean": 284
+ },
+ {
+  "arch": "mobilenet_v3_small",
+  "seed": 1,
+  "recall_all": 0.8107569721115537,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6654929577464789,
+  "gap": 0.3345070422535211,
+  "n_contaminated": 218,
+  "n_clean": 284
+ },
+ {
+  "arch": "mobilenet_v3_small",
+  "seed": 2,
+  "recall_all": 0.7828685258964143,
+  "recall_contaminated": 0.9862385321100917,
+  "recall_clean": 0.6267605633802817,
+  "gap": 0.35947796872980997,
+  "n_contaminated": 218,
+  "n_clean": 284
+ },
+ {
+  "arch": "efficientnet_b0",
+  "seed": 0,
+  "recall_all": 0.7569721115537849,
+  "recall_contaminated": 0.9954128440366973,
+  "recall_clean": 0.573943661971831,
+  "gap": 0.4214691820648663,
+  "n_contaminated": 218,
+  "n_clean": 284
+ },
+ {
+  "arch": "efficientnet_b0",
+  "seed": 1,
+  "recall_all": 0.8306772908366534,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.7007042253521126,
+  "gap": 0.29929577464788737,
+  "n_contaminated": 218,
+  "n_clean": 284
+ },
+ {
+  "arch": "efficientnet_b0",
+  "seed": 2,
+  "recall_all": 0.7948207171314741,
+  "recall_contaminated": 1.0,
+  "recall_clean": 0.6373239436619719,
+  "gap": 0.36267605633802813,
+  "n_contaminated": 218,
+  "n_clean": 284
+ }
+]

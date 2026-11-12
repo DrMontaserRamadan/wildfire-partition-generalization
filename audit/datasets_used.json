@@ -1,0 +1,36 @@
+{
+ "datasets": [
+  {
+   "name": "Pyro-SDIS",
+   "n_images": 33636,
+   "role": "the partition-granularity experiment: five allocation rules, 76 runs",
+   "why": "carries per-image event, camera and partner attribution, which the ladder requires"
+  },
+  {
+   "name": "FLAME",
+   "n_images": null,
+   "n_images_note": "not obtained; not trained on here",
+   "role": "benchmark-adherence check, and the 31-paper reported-accuracy record",
+   "why": "ships a documented camera-disjoint test set, so a paper's description can be tested against it"
+  },
+  {
+   "name": "FireNET",
+   "n_images": 502,
+   "role": "near-duplicate measurement and the evaluation corpus for both overlap experiments",
+   "why": "widely circulated and treated as independent of DeepQuestAI"
+  },
+  {
+   "name": "DeepQuestAI Fire-Smoke",
+   "n_images": 3000,
+   "role": "near-duplicate measurement and the training pool for the first overlap experiment",
+   "why": "the corpus FireNET overlaps with"
+  },
+  {
+   "name": "D-Fire",
+   "n_images": 4306,
+   "role": "specificity control, and the substituted training corpus in the second overlap experiment",
+   "why": "shows no measured overlap with the other three"
+  }
+ ],
+ "note": "Counts are image files under each extracted dataset root. FLAME is not trained on in this study; it is read as a benchmark and as a record of what other papers reported on it."
+}

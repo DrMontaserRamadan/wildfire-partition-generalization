@@ -1,0 +1,19 @@
+096	OUT_S3	survey of early warning systems across wildfires, volcanoes and landslides; a landscape review, not a primary study
+097	OUT_S2	fire climatology: MODIS hotspot counts cross-tabulated against weather charts to characterise fire-weather conditions; no detection method is proposed or evaluated
+098	OUT_S3	survey of UAV technology for disaster response and communication relay; forest fire is one item in a disaster list
+099	IN	drone-based forest and mountain fire detection, YOLO-CSQ on YOLOv8 (the title says "drone detection" but the task is fire detection FROM a drone)
+100	OUT_S2	FAKE NEWS detection from text. It entered the sample because its abstract contains the simile "news spreads like wildfire" - the clearest possible demonstration of keyword-level filter failure
+101	IN	wildland fire smoke detection from fixed-view cameras, FIgLib dataset and SmokeyNet
+102	IN	UAV forest fire detection and monitoring with YOLOv8/YOLOv5 on Jetson Nano, with a ground station
+103	UNCLEAR	fire detection from smoke shade and direction vectors; the abstract names no setting and reports no results
+104	IN_BORDERLINE	forest fire segmentation on satellite imagery. DATA DEFECT: the abstract field holds a bibliographic citation, not an abstract, so this decision rests on the title alone
+105	IN	real-time forest fire smoke detection, comparison of EfficientDet, Faster R-CNN, YOLOv3 and SSD
+106	OUT_S1	fire and smoke detection for COAL MINES; underground industrial setting
+107	IN	smoke and wildfire detection and localisation in ground and aerial images, YOLO family
+108	IN	forest fire detection with an improved Detectron2 on a custom 5,200-image dataset
+109	UNCLEAR	unsupervised domain-adaptive smoke detection; motivated by "fire hazards and the ecological environment" but the abstract names no wildland setting and no dataset
+110	UNCLEAR	flame segmentation trained on synthetic flame video with random background pasting; tested on FIRE-SMOKE-DATASET and Fire-Detection-Image-Dataset, neither identified as wildland
+111	IN_BORDERLINE	benchmarked as "wildfire and smoke detection" but evaluated on the Foggia dataset, which is general fire video rather than wildland-specific
+112	IN	satellite wildfire detection from hyperspectral imagery with onboard neural networks, Australian case study
+113	OUT_S2	NDVI versus RGB algorithms for UAV vegetation-health assessment; the detection target is vegetation stress, not fire
+114	IN_BORDERLINE	ZigBee forest fire detection system tracking forest temperature and humidity; the abstract describes the system but reports no evaluation at all

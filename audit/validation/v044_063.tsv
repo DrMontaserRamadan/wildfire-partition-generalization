@@ -1,0 +1,20 @@
+44	2	"split into training, testing, and validation sets. First, the testing data contained 20% of the images (4306)" - no rule
+45	1	"stratified four-fold cross-validation scheme, repeated five times" - mechanism stated
+46	1	"ordered to preserve the chronology ... earlier portion for training and the later portion for validation" - temporal, explicit
+47	2	per-palette training and test frame counts; no allocation rule
+48	1	group-disjoint by wildfire: north-east wildfire for training/validation, south and north-west wildfires as test
+49	2	"divided into training, validation, and test sets in a ratio of 7:1:2" plus counts - no rule
+50	1	"All the images ... are randomly divided into a training set, a verification set, and a test set in a ratio of 8:1:1" - random
+51	1	trained on one corpus and evaluated on separate corpora - cross-dataset design is the mechanism
+52	2	three mutually inconsistent ratios (80/20, 80/5/15, 80/20) and no allocation rule in any of them
+53	1	"we kept the wildfire events disjoints between the train, val, and test" - event-disjoint, explicit
+54	2	"divided into training, validation, and test sets, with a distribution ratio of 8:1:1" - no rule
+55	2	"The dataset was divided as follows: 80% to train and 20% to test our network" - no rule
+56	1	"each validation fold was stratified by ignition date and case number" - stratified by event, explicit
+57	1	"All experiments were conducted using stratified training-validation splits to preserve class distributions" - stratified, explicit
+58	3	no partition statement anywhere in the complete full text (15 candidates, 0 set-language)
+59	2	"The datasets were split into training, validation, and testing sets with [ratio]" - no rule
+60	1	"Among these data, 70% was used for training, and 30% was used for testing. The training and testing data were randomly selected" - random
+61	2	"We split each dataset in the ratio of 70-15-15" - no rule
+62	1	"the set of training image data taken as a randomly selected 80% of all available data" - random
+63	2	"split into training and testing sets, with 6,856 images for training and 2,940 for testing" - counts, no rule

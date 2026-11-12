@@ -1,0 +1,12 @@
+0	1	"1% randomly sampled data and split it" - random assignment stated
+1	4	leave-one-out CV stated only for the regression sub-models; the detection model's partition is never stated
+2	2	"divided into the training set and verification set according to the ratio of 8:2" - ratio, no rule
+3	2	"partitioned into training, testing, and validation sets in a ratio of 7:2:1" - ratio, no rule
+4	2	counts only (31,696 / 14,259 / 7,896); "this partitioning strategy" never says how
+5	2	"divided into three sets: a training set (17,518 images), a validation set (5005), test set (2503)" - counts, no rule
+6	2	"split into training (70%), validation (20%), and testing (10%) subsets" - ratio, no rule
+7	2	"split into training, validation, and test sets in a ratio of 8:1:1" - ratio, no rule
+8	2	"divided into training, testing, and validation sets at a ratio of 8:1:1" - ratio, no rule
+9	2	"divided into training, validation, and test sets with a ratio of 8:1:1" - ratio, no rule
+10	2	"divided into training, validation, and test sets with an 8:1:1 distribution ratio" - ratio, no rule
+11	2	"the 6135 images ... are divided into training and testing sets by [ratio]" - ratio, no rule; column interleaving garbles the tail

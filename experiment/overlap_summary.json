@@ -1,0 +1,101 @@
+{
+ "params": {
+  "hamming_max": 5,
+  "ncc_min": 0.95,
+  "hash_bits": 64,
+  "hashes": [
+   "dhash",
+   "phash"
+  ]
+ },
+ "sizes": {
+  "FireNET": 502,
+  "DeepQuestAI_FireSmoke": 3000,
+  "DeepQuestAI_inference": 150,
+  "DFire_test": 4306
+ },
+ "cross": {
+  "DFire_test|DeepQuestAI_FireSmoke": {
+   "n_a": 4306,
+   "n_b": 3000,
+   "a_hit": 0,
+   "b_hit": 0,
+   "exact": 0,
+   "candidates": 26
+  },
+  "DFire_test|DeepQuestAI_inference": {
+   "n_a": 4306,
+   "n_b": 150,
+   "a_hit": 0,
+   "b_hit": 0,
+   "exact": 0,
+   "candidates": 1
+  },
+  "DFire_test|FireNET": {
+   "n_a": 4306,
+   "n_b": 502,
+   "a_hit": 0,
+   "b_hit": 0,
+   "exact": 0,
+   "candidates": 22
+  },
+  "DeepQuestAI_FireSmoke|DeepQuestAI_inference": {
+   "n_a": 3000,
+   "n_b": 150,
+   "a_hit": 2,
+   "b_hit": 2,
+   "exact": 0,
+   "candidates": 3
+  },
+  "DeepQuestAI_FireSmoke|FireNET": {
+   "n_a": 3000,
+   "n_b": 502,
+   "a_hit": 234,
+   "b_hit": 218,
+   "exact": 0,
+   "candidates": 276
+  },
+  "DeepQuestAI_inference|FireNET": {
+   "n_a": 150,
+   "n_b": 502,
+   "a_hit": 0,
+   "b_hit": 0,
+   "exact": 0,
+   "candidates": 0
+  }
+ },
+ "internal": {
+  "DFire_test": {
+   "n_a": 4306,
+   "n_b": 4306,
+   "a_hit": 4306,
+   "b_hit": 4306,
+   "exact": 4306,
+   "candidates": 40166
+  },
+  "DeepQuestAI_FireSmoke": {
+   "n_a": 3000,
+   "n_b": 3000,
+   "a_hit": 3000,
+   "b_hit": 3000,
+   "exact": 3138,
+   "candidates": 3156
+  },
+  "DeepQuestAI_inference": {
+   "n_a": 150,
+   "n_b": 150,
+   "a_hit": 150,
+   "b_hit": 150,
+   "exact": 150,
+   "candidates": 150
+  },
+  "FireNET": {
+   "n_a": 502,
+   "n_b": 502,
+   "a_hit": 502,
+   "b_hit": 502,
+   "exact": 542,
+   "candidates": 548
+  }
+ }
+}

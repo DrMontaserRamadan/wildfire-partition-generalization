@@ -1,0 +1,389 @@
+{
+ "n": 67,
+ "estimands": [
+  {
+   "id": "E1",
+   "label": "split mechanism unreported",
+   "status": "PRIMARY",
+   "estimated": true,
+   "numerator": 38,
+   "denominator": 64,
+   "pct": 59.38,
+   "ci95": [
+    47.15,
+    70.54
+   ],
+   "population": "POP_LEARNED",
+   "driver": "split_protocol",
+   "class": "PRIMARY-SAFE",
+   "kappa": 0.9584367245657567,
+   "sens_coder": {
+    "A": 59.38,
+    "B": 56.25,
+    "agreed": 58.06,
+    "n_agreed": 62,
+    "spread": 3.12
+   }
+  },
+  {
+   "id": "E2",
+   "label": "official held-out split used",
+   "status": "PRIMARY",
+   "estimated": true,
+   "numerator": 0,
+   "denominator": 64,
+   "pct": 0.0,
+   "ci95": [
+    0.0,
+    5.66
+   ],
+   "population": "POP_LEARNED",
+   "driver": "split_protocol",
+   "class": "PRIMARY-SAFE",
+   "kappa": 0.9584367245657567,
+   "sens_coder": {
+    "A": 0.0,
+    "B": 0.0,
+    "agreed": 0.0,
+    "n_agreed": 62,
+    "spread": 0.0
+   }
+  },
+  {
+   "id": "E3",
+   "label": "augmentation before partition",
+   "status": "PRIMARY",
+   "estimated": true,
+   "numerator": 5,
+   "denominator": 64,
+   "pct": 7.81,
+   "ci95": [
+    3.38,
+    17.02
+   ],
+   "population": "POP_LEARNED",
+   "driver": "split_protocol",
+   "class": "PRIMARY-SAFE",
+   "kappa": 0.9584367245657567,
+   "sens_coder": {
+    "A": 7.81,
+    "B": 7.81,
+    "agreed": 8.06,
+    "n_agreed": 62,
+    "spread": 0.0
+   }
+  },
+  {
+   "id": "E4",
+   "label": "any operational metric reported",
+   "status": "PRIMARY",
+   "estimated": true,
+   "numerator": 6,
+   "denominator": 67,
+   "pct": 8.96,
+   "ci95": [
+    4.17,
+    18.19
+   ],
+   "population": "POP_ALL",
+   "driver": "false_alarms_per_unit_time",
+   "class": "PRIMARY-SAFE",
+   "kappa": null,
+   "sens_coder": {
+    "A": 8.96,
+    "B": 11.94,
+    "agreed": 8.96,
+    "n_agreed": 67,
+    "spread": 2.99
+   }
+  },
+  {
+   "id": "E5",
+   "label": "deployment beyond dataset-only (>= L2)",
+   "status": "PRIMARY",
+   "estimated": true,
+   "numerator": 9,
+   "denominator": 67,
+   "pct": 13.43,
+   "ci95": [
+    7.23,
+    23.6
+   ],
+   "population": "POP_ALL",
+   "driver": "deployment_level",
+   "class": "PRIMARY-SAFE",
+   "kappa": 0.9659033078880406,
+   "sens_coder": {
+    "A": 13.43,
+    "B": 11.94,
+    "agreed": 12.12,
+    "n_agreed": 66,
+    "spread": 1.49
+   }
+  },
+  {
+   "id": "E6",
+   "label": "detected a real unplanned wildfire",
+   "status": "PRIMARY",
+   "estimated": true,
+   "numerator": 2,
+   "denominator": 18,
+   "pct": 11.11,
+   "ci95": [
+    3.1,
+    32.8
+   ],
+   "population": "POP_DEPLOY",
+   "driver": "real_wildfire_detected",
+   "class": "PRIMARY-SAFE",
+   "kappa": 0.9506990434142755,
+   "sens_coder": {
+    "A": 11.11,
+    "B": 11.76,
+    "agreed": 11.76,
+    "n_agreed": 17,
+    "spread": 0.65
+   }
+  },
+  {
+   "id": "E7",
+   "label": "code available with a link",
+   "status": "PRIMARY",
+   "estimated": true,
+   "numerator": 4,
+   "denominator": 67,
+   "pct": 5.97,
+   "ci95": [
+    2.35,
+    14.37
+   ],
+   "population": "POP_ALL",
+   "driver": "code_available",
+   "class": "PRIMARY-SAFE",
+   "kappa": 1.0,
+   "sens_coder": {
+    "A": 5.97,
+    "B": 5.97,
+    "agreed": 5.97,
+    "n_agreed": 67,
+    "spread": 0.0
+   }
+  },
+  {
+   "id": "E8",
+   "label": "variance or multiple runs reported",
+   "status": "PRIMARY",
+   "estimated": true,
+   "numerator": 4,
+   "denominator": 64,
+   "pct": 6.25,
+   "ci95": [
+    2.46,
+    15.0
+   ],
+   "population": "POP_LEARNED",
+   "driver": "variance_reported",
+   "class": "PRIMARY-SAFE",
+   "kappa": 0.739299610894942,
+   "sens_coder": {
+    "A": 6.25,
+    "B": 6.25,
+    "agreed": 4.84,
+    "n_agreed": 62,
+    "spread": 0.0
+   }
+  },
+  {
+   "id": "E9",
+   "label": "duplicate check performed",
+   "status": "PRIMARY",
+   "estimated": true,
+   "numerator": 4,
+   "denominator": 64,
+   "pct": 6.25,
+   "ci95": [
+    2.46,
+    15.0
+   ],
+   "population": "POP_LEARNED",
+   "driver": "duplicate_check_done",
+   "class": "PRIMARY-SAFE",
+   "kappa": 1.0,
+   "sens_coder": {
+    "A": 6.25,
+    "B": 6.25,
+    "agreed": 6.25,
+    "n_agreed": 64,
+    "spread": 0.0
+   }
+  },
+  {
+   "id": "E10",
+   "label": "cross-dataset evaluation",
+   "status": "PRIMARY",
+   "estimated": true,
+   "numerator": 10,
+   "denominator": 64,
+   "pct": 15.62,
+   "ci95": [
+    8.71,
+    26.43
+   ],
+   "population": "POP_LEARNED",
+   "driver": "cross_dataset_eval",
+   "class": "PRIMARY-SAFE",
+   "kappa": 0.9483821263482279,
+   "sens_coder": {
+    "A": 15.62,
+    "B": 14.06,
+    "agreed": 14.29,
+    "n_agreed": 63,
+    "spread": 1.56
+   }
+  },
+  {
+   "id": "E11",
+   "label": "high leakage risk",
+   "status": "PRIMARY",
+   "estimated": true,
+   "numerator": 11,
+   "denominator": 64,
+   "pct": 17.19,
+   "ci95": [
+    9.88,
+    28.21
+   ],
+   "population": "POP_LEARNED",
+   "driver": "leakage_risk",
+   "class": "PRIMARY-SAFE",
+   "kappa": 0.8630976706170822,
+   "sens_coder": {
+    "A": 17.19,
+    "B": 21.88,
+    "agreed": 18.03,
+    "n_agreed": 61,
+    "spread": 4.69
+   }
+  },
+  {
+   "id": "S1",
+   "label": "comparison is like-for-like",
+   "status": "SECONDARY",
+   "estimated": true,
+   "numerator": 35,
+   "denominator": 64,
+   "pct": 54.69,
+   "ci95": [
+    42.57,
+    66.27
+   ],
+   "population": "POP_LEARNED",
+   "driver": "comparison_is_like_for_like",
+   "class": "PRIMARY-SAFE",
+   "kappa": 0.8513313609467456,
+   "sens_coder": {
+    "A": 54.69,
+    "B": 56.25,
+    "agreed": 56.9,
+    "n_agreed": 58,
+    "spread": 1.56
+   }
+  },
+  {
+   "id": "S2",
+   "label": "tested on unseen site or season",
+   "status": "SECONDARY",
+   "estimated": true,
+   "numerator": 8,
+   "denominator": 64,
+   "pct": 12.5,
+   "ci95": [
+    6.47,
+    22.77
+   ],
+   "population": "POP_LEARNED",
+   "driver": "tested_unseen_site_or_season",
+   "class": "SECONDARY-QUALIFIED",
+   "kappa": 0.7681660899653979,
+   "sens_coder": {
+    "A": 12.5,
+    "B": 17.19,
+    "agreed": 13.56,
+    "n_agreed": 59,
+    "spread": 4.69
+   }
+  },
+  {
+   "id": "S3",
+   "label": "night or low-light tested",
+   "status": "SECONDARY",
+   "estimated": true,
+   "numerator": 15,
+   "denominator": 64,
+   "pct": 23.44,
+   "ci95": [
+    14.75,
+    35.13
+   ],
+   "population": "POP_LEARNED",
+   "driver": "night_or_lowlight_tested",
+   "class": "PRIMARY-SAFE",
+   "kappa": 0.8233122362869199,
+   "sens_coder": {
+    "A": 23.44,
+    "B": 26.56,
+    "agreed": 25.0,
+    "n_agreed": 60,
+    "spread": 3.12
+   }
+  },
+  {
+   "id": "S4",
+   "label": "adverse weather tested",
+   "status": "SECONDARY",
+   "estimated": true,
+   "numerator": 14,
+   "denominator": 64,
+   "pct": 21.88,
+   "ci95": [
+    13.5,
+    33.43
+   ],
+   "population": "POP_LEARNED",
+   "driver": "adverse_weather_tested",
+   "class": "PRIMARY-SAFE",
+   "kappa": 0.8359853121175032,
+   "sens_coder": {
+    "A": 21.88,
+    "B": 25.0,
+    "agreed": 21.67,
+    "n_agreed": 60,
+    "spread": 3.12
+   }
+  },
+  {
+   "id": "S5",
+   "label": "hyperparameters fully reported",
+   "status": "SECONDARY",
+   "estimated": true,
+   "numerator": 19,
+   "denominator": 64,
+   "pct": 29.69,
+   "ci95": [
+    19.91,
+    41.77
+   ],
+   "population": "POP_LEARNED",
+   "driver": "hyperparams_full",
+   "class": "SECONDARY-QUALIFIED",
+   "kappa": 0.6836424957841484,
+   "sens_coder": {
+    "A": 29.69,
+    "B": 25.0,
+    "agreed": 25.49,
+    "n_agreed": 51,
+    "spread": 4.69
+   }
+  }
+ ]
+}

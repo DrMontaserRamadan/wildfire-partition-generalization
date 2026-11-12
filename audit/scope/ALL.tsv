@@ -1,0 +1,134 @@
+000	IN	UAV forest fire and smoke detection, YOLOv8 variant, wildland setting stated throughout
+001	IN	wildfire smoke detection from MODIS imagery with brightness-temperature thresholds
+002	OUT_S2	detects floods from water-level and water-velocity sensors; forest fire appears only in a list of disasters, no fire detector is built
+003	OUT_S2	WSN multipath routing protocol; wildfire enters only as a cellular-automaton simulation scenario for evaluating delivery ratio and energy
+004	IN	UAV forest smoke and fire detection, YOLOv8n variant
+005	OUT_S2	post-fire damage assessment with NBR/dNBR/NDVI/NDMI/LST on Landsat; burned-area and impact mapping, not detection. Title says "detection" but the study characterises fires after the fact
+006	IN	small-target fire and smoke detection in forest fire images, states real-time forest fire detection
+007	IN	forest fire detection, YOLOv8 with transfer learning
+008	IN_BORDERLINE	self-describes as wildfire detection from fire/non-fire imagery; abstract does not confirm the Kaggle data is wildland, so S1 rests on the paper's own framing
+009	IN	active forest fire detection from Landsat-8 optical plus thermal fusion
+010	IN_BORDERLINE	dataset paper (FASDD) but reports Swin Transformer detection experiments and a wildfire localisation case; S3 turns on whether a benchmark-with-baselines counts as a method paper
+011	IN	forest fire detection from Sentinel-1 SAR time series, unsupervised autoencoders
+012	IN	forest fire recognition from multi-view images, GNN plus HSV fire-area extraction
+013	IN	forest fire detection, improved YOLOv11n
+014	OUT_S2	multi-hazard prediction and early warning for tourist safety using random-forest on sensor and movement data; no fire or smoke detector is built or evaluated
+015	OUT_S1	campus fires from building surveillance video; urban/structural, not wildland
+016	IN_BORDERLINE	wildland fire, and detection latency is the measured quantity (GOES-17 vs ground camera at Kincade ignition), but the paper proposes no method - it corroborates an existing one
+017	OUT_S1	residential chimney smoke from domestic heating; the abstract explicitly contrasts itself with wildfire smoke studies
+018	OUT_S2	semantic segmentation of forest-cover disturbance (logging, burned, windthrow) from multidate Sentinel-2; burned-area mapping after the event
+019	OUT_S2	carbon-budget attribution of CO2 release during drought and wildfire; no detection task
+020	IN	forest fire detection, improved YOLOv5
+021	OUT_S2	detects fire-break MAINTENANCE OPERATIONS from Sentinel-2 time series; the detection target is vegetation management, not fire
+022	UNCLEAR	LoRaWAN sensor network for rural fire risk and "presence of a forest fire"; the only reported results are gateway coverage (4 km radius), so the abstract does not establish that a detector is evaluated
+023	IN	forest fire recognition and localisation in video, modified deep CNN
+024	IN	UAV forest fire smoke detection, lightweight YOLOv10n, own UFFS dataset
+025	OUT_S2	UAS structure-from-motion mapping of forest structure and fuel load, compared to pre-fire ALS; measures wildfire IMPACTS on canopy, no fire or smoke detector
+026	IN	early pile fire detection from UAV thermal/white/night imagery, evaluated on FLAME
+027	IN	forest fire segmentation from aerial video, FFS-UNet temporal transformer
+028	OUT_S1	ferroelectric UV optoelectronic sensor array for flame detection in generic fire-safety systems and flame-motion recognition; a device paper with no wildland setting
+029	IN	UAV remote-sensing forest fire detection, lightweight YOLO
+030	IN	forest fire detection and recognition, lightweight SWVR
+031	OUT_S1	smart smoke-alarm device on the UCL smoke dataset for indoor/appliance fire safety; no wildland setting
+032	IN	fire and smoke detection with YOLOv8/v7, framed and motivated as wildfire detection for firefighters
+033	IN_BORDERLINE	smoke and fire semantic segmentation motivated by wildfires, but the stated use is a camera embedded in a vehicle assisting firemen; the abstract does not establish wildland imagery
+034	IN	wildfire detection from Himawari-8 geostationary data, random forest plus spatial contextual algorithm
+035	OUT_S2	detects and classifies forest VEGETATION (grass, live, cut, dead, trunks) for an autonomous fuel-cutting UGV; fire prevention is the motivation, the detection target is fuel
+036	IN	event-level UAV fire detection on FLAME with an energy-aware edge pipeline
+037	OUT_S2	generic ontology-based object-detection method; the fire-related task is predicting burned vs non-burned zones, i.e. burned-area classification
+038	IN	UAV forest fire detection, lightweight YOLO11 variant
+039	OUT_S2	unsupervised change detection of BURNED AREAS from Sentinel-2 for post-fire impact delineation
+040	UNCLEAR	fire and smoke detection with ViT+YOLOv5s, explicitly for "both indoor and outdoor environments"; the abstract does not say whether the evaluation data is wildland
+041	IN	forest fire identification in satellite imagery on embedded hardware (Jetson Nano)
+042	IN	forest fire detection from a deployed WSN with a machine-learning regression detector, trialled in tropical forest
+043	OUT_S2	sensor-topology and coverage optimisation (artificial bee colony) for WSN node placement; evaluated on coverage, not on detection
+044	IN	IoT wildfire detection from smoke presence and temperature rise with an ultra-low-power node, prototype deployed
+045	OUT_S2	post-fire vegetation change and recovery assessment; the fire has already occurred
+046	IN	UAV vision-based forest fire detection plus stereo spatial localisation
+047	OUT_S3	"we provide a comprehensive review of recent deep learning techniques" - a review that survived the review filter and is still in the eligible sample
+048	OUT_S1	"Fires in smart cities"; urban fire detection across an IoT/fog/cloud smart-city stack, extensible to gas leaks and flooding. No wildland setting
+049	IN	forest fire flame and smoke detection, YOLOv12-based F3-YOLO
+050	OUT_S1	framed entirely as fire safety for "modern infrastructure and complex settings"; forest, wildland and wildfire appear nowhere in the abstract
+051	OUT_S2	land-cover classification and POST-wildfire change detection for vegetation recovery in a burnt area
+052	OUT_S2	identifies forest fire RISK areas along power lines from LiDAR vegetation growth; risk mapping, no fire detected
+053	IN	autonomous ground vehicle with an ESP32-CAM CNN detecting forest fire in real time, then suppressing it
+054	OUT_S2	survey of wildfire management agencies and clustering of end-user archetypes for EO adoption; a social-science study with no detector
+055	UNCLEAR	MDCNet fire and smoke detection motivated by generic "public safety"; the abstract names no setting at all, wildland or built
+056	IN	detection of four classes of extreme wildfire in forest scenes, lightweight LEF-YOLO
+057	OUT_S2	measures CO and NO2 INDOORS to condition air polluted by forest-fire haze; an air-quality and ventilation system, not a fire detector
+058	IN	wildfire detection, classification and segmentation from Landsat/Sentinel imagery
+059	OUT_S1	"real-time detection performance of fire and smoke in INDOOR environments"; stated in the title and throughout
+060	OUT_S2	UAV trajectory and 5G communication optimisation; the reported results are network delay, coverage and energy efficiency, with no detector evaluated
+061	IN	forest fire and smoke detection from images, transfer learning with learning-without-forgetting
+062	IN	forest fire detection, DeepFire dataset plus VGG19 transfer learning, UAV surveillance framing
+063	IN	federated learning across edge devices for forest fire detection, DenseNet121 with soft attention
+064	OUT_S3	"This review examines the diverse benefits of remote sensing"; a second review still inside the eligible sample
+065	IN	forest fire detection for UAVs, rule-based RGB/YCbCr colour spaces plus correlation coefficient
+066	IN	forest fire classification and detection, FFireNet on a forest fire/no-fire dataset; "smart cities" is framing only
+067	OUT_S2	acoustic detection of chainsaws and illegal logging; wildfire is named once as an additional capability and is never evaluated
+068	OUT_S2	named-entity recognition of location and time strings in tweets; the model detects entities in text, not fire or smoke in sensor data
+069	IN	few-shot wildfire target detection in UAV remote-sensing images
+070	IN_BORDERLINE	titled "An Analysis of" and reads like a survey, but the abstract describes a built Arduino/flame-sensor/GPRS device with MLP mapping. Cannot tell from the abstract whether it reports its own system
+071	IN	classifies MODIS thermal detections as wildfire versus responsible agricultural burning in southern Canadian grasslands; a detection-classification task on satellite sensor data in a wildland setting
+072	IN	smoke and fire detection in forest environments, YOLOv9/v10/v11 comparison
+073	IN	wildfire classification from RGB with synthetic pseudo-thermal modalities, FLAME and FireStage
+074	IN	forest fire detection by ensembling YOLOv5, EfficientDet and EfficientNet
+075	IN	UAV wildfire classification and segmentation, deep ensemble plus TransUNet/TransFire
+076	OUT_S1	industrial workplace safety: safety-helmet and flame detection in video streams; no wildland setting
+077	IN	early smoke detection in the wild, mountains and fog in the background, improved YOLOv3 plus PCA
+078	IN	forest fire detection from VIIRS nighttime-light radiance with random forest pixel classification
+079	IN	forest fire detection, ConvNeXtV2 plus CBAM on YOLOv7
+080	OUT_S1	"antifire surveillance"; trained and tested indoors and outdoors on railway carriages, containers, bus wagons, home/office, storage and parking areas, for vehicles and transport infrastructure
+081	IN	drone-based wildfire and smoke detection fusing optical, infrared and SAR
+082	IN	wildfire smoke detection and early warning, YOLO on Jetson Xavier
+083	OUT_S1	ship fires, both inside ship rooms and on board; a marine structural-fire detector
+084	IN	small-target forest fire detection from long-range camera images, improved YOLOv5
+085	IN	active wildfire detection from Landsat-8 with SVM, Wolgan Valley Australia
+086	OUT_S1	marine engine room fire detection and tracking; a public wildfire dataset is used only as a generalisation check, not as the target domain
+087	OUT_S2	predicts aerial SUPPRESSANT DROP events from ADS-B flight telemetry; the detection target is aircraft behaviour during firefighting, not fire
+088	IN	UAV wildfire detection and localisation with a modified Miti-DETR, trained on FLAME
+089	IN	forest fire video detection with a one-class model, evaluated on public ground and UAV forest fire videos
+090	IN	wildfire detection through video cameras in mountains and jungles, lightweight YOLOv5s
+091	OUT_S2	trilateration and Nelder-Mead optimisation for locating WSN anchor nodes; the reported accuracy is coordinate estimation in simulation, not fire detection
+092	IN	early flame and smoke segmentation from UAV 360-degree cameras over forests and urban woodlands
+093	UNCLEAR	ESP32 WSN in the Mechrouha forest with cameras and gas sensors, but the stated objective and reported results are node energy consumption and LoRa/NRF communication; the abstract does not establish that detection is evaluated
+094	UNCLEAR	physics-inspired flame detection framework; the abstract names no setting, wildland or built, and reports only efficiency and architecture
+095	UNCLEAR	YOLO segmentation comparison on 5,000 fire images for "fire incidents" generally; no wildland setting is stated
+096	OUT_S3	survey of early warning systems across wildfires, volcanoes and landslides; a landscape review, not a primary study
+097	OUT_S2	fire climatology: MODIS hotspot counts cross-tabulated against weather charts to characterise fire-weather conditions; no detection method is proposed or evaluated
+098	OUT_S3	survey of UAV technology for disaster response and communication relay; forest fire is one item in a disaster list
+099	IN	drone-based forest and mountain fire detection, YOLO-CSQ on YOLOv8 (the title says "drone detection" but the task is fire detection FROM a drone)
+100	OUT_S2	FAKE NEWS detection from text. It entered the sample because its abstract contains the simile "news spreads like wildfire" - the clearest possible demonstration of keyword-level filter failure
+101	IN	wildland fire smoke detection from fixed-view cameras, FIgLib dataset and SmokeyNet
+102	IN	UAV forest fire detection and monitoring with YOLOv8/YOLOv5 on Jetson Nano, with a ground station
+103	UNCLEAR	fire detection from smoke shade and direction vectors; the abstract names no setting and reports no results
+104	IN_BORDERLINE	forest fire segmentation on satellite imagery. DATA DEFECT: the abstract field holds a bibliographic citation, not an abstract, so this decision rests on the title alone
+105	IN	real-time forest fire smoke detection, comparison of EfficientDet, Faster R-CNN, YOLOv3 and SSD
+106	OUT_S1	fire and smoke detection for COAL MINES; underground industrial setting
+107	IN	smoke and wildfire detection and localisation in ground and aerial images, YOLO family
+108	IN	forest fire detection with an improved Detectron2 on a custom 5,200-image dataset
+109	UNCLEAR	unsupervised domain-adaptive smoke detection; motivated by "fire hazards and the ecological environment" but the abstract names no wildland setting and no dataset
+110	UNCLEAR	flame segmentation trained on synthetic flame video with random background pasting; tested on FIRE-SMOKE-DATASET and Fire-Detection-Image-Dataset, neither identified as wildland
+111	IN_BORDERLINE	benchmarked as "wildfire and smoke detection" but evaluated on the Foggia dataset, which is general fire video rather than wildland-specific
+112	IN	satellite wildfire detection from hyperspectral imagery with onboard neural networks, Australian case study
+113	OUT_S2	NDVI versus RGB algorithms for UAV vegetation-health assessment; the detection target is vegetation stress, not fire
+114	IN_BORDERLINE	ZigBee forest fire detection system tracking forest temperature and humidity; the abstract describes the system but reports no evaluation at all
+115	OUT_S2	semantic segmentation of forest DISTURBANCE (logged, burnt, windthrow) from multi-temporal Sentinel-2. NOTE: this is the same study as index 018, published in Russian; a probable duplicate inside the sampling frame
+116	OUT_S2	near-real-time wildfire progression monitoring from Sentinel-1; the quantity detected is BURNT AREA growth, not an active fire front. Borderline because the monitoring is during the fire rather than after it
+117	IN	forest fire recognition from images, CNN trained on Fire / No fire classes
+118	IN	proposes using the FY-3D/MERSI-II 10.8 um far-infrared channel at 250 m as the primary source for detecting fire spots, verified on wildfire cases
+119	OUT_S1	IoT smoke detection on tabular sensor data for "infrastructure safety"; no wildland setting, and the pipeline (StandardScaler, SMOTE) indicates a tabular indoor sensor dataset
+120	OUT_S2	geomorphological change detection quantifying post-fire SOIL EROSION from LiDAR and UAV point clouds
+121	OUT_S2	Dijkstra plus fuzzy-logic route selection between WSN nodes and a router; a communication-topology study inside a fire-detection system
+122	IN	classifies satellite imagery into cloud, land, sea and wildfire with CNNs, delivered as the CoFFI GUI
+123	IN	lightweight forest fire and smoke detection, FFYOLO on YOLOv8
+124	IN	forest fire flame and smoke detection, improved YOLOv5 with SAC, PSA and Soft-NMS
+125	IN	lightweight forest fire and smoke detection, LD-YOLO on YOLOv8
+126	IN	fire and smoke detection on edge devices for fire-prone regions via drones and satellites, early-exit compact models
+127	IN	forest wildfire detection from UAV remote sensing, ASCA-YOLO
+128	IN_BORDERLINE	PyroNear2025 benchmark of 640 wildfires with cross-dataset smoke-plume detection experiments; same dataset-versus-method question as index 010, coded the same way
+129	IN	forest fire smoke recognition with YOLOv11x on the Wildfire Dataset and Forest Fire Smoke datasets
+130	OUT_S2	burned-area segmentation from mono-temporal Sentinel-2 to assess fire extent after the event
+131	UNCLEAR	video fire detection for "wide outdoor areas" monitored by smart cameras; outdoor is stated but wildland is not, and the evaluation dataset is not identified
+132	OUT_S1	smoke detection for "fire monitoring, industrial safety, and urban surveillance"; the named settings are industrial and urban
+133	OUT_S1	household electrical safety: overcurrent, cable overheating and a flame sensor in domestic wiring

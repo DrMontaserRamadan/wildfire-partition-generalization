@@ -1,0 +1,24 @@
+024	IN	UAV forest fire smoke detection, lightweight YOLOv10n, own UFFS dataset
+025	OUT_S2	UAS structure-from-motion mapping of forest structure and fuel load, compared to pre-fire ALS; measures wildfire IMPACTS on canopy, no fire or smoke detector
+026	IN	early pile fire detection from UAV thermal/white/night imagery, evaluated on FLAME
+027	IN	forest fire segmentation from aerial video, FFS-UNet temporal transformer
+028	OUT_S1	ferroelectric UV optoelectronic sensor array for flame detection in generic fire-safety systems and flame-motion recognition; a device paper with no wildland setting
+029	IN	UAV remote-sensing forest fire detection, lightweight YOLO
+030	IN	forest fire detection and recognition, lightweight SWVR
+031	OUT_S1	smart smoke-alarm device on the UCL smoke dataset for indoor/appliance fire safety; no wildland setting
+032	IN	fire and smoke detection with YOLOv8/v7, framed and motivated as wildfire detection for firefighters
+033	IN_BORDERLINE	smoke and fire semantic segmentation motivated by wildfires, but the stated use is a camera embedded in a vehicle assisting firemen; the abstract does not establish wildland imagery
+034	IN	wildfire detection from Himawari-8 geostationary data, random forest plus spatial contextual algorithm
+035	OUT_S2	detects and classifies forest VEGETATION (grass, live, cut, dead, trunks) for an autonomous fuel-cutting UGV; fire prevention is the motivation, the detection target is fuel
+036	IN	event-level UAV fire detection on FLAME with an energy-aware edge pipeline
+037	OUT_S2	generic ontology-based object-detection method; the fire-related task is predicting burned vs non-burned zones, i.e. burned-area classification
+038	IN	UAV forest fire detection, lightweight YOLO11 variant
+039	OUT_S2	unsupervised change detection of BURNED AREAS from Sentinel-2 for post-fire impact delineation
+040	UNCLEAR	fire and smoke detection with ViT+YOLOv5s, explicitly for "both indoor and outdoor environments"; the abstract does not say whether the evaluation data is wildland
+041	IN	forest fire identification in satellite imagery on embedded hardware (Jetson Nano)
+042	IN	forest fire detection from a deployed WSN with a machine-learning regression detector, trialled in tropical forest
+043	OUT_S2	sensor-topology and coverage optimisation (artificial bee colony) for WSN node placement; evaluated on coverage, not on detection
+044	IN	IoT wildfire detection from smoke presence and temperature rise with an ultra-low-power node, prototype deployed
+045	OUT_S2	post-fire vegetation change and recovery assessment; the fire has already occurred
+046	IN	UAV vision-based forest fire detection plus stereo spatial localisation
+047	OUT_S3	"we provide a comprehensive review of recent deep learning techniques" - a review that survived the review filter and is still in the eligible sample

@@ -1,0 +1,24 @@
+072	IN	smoke and fire detection in forest environments, YOLOv9/v10/v11 comparison
+073	IN	wildfire classification from RGB with synthetic pseudo-thermal modalities, FLAME and FireStage
+074	IN	forest fire detection by ensembling YOLOv5, EfficientDet and EfficientNet
+075	IN	UAV wildfire classification and segmentation, deep ensemble plus TransUNet/TransFire
+076	OUT_S1	industrial workplace safety: safety-helmet and flame detection in video streams; no wildland setting
+077	IN	early smoke detection in the wild, mountains and fog in the background, improved YOLOv3 plus PCA
+078	IN	forest fire detection from VIIRS nighttime-light radiance with random forest pixel classification
+079	IN	forest fire detection, ConvNeXtV2 plus CBAM on YOLOv7
+080	OUT_S1	"antifire surveillance"; trained and tested indoors and outdoors on railway carriages, containers, bus wagons, home/office, storage and parking areas, for vehicles and transport infrastructure
+081	IN	drone-based wildfire and smoke detection fusing optical, infrared and SAR
+082	IN	wildfire smoke detection and early warning, YOLO on Jetson Xavier
+083	OUT_S1	ship fires, both inside ship rooms and on board; a marine structural-fire detector
+084	IN	small-target forest fire detection from long-range camera images, improved YOLOv5
+085	IN	active wildfire detection from Landsat-8 with SVM, Wolgan Valley Australia
+086	OUT_S1	marine engine room fire detection and tracking; a public wildfire dataset is used only as a generalisation check, not as the target domain
+087	OUT_S2	predicts aerial SUPPRESSANT DROP events from ADS-B flight telemetry; the detection target is aircraft behaviour during firefighting, not fire
+088	IN	UAV wildfire detection and localisation with a modified Miti-DETR, trained on FLAME
+089	IN	forest fire video detection with a one-class model, evaluated on public ground and UAV forest fire videos
+090	IN	wildfire detection through video cameras in mountains and jungles, lightweight YOLOv5s
+091	OUT_S2	trilateration and Nelder-Mead optimisation for locating WSN anchor nodes; the reported accuracy is coordinate estimation in simulation, not fire detection
+092	IN	early flame and smoke segmentation from UAV 360-degree cameras over forests and urban woodlands
+093	UNCLEAR	ESP32 WSN in the Mechrouha forest with cameras and gas sensors, but the stated objective and reported results are node energy consumption and LoRa/NRF communication; the abstract does not establish that detection is evaluated
+094	UNCLEAR	physics-inspired flame detection framework; the abstract names no setting, wildland or built, and reports only efficiency and architecture
+095	UNCLEAR	YOLO segmentation comparison on 5,000 fire images for "fire incidents" generally; no wildland setting is stated

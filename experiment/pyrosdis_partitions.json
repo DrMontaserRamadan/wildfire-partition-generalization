@@ -1,0 +1,845 @@
+{
+ "n_pooled": 33636,
+ "target": [
+  0.7,
+  0.1,
+  0.2
+ ],
+ "seeds": [
+  20260911,
+  20260912,
+  20260913,
+  20260914,
+  20260915
+ ],
+ "event_gap_min": 30,
+ "rung_sizes": {
+  "event": 892,
+  "camera": 40,
+  "partner": 3
+ },
+ "nesting_verified": true,
+ "protocols": {
+  "P1_random_image": {
+   "replicates": [
+    {
+     "label": "P1_random_image",
+     "train": {
+      "n": 23545,
+      "pct": 70.0,
+      "pos_rate": 83.92,
+      "boxes": 22597,
+      "events": 892,
+      "cameras": 40,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "val": {
+      "n": 3363,
+      "pct": 10.0,
+      "pos_rate": 83.56,
+      "boxes": 3222,
+      "events": 728,
+      "cameras": 35,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "test": {
+      "n": 6728,
+      "pct": 20.0,
+      "pos_rate": 82.74,
+      "boxes": 6290,
+      "events": 843,
+      "cameras": 40,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "event_leak": 843,
+     "camera_leak": 40,
+     "partner_leak": 3,
+     "prevalence_spread_pp": 1.18
+    },
+    {
+     "label": "P1_random_image",
+     "train": {
+      "n": 23545,
+      "pct": 70.0,
+      "pos_rate": 83.77,
+      "boxes": 22486,
+      "events": 892,
+      "cameras": 40,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "val": {
+      "n": 3363,
+      "pct": 10.0,
+      "pos_rate": 83.94,
+      "boxes": 3201,
+      "events": 727,
+      "cameras": 36,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "test": {
+      "n": 6728,
+      "pct": 20.0,
+      "pos_rate": 83.1,
+      "boxes": 6422,
+      "events": 844,
+      "cameras": 40,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "event_leak": 844,
+     "camera_leak": 40,
+     "partner_leak": 3,
+     "prevalence_spread_pp": 0.84
+    },
+    {
+     "label": "P1_random_image",
+     "train": {
+      "n": 23545,
+      "pct": 70.0,
+      "pos_rate": 83.86,
+      "boxes": 22528,
+      "events": 892,
+      "cameras": 40,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "val": {
+      "n": 3363,
+      "pct": 10.0,
+      "pos_rate": 83.2,
+      "boxes": 3220,
+      "events": 721,
+      "cameras": 39,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "test": {
+      "n": 6728,
+      "pct": 20.0,
+      "pos_rate": 83.13,
+      "boxes": 6361,
+      "events": 841,
+      "cameras": 40,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "event_leak": 841,
+     "camera_leak": 40,
+     "partner_leak": 3,
+     "prevalence_spread_pp": 0.73
+    },
+    {
+     "label": "P1_random_image",
+     "train": {
+      "n": 23545,
+      "pct": 70.0,
+      "pos_rate": 83.51,
+      "boxes": 22469,
+      "events": 889,
+      "cameras": 40,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "val": {
+      "n": 3363,
+      "pct": 10.0,
+      "pos_rate": 83.85,
+      "boxes": 3181,
+      "events": 735,
+      "cameras": 39,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "test": {
+      "n": 6728,
+      "pct": 20.0,
+      "pos_rate": 84.04,
+      "boxes": 6459,
+      "events": 836,
+      "cameras": 39,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "event_leak": 833,
+     "camera_leak": 39,
+     "partner_leak": 3,
+     "prevalence_spread_pp": 0.53
+    },
+    {
+     "label": "P1_random_image",
+     "train": {
+      "n": 23545,
+      "pct": 70.0,
+      "pos_rate": 83.51,
+      "boxes": 22424,
+      "events": 892,
+      "cameras": 40,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "val": {
+      "n": 3363,
+      "pct": 10.0,
+      "pos_rate": 83.41,
+      "boxes": 3208,
+      "events": 745,
+      "cameras": 39,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "test": {
+      "n": 6728,
+      "pct": 20.0,
+      "pos_rate": 84.26,
+      "boxes": 6477,
+      "events": 844,
+      "cameras": 37,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "event_leak": 844,
+     "camera_leak": 37,
+     "partner_leak": 3,
+     "prevalence_spread_pp": 0.85
+    }
+   ],
+   "train_size_range": [
+    23545,
+    23545
+   ],
+   "prevalence_spread_range": [
+    0.53,
+    1.18
+   ]
+  },
+  "P2_event_disjoint": {
+   "replicates": [
+    {
+     "label": "P2_event_disjoint",
+     "train": {
+      "n": 23538,
+      "pct": 69.98,
+      "pos_rate": 82.55,
+      "boxes": 22388,
+      "events": 619,
+      "cameras": 39,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "val": {
+      "n": 3380,
+      "pct": 10.05,
+      "pos_rate": 85.65,
+      "boxes": 3291,
+      "events": 93,
+      "cameras": 27,
+      "partners": 3,
+      "date_min": "2024-01-04",
+      "date_max": "2024-09-21"
+     },
+     "test": {
+      "n": 6718,
+      "pct": 19.97,
+      "pos_rate": 86.5,
+      "boxes": 6430,
+      "events": 180,
+      "cameras": 29,
+      "partners": 3,
+      "date_min": "2024-01-03",
+      "date_max": "2024-09-18"
+     },
+     "event_leak": 0,
+     "camera_leak": 29,
+     "partner_leak": 3,
+     "prevalence_spread_pp": 3.95
+    },
+    {
+     "label": "P2_event_disjoint",
+     "train": {
+      "n": 23502,
+      "pct": 69.87,
+      "pos_rate": 84.64,
+      "boxes": 22756,
+      "events": 625,
+      "cameras": 38,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "val": {
+      "n": 3298,
+      "pct": 9.8,
+      "pos_rate": 79.62,
+      "boxes": 3085,
+      "events": 74,
+      "cameras": 26,
+      "partners": 3,
+      "date_min": "2024-01-04",
+      "date_max": "2024-09-20"
+     },
+     "test": {
+      "n": 6836,
+      "pct": 20.32,
+      "pos_rate": 82.18,
+      "boxes": 6268,
+      "events": 193,
+      "cameras": 32,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "event_leak": 0,
+     "camera_leak": 31,
+     "partner_leak": 3,
+     "prevalence_spread_pp": 5.02
+    },
+    {
+     "label": "P2_event_disjoint",
+     "train": {
+      "n": 23546,
+      "pct": 70.0,
+      "pos_rate": 83.54,
+      "boxes": 22522,
+      "events": 614,
+      "cameras": 38,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-21"
+     },
+     "val": {
+      "n": 3369,
+      "pct": 10.02,
+      "pos_rate": 82.93,
+      "boxes": 3112,
+      "events": 81,
+      "cameras": 25,
+      "partners": 3,
+      "date_min": "2024-01-06",
+      "date_max": "2024-09-19"
+     },
+     "test": {
+      "n": 6721,
+      "pct": 19.98,
+      "pos_rate": 84.39,
+      "boxes": 6475,
+      "events": 197,
+      "cameras": 31,
+      "partners": 3,
+      "date_min": "2024-01-02",
+      "date_max": "2024-09-22"
+     },
+     "event_leak": 0,
+     "camera_leak": 29,
+     "partner_leak": 3,
+     "prevalence_spread_pp": 1.46
+    },
+    {
+     "label": "P2_event_disjoint",
+     "train": {
+      "n": 23549,
+      "pct": 70.01,
+      "pos_rate": 83.1,
+      "boxes": 21936,
+      "events": 637,
+      "cameras": 37,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "val": {
+      "n": 3350,
+      "pct": 9.96,
+      "pos_rate": 84.93,
+      "boxes": 3134,
+      "events": 87,
+      "cameras": 26,
+      "partners": 3,
+      "date_min": "2024-01-04",
+      "date_max": "2024-09-22"
+     },
+     "test": {
+      "n": 6737,
+      "pct": 20.03,
+      "pos_rate": 84.95,
+      "boxes": 7039,
+      "events": 168,
+      "cameras": 29,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-21"
+     },
+     "event_leak": 0,
+     "camera_leak": 27,
+     "partner_leak": 3,
+     "prevalence_spread_pp": 1.85
+    },
+    {
+     "label": "P2_event_disjoint",
+     "train": {
+      "n": 23527,
+      "pct": 69.95,
+      "pos_rate": 83.37,
+      "boxes": 22170,
+      "events": 615,
+      "cameras": 39,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "val": {
+      "n": 3352,
+      "pct": 9.97,
+      "pos_rate": 88.19,
+      "boxes": 3546,
+      "events": 90,
+      "cameras": 25,
+      "partners": 3,
+      "date_min": "2024-01-03",
+      "date_max": "2024-09-14"
+     },
+     "test": {
+      "n": 6757,
+      "pct": 20.09,
+      "pos_rate": 82.39,
+      "boxes": 6393,
+      "events": 187,
+      "cameras": 30,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-20"
+     },
+     "event_leak": 0,
+     "camera_leak": 29,
+     "partner_leak": 3,
+     "prevalence_spread_pp": 5.8
+    }
+   ],
+   "train_size_range": [
+    23502,
+    23549
+   ],
+   "prevalence_spread_range": [
+    1.46,
+    5.8
+   ]
+  },
+  "P3_camera_disjoint": {
+   "replicates": [
+    {
+     "label": "P3_camera_disjoint",
+     "train": {
+      "n": 25093,
+      "pct": 74.6,
+      "pos_rate": 84.7,
+      "boxes": 24437,
+      "events": 659,
+      "cameras": 30,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "val": {
+      "n": 2929,
+      "pct": 8.71,
+      "pos_rate": 89.07,
+      "boxes": 2913,
+      "events": 80,
+      "cameras": 2,
+      "partners": 2,
+      "date_min": "2024-01-03",
+      "date_max": "2024-03-25"
+     },
+     "test": {
+      "n": 5614,
+      "pct": 16.69,
+      "pos_rate": 76.13,
+      "boxes": 4759,
+      "events": 153,
+      "cameras": 8,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-21"
+     },
+     "event_leak": 0,
+     "camera_leak": 0,
+     "partner_leak": 3,
+     "prevalence_spread_pp": 12.94
+    },
+    {
+     "label": "P3_camera_disjoint",
+     "train": {
+      "n": 26414,
+      "pct": 78.53,
+      "pos_rate": 82.99,
+      "boxes": 25447,
+      "events": 687,
+      "cameras": 30,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-21"
+     },
+     "val": {
+      "n": 2019,
+      "pct": 6.0,
+      "pos_rate": 80.09,
+      "boxes": 1691,
+      "events": 54,
+      "cameras": 4,
+      "partners": 2,
+      "date_min": "2024-01-04",
+      "date_max": "2024-09-22"
+     },
+     "test": {
+      "n": 5203,
+      "pct": 15.47,
+      "pos_rate": 88.41,
+      "boxes": 4971,
+      "events": 151,
+      "cameras": 6,
+      "partners": 3,
+      "date_min": "2024-01-02",
+      "date_max": "2024-09-22"
+     },
+     "event_leak": 0,
+     "camera_leak": 0,
+     "partner_leak": 3,
+     "prevalence_spread_pp": 8.32
+    },
+    {
+     "label": "P3_camera_disjoint",
+     "train": {
+      "n": 21995,
+      "pct": 65.39,
+      "pos_rate": 83.37,
+      "boxes": 20756,
+      "events": 577,
+      "cameras": 30,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "val": {
+      "n": 4089,
+      "pct": 12.16,
+      "pos_rate": 76.69,
+      "boxes": 3681,
+      "events": 132,
+      "cameras": 3,
+      "partners": 1,
+      "date_min": "2024-01-02",
+      "date_max": "2024-09-17"
+     },
+     "test": {
+      "n": 7552,
+      "pct": 22.45,
+      "pos_rate": 88.23,
+      "boxes": 7672,
+      "events": 183,
+      "cameras": 7,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-18"
+     },
+     "event_leak": 0,
+     "camera_leak": 0,
+     "partner_leak": 3,
+     "prevalence_spread_pp": 11.54
+    },
+    {
+     "label": "P3_camera_disjoint",
+     "train": {
+      "n": 23151,
+      "pct": 68.83,
+      "pos_rate": 85.21,
+      "boxes": 22077,
+      "events": 644,
+      "cameras": 31,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "val": {
+      "n": 3798,
+      "pct": 11.29,
+      "pos_rate": 88.65,
+      "boxes": 4291,
+      "events": 68,
+      "cameras": 3,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-05"
+     },
+     "test": {
+      "n": 6687,
+      "pct": 19.88,
+      "pos_rate": 75.43,
+      "boxes": 5741,
+      "events": 180,
+      "cameras": 6,
+      "partners": 2,
+      "date_min": "2024-01-02",
+      "date_max": "2024-09-20"
+     },
+     "event_leak": 0,
+     "camera_leak": 0,
+     "partner_leak": 2,
+     "prevalence_spread_pp": 13.22
+    },
+    {
+     "label": "P3_camera_disjoint",
+     "train": {
+      "n": 23940,
+      "pct": 71.17,
+      "pos_rate": 82.78,
+      "boxes": 22680,
+      "events": 606,
+      "cameras": 23,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-21"
+     },
+     "val": {
+      "n": 2984,
+      "pct": 8.87,
+      "pos_rate": 82.94,
+      "boxes": 2637,
+      "events": 86,
+      "cameras": 6,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-19"
+     },
+     "test": {
+      "n": 6712,
+      "pct": 19.95,
+      "pos_rate": 87.07,
+      "boxes": 6792,
+      "events": 200,
+      "cameras": 11,
+      "partners": 3,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "event_leak": 0,
+     "camera_leak": 0,
+     "partner_leak": 3,
+     "prevalence_spread_pp": 4.29
+    }
+   ],
+   "train_size_range": [
+    21995,
+    26414
+   ],
+   "prevalence_spread_range": [
+    4.29,
+    13.22
+   ]
+  },
+  "P4_partner_lopo": {
+   "replicates": [
+    {
+     "label": "P4_partner_lopo",
+     "train": {
+      "n": 17363,
+      "pct": 51.62,
+      "pos_rate": 90.53,
+      "boxes": 17765,
+      "events": 418,
+      "cameras": 25,
+      "partners": 2,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "val": {
+      "n": 2505,
+      "pct": 7.45,
+      "pos_rate": 78.68,
+      "boxes": 2293,
+      "events": 57,
+      "cameras": 13,
+      "partners": 2,
+      "date_min": "2024-01-04",
+      "date_max": "2024-09-22"
+     },
+     "test": {
+      "n": 13768,
+      "pct": 40.93,
+      "pos_rate": 75.88,
+      "boxes": 12051,
+      "events": 417,
+      "cameras": 15,
+      "partners": 1,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-20"
+     },
+     "event_leak": 0,
+     "camera_leak": 0,
+     "partner_leak": 0,
+     "prevalence_spread_pp": 14.65
+    },
+    {
+     "label": "P4_partner_lopo",
+     "train": {
+      "n": 13836,
+      "pct": 41.13,
+      "pos_rate": 76.35,
+      "boxes": 11980,
+      "events": 446,
+      "cameras": 23,
+      "partners": 2,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "val": {
+      "n": 2034,
+      "pct": 6.05,
+      "pos_rate": 75.52,
+      "boxes": 1775,
+      "events": 53,
+      "cameras": 15,
+      "partners": 2,
+      "date_min": "2024-01-02",
+      "date_max": "2024-09-17"
+     },
+     "test": {
+      "n": 17766,
+      "pct": 52.82,
+      "pos_rate": 90.27,
+      "boxes": 18354,
+      "events": 393,
+      "cameras": 17,
+      "partners": 1,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "event_leak": 0,
+     "camera_leak": 0,
+     "partner_leak": 0,
+     "prevalence_spread_pp": 14.75
+    },
+    {
+     "label": "P4_partner_lopo",
+     "train": {
+      "n": 27562,
+      "pct": 81.94,
+      "pos_rate": 83.95,
+      "boxes": 26299,
+      "events": 710,
+      "cameras": 32,
+      "partners": 2,
+      "date_min": "2024-01-01",
+      "date_max": "2024-09-22"
+     },
+     "val": {
+      "n": 3972,
+      "pct": 11.81,
+      "pos_rate": 84.24,
+      "boxes": 4106,
+      "events": 100,
+      "cameras": 24,
+      "partners": 2,
+      "date_min": "2024-01-04",
+      "date_max": "2024-09-21"
+     },
+     "test": {
+      "n": 2102,
+      "pct": 6.25,
+      "pos_rate": 78.64,
+      "boxes": 1704,
+      "events": 82,
+      "cameras": 8,
+      "partners": 1,
+      "date_min": "2024-07-01",
+      "date_max": "2024-09-22"
+     },
+     "event_leak": 0,
+     "camera_leak": 0,
+     "partner_leak": 0,
+     "prevalence_spread_pp": 5.6
+    }
+   ],
+   "train_size_range": [
+    13836,
+    27562
+   ],
+   "prevalence_spread_range": [
+    5.6,
+    14.75
+   ]
+  },
+  "P5_temporal": {
+   "replicates": [
+    {
+     "label": "P5_temporal",
+     "train": {
+      "n": 23545,
+      "pct": 70.0,
+      "pos_rate": 84.88,
+      "boxes": 23273,
+      "events": 555,
+      "cameras": 23,
+      "partners": 2,
+      "date_min": "2024-01-01",
+      "date_max": "2024-02-29"
+     },
+     "val": {
+      "n": 3363,
+      "pct": 10.0,
+      "pos_rate": 86.83,
+      "boxes": 3139,
+      "events": 94,
+      "cameras": 11,
+      "partners": 2,
+      "date_min": "2024-02-29",
+      "date_max": "2024-03-20"
+     },
+     "test": {
+      "n": 6728,
+      "pct": 20.0,
+      "pos_rate": 77.75,
+      "boxes": 5697,
+      "events": 245,
+      "cameras": 35,
+      "partners": 3,
+      "date_min": "2024-03-20",
+      "date_max": "2024-09-22"
+     },
+     "event_leak": 0,
+     "camera_leak": 18,
+     "partner_leak": 2,
+     "prevalence_spread_pp": 9.08
+    }
+   ],
+   "train_size_range": [
+    23545,
+    23545
+   ],
+   "prevalence_spread_range": [
+    9.08,
+    9.08
+   ]
+  }
+ },
+ "matched_train_n": 13836
+}

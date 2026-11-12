@@ -1,0 +1,24 @@
+000	IN	UAV forest fire and smoke detection, YOLOv8 variant, wildland setting stated throughout
+001	IN	wildfire smoke detection from MODIS imagery with brightness-temperature thresholds
+002	OUT_S2	detects floods from water-level and water-velocity sensors; forest fire appears only in a list of disasters, no fire detector is built
+003	OUT_S2	WSN multipath routing protocol; wildfire enters only as a cellular-automaton simulation scenario for evaluating delivery ratio and energy
+004	IN	UAV forest smoke and fire detection, YOLOv8n variant
+005	OUT_S2	post-fire damage assessment with NBR/dNBR/NDVI/NDMI/LST on Landsat; burned-area and impact mapping, not detection. Title says "detection" but the study characterises fires after the fact
+006	IN	small-target fire and smoke detection in forest fire images, states real-time forest fire detection
+007	IN	forest fire detection, YOLOv8 with transfer learning
+008	IN_BORDERLINE	self-describes as wildfire detection from fire/non-fire imagery; abstract does not confirm the Kaggle data is wildland, so S1 rests on the paper's own framing
+009	IN	active forest fire detection from Landsat-8 optical plus thermal fusion
+010	IN_BORDERLINE	dataset paper (FASDD) but reports Swin Transformer detection experiments and a wildfire localisation case; S3 turns on whether a benchmark-with-baselines counts as a method paper
+011	IN	forest fire detection from Sentinel-1 SAR time series, unsupervised autoencoders
+012	IN	forest fire recognition from multi-view images, GNN plus HSV fire-area extraction
+013	IN	forest fire detection, improved YOLOv11n
+014	OUT_S2	multi-hazard prediction and early warning for tourist safety using random-forest on sensor and movement data; no fire or smoke detector is built or evaluated
+015	OUT_S1	campus fires from building surveillance video; urban/structural, not wildland
+016	IN_BORDERLINE	wildland fire, and detection latency is the measured quantity (GOES-17 vs ground camera at Kincade ignition), but the paper proposes no method - it corroborates an existing one
+017	OUT_S1	residential chimney smoke from domestic heating; the abstract explicitly contrasts itself with wildfire smoke studies
+018	OUT_S2	semantic segmentation of forest-cover disturbance (logging, burned, windthrow) from multidate Sentinel-2; burned-area mapping after the event
+019	OUT_S2	carbon-budget attribution of CO2 release during drought and wildfire; no detection task
+020	IN	forest fire detection, improved YOLOv5
+021	OUT_S2	detects fire-break MAINTENANCE OPERATIONS from Sentinel-2 time series; the detection target is vegetation management, not fire
+022	UNCLEAR	LoRaWAN sensor network for rural fire risk and "presence of a forest fire"; the only reported results are gateway coverage (4 km radius), so the abstract does not establish that a detector is evaluated
+023	IN	forest fire recognition and localisation in video, modified deep CNN

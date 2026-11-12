@@ -1,0 +1,979 @@
+{
+ "material_threshold_pp": 10.0,
+ "estimands": [
+  {
+   "id": "E1",
+   "label": "split mechanism unreported",
+   "population": "POP_LEARNED",
+   "driver": "split_protocol",
+   "numerator": 38,
+   "denominator": 64,
+   "primary": 59.38,
+   "ci95": [
+    47.15,
+    70.54
+   ],
+   "reliability_class": "PRIMARY-SAFE",
+   "kappa": 0.9584367245657567,
+   "sens": {
+    "coderB": 56.25,
+    "agreed_only": 58.06,
+    "unclear_in": 59.38,
+    "contested_dropped": 60.32,
+    "lopo": {
+     "Elsevier": 57.63,
+     "Frontiers": 60.32,
+     "IEEE": 63.46,
+     "MDPI": 54.17,
+     "Nature Portfolio": 59.02,
+     "PLOS": 58.73,
+     "Springer": 59.68
+    },
+    "lopo_max_influence": "MDPI"
+   },
+   "modality_strata": {
+    "edge": [
+     57.1,
+     4,
+     7
+    ],
+    "iot": [
+     0.0,
+     0,
+     2
+    ],
+    "satellite": [
+     57.1,
+     4,
+     7
+    ],
+    "uav": [
+     59.3,
+     16,
+     27
+    ],
+    "vision": [
+     66.7,
+     14,
+     21
+    ]
+   },
+   "max_deviation_pp": 5.21,
+   "direction_preserved": true,
+   "material_change": false
+  },
+  {
+   "id": "E2",
+   "label": "official held-out split used",
+   "population": "POP_LEARNED",
+   "driver": "split_protocol",
+   "numerator": 0,
+   "denominator": 64,
+   "primary": 0.0,
+   "ci95": [
+    0.0,
+    5.66
+   ],
+   "reliability_class": "PRIMARY-SAFE",
+   "kappa": 0.9584367245657567,
+   "sens": {
+    "coderB": 0.0,
+    "agreed_only": 0.0,
+    "unclear_in": 0.0,
+    "contested_dropped": 0.0,
+    "lopo": {
+     "Elsevier": 0.0,
+     "Frontiers": 0.0,
+     "IEEE": 0.0,
+     "MDPI": 0.0,
+     "Nature Portfolio": 0.0,
+     "PLOS": 0.0,
+     "Springer": 0.0
+    },
+    "lopo_max_influence": "Elsevier"
+   },
+   "modality_strata": {
+    "edge": [
+     0.0,
+     0,
+     7
+    ],
+    "iot": [
+     0.0,
+     0,
+     2
+    ],
+    "satellite": [
+     0.0,
+     0,
+     7
+    ],
+    "uav": [
+     0.0,
+     0,
+     27
+    ],
+    "vision": [
+     0.0,
+     0,
+     21
+    ]
+   },
+   "max_deviation_pp": 0.0,
+   "direction_preserved": true,
+   "material_change": false
+  },
+  {
+   "id": "E3",
+   "label": "augmentation before partition",
+   "population": "POP_LEARNED",
+   "driver": "split_protocol",
+   "numerator": 5,
+   "denominator": 64,
+   "primary": 7.81,
+   "ci95": [
+    3.38,
+    17.02
+   ],
+   "reliability_class": "PRIMARY-SAFE",
+   "kappa": 0.9584367245657567,
+   "sens": {
+    "coderB": 7.81,
+    "agreed_only": 8.06,
+    "unclear_in": 7.81,
+    "contested_dropped": 7.94,
+    "lopo": {
+     "Elsevier": 8.47,
+     "Frontiers": 7.94,
+     "IEEE": 5.77,
+     "MDPI": 8.33,
+     "Nature Portfolio": 8.2,
+     "PLOS": 7.94,
+     "Springer": 8.06
+    },
+    "lopo_max_influence": "IEEE"
+   },
+   "modality_strata": {
+    "edge": [
+     14.3,
+     1,
+     7
+    ],
+    "iot": [
+     0.0,
+     0,
+     2
+    ],
+    "satellite": [
+     0.0,
+     0,
+     7
+    ],
+    "uav": [
+     11.1,
+     3,
+     27
+    ],
+    "vision": [
+     4.8,
+     1,
+     21
+    ]
+   },
+   "max_deviation_pp": 2.04,
+   "direction_preserved": true,
+   "material_change": false
+  },
+  {
+   "id": "E4",
+   "label": "any operational metric reported",
+   "population": "POP_ALL",
+   "driver": "false_alarms_per_unit_time",
+   "numerator": 6,
+   "denominator": 67,
+   "primary": 8.96,
+   "ci95": [
+    4.17,
+    18.19
+   ],
+   "reliability_class": "PRIMARY-SAFE",
+   "kappa": null,
+   "sens": {
+    "coderB": 11.94,
+    "agreed_only": 8.96,
+    "unclear_in": 8.96,
+    "contested_dropped": 9.09,
+    "lopo": {
+     "Elsevier": 8.06,
+     "Frontiers": 9.09,
+     "IEEE": 9.26,
+     "MDPI": 12.0,
+     "Nature Portfolio": 7.81,
+     "PLOS": 9.09,
+     "Springer": 9.23
+    },
+    "lopo_max_influence": "MDPI"
+   },
+   "modality_strata": {
+    "edge": [
+     0.0,
+     0,
+     7
+    ],
+    "iot": [
+     66.7,
+     2,
+     3
+    ],
+    "satellite": [
+     11.1,
+     1,
+     9
+    ],
+    "uav": [
+     3.7,
+     1,
+     27
+    ],
+    "vision": [
+     9.5,
+     2,
+     21
+    ]
+   },
+   "max_deviation_pp": 3.04,
+   "direction_preserved": true,
+   "material_change": false
+  },
+  {
+   "id": "E5",
+   "label": "deployment beyond dataset-only (>= L2)",
+   "population": "POP_ALL",
+   "driver": "deployment_level",
+   "numerator": 9,
+   "denominator": 67,
+   "primary": 13.43,
+   "ci95": [
+    7.23,
+    23.6
+   ],
+   "reliability_class": "PRIMARY-SAFE",
+   "kappa": 0.9659033078880406,
+   "sens": {
+    "coderB": 11.94,
+    "agreed_only": 12.12,
+    "unclear_in": 13.43,
+    "contested_dropped": 12.12,
+    "lopo": {
+     "Elsevier": 12.9,
+     "Frontiers": 13.64,
+     "IEEE": 9.26,
+     "MDPI": 28.0,
+     "Nature Portfolio": 12.5,
+     "PLOS": 12.12,
+     "Springer": 13.85
+    },
+    "lopo_max_influence": "MDPI"
+   },
+   "modality_strata": {
+    "edge": [
+     0.0,
+     0,
+     7
+    ],
+    "iot": [
+     66.7,
+     2,
+     3
+    ],
+    "satellite": [
+     0.0,
+     0,
+     9
+    ],
+    "uav": [
+     22.2,
+     6,
+     27
+    ],
+    "vision": [
+     4.8,
+     1,
+     21
+    ]
+   },
+   "max_deviation_pp": 14.57,
+   "direction_preserved": true,
+   "material_change": true
+  },
+  {
+   "id": "E6",
+   "label": "detected a real unplanned wildfire",
+   "population": "POP_DEPLOY",
+   "driver": "real_wildfire_detected",
+   "numerator": 2,
+   "denominator": 18,
+   "primary": 11.11,
+   "ci95": [
+    3.1,
+    32.8
+   ],
+   "reliability_class": "PRIMARY-SAFE",
+   "kappa": 0.9506990434142755,
+   "sens": {
+    "coderB": 11.76,
+    "agreed_only": 11.76,
+    "unclear_in": 11.11,
+    "contested_dropped": 11.76,
+    "lopo": {
+     "Elsevier": 11.76,
+     "IEEE": 9.09,
+     "MDPI": 10.0,
+     "Nature Portfolio": 11.76,
+     "PLOS": 11.76
+    },
+    "lopo_max_influence": "IEEE"
+   },
+   "modality_strata": {
+    "edge": [
+     0.0,
+     0,
+     1
+    ],
+    "iot": [
+     0.0,
+     0,
+     3
+    ],
+    "satellite": [
+     0.0,
+     0,
+     1
+    ],
+    "uav": [
+     10.0,
+     1,
+     10
+    ],
+    "vision": [
+     33.3,
+     1,
+     3
+    ]
+   },
+   "max_deviation_pp": 2.02,
+   "direction_preserved": true,
+   "material_change": false
+  },
+  {
+   "id": "E7",
+   "label": "code available with a link",
+   "population": "POP_ALL",
+   "driver": "code_available",
+   "numerator": 4,
+   "denominator": 67,
+   "primary": 5.97,
+   "ci95": [
+    2.35,
+    14.37
+   ],
+   "reliability_class": "PRIMARY-SAFE",
+   "kappa": 1.0,
+   "sens": {
+    "coderB": 5.97,
+    "agreed_only": 5.97,
+    "unclear_in": 5.97,
+    "contested_dropped": 6.06,
+    "lopo": {
+     "Elsevier": 6.45,
+     "Frontiers": 6.06,
+     "IEEE": 3.7,
+     "MDPI": 8.0,
+     "Nature Portfolio": 6.25,
+     "PLOS": 6.06,
+     "Springer": 6.15
+    },
+    "lopo_max_influence": "IEEE"
+   },
+   "modality_strata": {
+    "edge": [
+     0.0,
+     0,
+     7
+    ],
+    "iot": [
+     0.0,
+     0,
+     3
+    ],
+    "satellite": [
+     0.0,
+     0,
+     9
+    ],
+    "uav": [
+     11.1,
+     3,
+     27
+    ],
+    "vision": [
+     4.8,
+     1,
+     21
+    ]
+   },
+   "max_deviation_pp": 2.27,
+   "direction_preserved": true,
+   "material_change": false
+  },
+  {
+   "id": "E8",
+   "label": "variance or multiple runs reported",
+   "population": "POP_LEARNED",
+   "driver": "variance_reported",
+   "numerator": 4,
+   "denominator": 64,
+   "primary": 6.25,
+   "ci95": [
+    2.46,
+    15.0
+   ],
+   "reliability_class": "PRIMARY-SAFE",
+   "kappa": 0.739299610894942,
+   "sens": {
+    "coderB": 6.25,
+    "agreed_only": 4.84,
+    "unclear_in": 6.25,
+    "contested_dropped": 6.35,
+    "lopo": {
+     "Elsevier": 6.78,
+     "Frontiers": 6.35,
+     "IEEE": 5.77,
+     "MDPI": 4.17,
+     "Nature Portfolio": 6.56,
+     "PLOS": 6.35,
+     "Springer": 6.45
+    },
+    "lopo_max_influence": "MDPI"
+   },
+   "modality_strata": {
+    "edge": [
+     0.0,
+     0,
+     7
+    ],
+    "iot": [
+     0.0,
+     0,
+     2
+    ],
+    "satellite": [
+     0.0,
+     0,
+     7
+    ],
+    "uav": [
+     3.7,
+     1,
+     27
+    ],
+    "vision": [
+     14.3,
+     3,
+     21
+    ]
+   },
+   "max_deviation_pp": 2.08,
+   "direction_preserved": true,
+   "material_change": false
+  },
+  {
+   "id": "E9",
+   "label": "duplicate check performed",
+   "population": "POP_LEARNED",
+   "driver": "duplicate_check_done",
+   "numerator": 4,
+   "denominator": 64,
+   "primary": 6.25,
+   "ci95": [
+    2.46,
+    15.0
+   ],
+   "reliability_class": "PRIMARY-SAFE",
+   "kappa": 1.0,
+   "sens": {
+    "coderB": 6.25,
+    "agreed_only": 6.25,
+    "unclear_in": 6.25,
+    "contested_dropped": 6.35,
+    "lopo": {
+     "Elsevier": 6.78,
+     "Frontiers": 6.35,
+     "IEEE": 7.69,
+     "MDPI": 4.17,
+     "Nature Portfolio": 6.56,
+     "PLOS": 4.76,
+     "Springer": 6.45
+    },
+    "lopo_max_influence": "MDPI"
+   },
+   "modality_strata": {
+    "edge": [
+     0.0,
+     0,
+     7
+    ],
+    "iot": [
+     0.0,
+     0,
+     2
+    ],
+    "satellite": [
+     0.0,
+     0,
+     7
+    ],
+    "uav": [
+     11.1,
+     3,
+     27
+    ],
+    "vision": [
+     4.8,
+     1,
+     21
+    ]
+   },
+   "max_deviation_pp": 2.08,
+   "direction_preserved": true,
+   "material_change": false
+  },
+  {
+   "id": "E10",
+   "label": "cross-dataset evaluation",
+   "population": "POP_LEARNED",
+   "driver": "cross_dataset_eval",
+   "numerator": 10,
+   "denominator": 64,
+   "primary": 15.62,
+   "ci95": [
+    8.71,
+    26.43
+   ],
+   "reliability_class": "PRIMARY-SAFE",
+   "kappa": 0.9483821263482279,
+   "sens": {
+    "coderB": 14.06,
+    "agreed_only": 14.29,
+    "unclear_in": 15.62,
+    "contested_dropped": 15.87,
+    "lopo": {
+     "Elsevier": 16.95,
+     "Frontiers": 15.87,
+     "IEEE": 13.46,
+     "MDPI": 20.83,
+     "Nature Portfolio": 14.75,
+     "PLOS": 15.87,
+     "Springer": 14.52
+    },
+    "lopo_max_influence": "MDPI"
+   },
+   "modality_strata": {
+    "edge": [
+     14.3,
+     1,
+     7
+    ],
+    "iot": [
+     0.0,
+     0,
+     2
+    ],
+    "satellite": [
+     14.3,
+     1,
+     7
+    ],
+    "uav": [
+     18.5,
+     5,
+     27
+    ],
+    "vision": [
+     14.3,
+     3,
+     21
+    ]
+   },
+   "max_deviation_pp": 5.21,
+   "direction_preserved": true,
+   "material_change": false
+  },
+  {
+   "id": "E11",
+   "label": "high leakage risk",
+   "population": "POP_LEARNED",
+   "driver": "leakage_risk",
+   "numerator": 11,
+   "denominator": 64,
+   "primary": 17.19,
+   "ci95": [
+    9.88,
+    28.21
+   ],
+   "reliability_class": "PRIMARY-SAFE",
+   "kappa": 0.8630976706170822,
+   "sens": {
+    "coderB": 21.88,
+    "agreed_only": 18.03,
+    "unclear_in": 17.19,
+    "contested_dropped": 15.87,
+    "lopo": {
+     "Elsevier": 16.95,
+     "Frontiers": 17.46,
+     "IEEE": 11.54,
+     "MDPI": 29.17,
+     "Nature Portfolio": 16.39,
+     "PLOS": 17.46,
+     "Springer": 17.74
+    },
+    "lopo_max_influence": "MDPI"
+   },
+   "modality_strata": {
+    "edge": [
+     14.3,
+     1,
+     7
+    ],
+    "iot": [
+     100.0,
+     2,
+     2
+    ],
+    "satellite": [
+     0.0,
+     0,
+     7
+    ],
+    "uav": [
+     25.9,
+     7,
+     27
+    ],
+    "vision": [
+     4.8,
+     1,
+     21
+    ]
+   },
+   "max_deviation_pp": 11.98,
+   "direction_preserved": true,
+   "material_change": true
+  },
+  {
+   "id": "S1",
+   "label": "comparison is like-for-like",
+   "population": "POP_LEARNED",
+   "driver": "comparison_is_like_for_like",
+   "numerator": 35,
+   "denominator": 64,
+   "primary": 54.69,
+   "ci95": [
+    42.57,
+    66.27
+   ],
+   "reliability_class": "PRIMARY-SAFE",
+   "kappa": 0.8513313609467456,
+   "sens": {
+    "coderB": 56.25,
+    "agreed_only": 56.9,
+    "unclear_in": 75.0,
+    "contested_dropped": 53.97,
+    "lopo": {
+     "Elsevier": 52.54,
+     "Frontiers": 55.56,
+     "IEEE": 51.92,
+     "MDPI": 58.33,
+     "Nature Portfolio": 55.74,
+     "PLOS": 55.56,
+     "Springer": 54.84
+    },
+    "lopo_max_influence": "MDPI"
+   },
+   "modality_strata": {
+    "edge": [
+     57.1,
+     4,
+     7
+    ],
+    "iot": [
+     0.0,
+     0,
+     2
+    ],
+    "satellite": [
+     57.1,
+     4,
+     7
+    ],
+    "uav": [
+     63.0,
+     17,
+     27
+    ],
+    "vision": [
+     47.6,
+     10,
+     21
+    ]
+   },
+   "max_deviation_pp": 20.31,
+   "direction_preserved": true,
+   "material_change": true
+  },
+  {
+   "id": "S2",
+   "label": "tested on unseen site or season",
+   "population": "POP_LEARNED",
+   "driver": "tested_unseen_site_or_season",
+   "numerator": 8,
+   "denominator": 64,
+   "primary": 12.5,
+   "ci95": [
+    6.47,
+    22.77
+   ],
+   "reliability_class": "SECONDARY-QUALIFIED",
+   "kappa": 0.7681660899653979,
+   "sens": {
+    "coderB": 17.19,
+    "agreed_only": 13.56,
+    "unclear_in": 14.06,
+    "contested_dropped": 12.7,
+    "lopo": {
+     "Elsevier": 13.56,
+     "Frontiers": 12.7,
+     "IEEE": 9.62,
+     "MDPI": 12.5,
+     "Nature Portfolio": 13.11,
+     "PLOS": 12.7,
+     "Springer": 12.9
+    },
+    "lopo_max_influence": "IEEE"
+   },
+   "modality_strata": {
+    "edge": [
+     0.0,
+     0,
+     7
+    ],
+    "iot": [
+     0.0,
+     0,
+     2
+    ],
+    "satellite": [
+     42.9,
+     3,
+     7
+    ],
+    "uav": [
+     11.1,
+     3,
+     27
+    ],
+    "vision": [
+     9.5,
+     2,
+     21
+    ]
+   },
+   "max_deviation_pp": 4.69,
+   "direction_preserved": true,
+   "material_change": false
+  },
+  {
+   "id": "S3",
+   "label": "night or low-light tested",
+   "population": "POP_LEARNED",
+   "driver": "night_or_lowlight_tested",
+   "numerator": 15,
+   "denominator": 64,
+   "primary": 23.44,
+   "ci95": [
+    14.75,
+    35.13
+   ],
+   "reliability_class": "PRIMARY-SAFE",
+   "kappa": 0.8233122362869199,
+   "sens": {
+    "coderB": 26.56,
+    "agreed_only": 25.0,
+    "unclear_in": 26.56,
+    "contested_dropped": 23.81,
+    "lopo": {
+     "Elsevier": 23.73,
+     "Frontiers": 23.81,
+     "IEEE": 23.08,
+     "MDPI": 29.17,
+     "Nature Portfolio": 19.67,
+     "PLOS": 23.81,
+     "Springer": 24.19
+    },
+    "lopo_max_influence": "MDPI"
+   },
+   "modality_strata": {
+    "edge": [
+     14.3,
+     1,
+     7
+    ],
+    "iot": [
+     50.0,
+     1,
+     2
+    ],
+    "satellite": [
+     14.3,
+     1,
+     7
+    ],
+    "uav": [
+     22.2,
+     6,
+     27
+    ],
+    "vision": [
+     28.6,
+     6,
+     21
+    ]
+   },
+   "max_deviation_pp": 5.73,
+   "direction_preserved": true,
+   "material_change": false
+  },
+  {
+   "id": "S4",
+   "label": "adverse weather tested",
+   "population": "POP_LEARNED",
+   "driver": "adverse_weather_tested",
+   "numerator": 14,
+   "denominator": 64,
+   "primary": 21.88,
+   "ci95": [
+    13.5,
+    33.43
+   ],
+   "reliability_class": "PRIMARY-SAFE",
+   "kappa": 0.8359853121175032,
+   "sens": {
+    "coderB": 25.0,
+    "agreed_only": 21.67,
+    "unclear_in": 21.88,
+    "contested_dropped": 22.22,
+    "lopo": {
+     "Elsevier": 20.34,
+     "Frontiers": 22.22,
+     "IEEE": 23.08,
+     "MDPI": 25.0,
+     "Nature Portfolio": 19.67,
+     "PLOS": 22.22,
+     "Springer": 22.58
+    },
+    "lopo_max_influence": "MDPI"
+   },
+   "modality_strata": {
+    "edge": [
+     14.3,
+     1,
+     7
+    ],
+    "iot": [
+     0.0,
+     0,
+     2
+    ],
+    "satellite": [
+     14.3,
+     1,
+     7
+    ],
+    "uav": [
+     25.9,
+     7,
+     27
+    ],
+    "vision": [
+     23.8,
+     5,
+     21
+    ]
+   },
+   "max_deviation_pp": 3.12,
+   "direction_preserved": true,
+   "material_change": false
+  },
+  {
+   "id": "S5",
+   "label": "hyperparameters fully reported",
+   "population": "POP_LEARNED",
+   "driver": "hyperparams_full",
+   "numerator": 19,
+   "denominator": 64,
+   "primary": 29.69,
+   "ci95": [
+    19.91,
+    41.77
+   ],
+   "reliability_class": "SECONDARY-QUALIFIED",
+   "kappa": 0.6836424957841484,
+   "sens": {
+    "coderB": 25.0,
+    "agreed_only": 25.49,
+    "unclear_in": 29.69,
+    "contested_dropped": 28.57,
+    "lopo": {
+     "Elsevier": 28.81,
+     "Frontiers": 30.16,
+     "IEEE": 26.92,
+     "MDPI": 33.33,
+     "Nature Portfolio": 31.15,
+     "PLOS": 28.57,
+     "Springer": 30.65
+    },
+    "lopo_max_influence": "MDPI"
+   },
+   "modality_strata": {
+    "edge": [
+     42.9,
+     3,
+     7
+    ],
+    "iot": [
+     0.0,
+     0,
+     2
+    ],
+    "satellite": [
+     14.3,
+     1,
+     7
+    ],
+    "uav": [
+     33.3,
+     9,
+     27
+    ],
+    "vision": [
+     28.6,
+     6,
+     21
+    ]
+   },
+   "max_deviation_pp": 4.69,
+   "direction_preserved": true,
+   "material_change": false
+  }
+ ]
+}

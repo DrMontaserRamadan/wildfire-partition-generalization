@@ -1,0 +1,1201 @@
+{
+ "round1_carried7": {
+  "task": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "target": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "datasets_used": {
+   "raw": 0.2857142857142857,
+   "kappa": 0.2553191489361702,
+   "n_disagree": 5
+  },
+  "dataset_public": {
+   "raw": 0.8571428571428571,
+   "kappa": 0.7586206896551724,
+   "n_disagree": 1
+  },
+  "n_train": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "n_val": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "n_test": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "data_source_type": {
+   "raw": 0.8571428571428571,
+   "kappa": 0.7999999999999999,
+   "n_disagree": 1
+  },
+  "split_protocol": {
+   "raw": 0.42857142857142855,
+   "kappa": 0.1515151515151515,
+   "n_disagree": 4
+  },
+  "leakage_risk": {
+   "raw": 0.8571428571428571,
+   "kappa": 0.7666666666666667,
+   "n_disagree": 1
+  },
+  "leakage_acknowledged": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "duplicate_check_done": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "headline_metric": {
+   "raw": 0.5714285714285714,
+   "kappa": 0.5116279069767441,
+   "n_disagree": 3
+  },
+  "headline_value": {
+   "raw": 0.7142857142857143,
+   "kappa": 0.6818181818181819,
+   "n_disagree": 2
+  },
+  "metrics_reported": {
+   "raw": 0.8571428571428571,
+   "kappa": 0.8333333333333331,
+   "n_disagree": 1
+  },
+  "class_balance_reported": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "variance_reported": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "n_runs": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "statistical_test_vs_baseline": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "comparison_is_like_for_like": {
+   "raw": 0.8571428571428571,
+   "kappa": 0.7407407407407407,
+   "n_disagree": 1
+  },
+  "cross_dataset_eval": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "tested_unseen_site_or_season": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "night_or_lowlight_tested": {
+   "raw": 0.7142857142857143,
+   "kappa": 0.0,
+   "n_disagree": 2
+  },
+  "smoke_only_early_stage_tested": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "adverse_weather_tested": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "false_positive_sources_analysed": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "deployment_level": {
+   "raw": 0.8571428571428571,
+   "kappa": 0.7586206896551724,
+   "n_disagree": 1
+  },
+  "deployment_duration_days": {
+   "raw": 0.8571428571428571,
+   "kappa": 0.0,
+   "n_disagree": 1
+  },
+  "n_nodes_or_cameras": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "real_wildfire_detected": {
+   "raw": 0.7142857142857143,
+   "kappa": 0.26315789473684215,
+   "n_disagree": 2
+  },
+  "failure_modes_reported": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "false_alarms_per_unit_time": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "time_to_detection": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "min_detectable_fire_size": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "detection_range": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "power_measured": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "latency_measured_on_target_hw": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "target_hardware_named": {
+   "raw": 0.5714285714285714,
+   "kappa": 0.4615384615384615,
+   "n_disagree": 3
+  },
+  "code_available": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "weights_available": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "hyperparams_full": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "seed_reported": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "leakage_note": {
+   "raw": 0.8571428571428571,
+   "kappa": 0.0,
+   "n_disagree": 1
+  }
+ },
+ "round2_carried7": {
+  "task": {
+   "raw": 0.8571428571428571,
+   "kappa": 0.8055555555555555,
+   "n_disagree": 1
+  },
+  "target": {
+   "raw": 0.8571428571428571,
+   "kappa": 0.7666666666666667,
+   "n_disagree": 1
+  },
+  "datasets_used": {
+   "raw": 0.2857142857142857,
+   "kappa": 0.2553191489361702,
+   "n_disagree": 5
+  },
+  "dataset_public": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "n_train": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "n_val": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "n_test": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "data_source_type": {
+   "raw": 0.8571428571428571,
+   "kappa": 0.8055555555555555,
+   "n_disagree": 1
+  },
+  "split_protocol": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "split_stated_verbatim": {
+   "raw": 0.2857142857142857,
+   "kappa": 0.2553191489361702,
+   "n_disagree": 5
+  },
+  "leakage_risk": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "leakage_acknowledged": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "duplicate_check_done": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "flame_official_test_used": {
+   "raw": 0.2857142857142857,
+   "kappa": 0.2222222222222222,
+   "n_disagree": 5
+  },
+  "flame_n_images_used": {
+   "raw": 0.2857142857142857,
+   "kappa": 0.2553191489361702,
+   "n_disagree": 5
+  },
+  "flame_reported_accuracy": {
+   "raw": 0.2857142857142857,
+   "kappa": 0.16666666666666666,
+   "n_disagree": 5
+  },
+  "headline_metric": {
+   "raw": 0.8571428571428571,
+   "kappa": 0.8292682926829268,
+   "n_disagree": 1
+  },
+  "headline_value": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "metrics_reported": {
+   "raw": 0.8571428571428571,
+   "kappa": 0.8292682926829268,
+   "n_disagree": 1
+  },
+  "class_balance_reported": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "variance_reported": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "n_runs": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "statistical_test_vs_baseline": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "ablation_present": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "comparison_is_like_for_like": {
+   "raw": 0.8571428571428571,
+   "kappa": 0.7741935483870968,
+   "n_disagree": 1
+  },
+  "cross_dataset_eval": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "cross_dataset_delta": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "tested_unseen_site_or_season": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "night_or_lowlight_tested": {
+   "raw": 0.7142857142857143,
+   "kappa": 0.0,
+   "n_disagree": 2
+  },
+  "smoke_only_early_stage_tested": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "adverse_weather_tested": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "false_positive_sources_analysed": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "deployment_level": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "deployment_duration_days": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "n_nodes_or_cameras": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "area_covered_km2": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "real_wildfire_detected": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "failure_modes_reported": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "false_alarms_per_unit_time": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "time_to_detection": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "min_detectable_fire_size": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "detection_range": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "power_measured": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0
+  },
+  "latency_measured_on_target_hw": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "target_hardware_named": {
+   "raw": 0.5714285714285714,
+   "kappa": 0.4615384615384615,
+   "n_disagree": 3
+  },
+  "code_available": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "weights_available": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "link_resolves": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  },
+  "hyperparams_full": {
+   "raw": 0.7142857142857143,
+   "kappa": 0.5333333333333333,
+   "n_disagree": 2
+  },
+  "seed_reported": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0
+  }
+ },
+ "round2_all15": {
+  "task": {
+   "raw": 0.9333333333333333,
+   "kappa": 0.8880597014925373,
+   "n_disagree": 1,
+   "disagreements": [
+    [
+     "W4399615782",
+     "multi",
+     "classification"
+    ]
+   ]
+  },
+  "target": {
+   "raw": 0.9333333333333333,
+   "kappa": 0.8905109489051095,
+   "n_disagree": 1,
+   "disagreements": [
+    [
+     "W4399615782",
+     "both",
+     "flame"
+    ]
+   ]
+  },
+  "datasets_used": {
+   "raw": 0.26666666666666666,
+   "kappa": 0.25,
+   "n_disagree": 11,
+   "disagreements": [
+    [
+     "W3090022951",
+     "corsican fire database (cfdb)|fire detection 360-degree dataset (created by the authors)|firenet dataset|two center for wildfire research datasets|two public smoke datasets",
+     "corsican fire database (cfdb)|fire detection 360-degree dataset (created by the authors, test only)|firenet dataset|two center for wildfire research datasets|two public smoke datasets"
+    ],
+    [
+     "W4224297527",
+     "private/self-collected fire dataset (19,819 images from a fire protection public welfare platform)|self-made small target dataset (370 images)",
+     "fire dataset collected from a fire protection public welfare platform (19,819 images)|self-made small target dataset (370 images)"
+    ],
+    [
+     "W4310379056",
+     "cvpr laboratory, keimyung university wildfire and smoke dataset|private/self-collected (14,400-image wildfire dataset)|split fesb wildfire research center datasets|visifire (bilkent university)",
+     "keimyung university cvpr laboratory wildfire and smoke dataset|private/self-collected negatives|split fesb wildfire research center datasets|visifire (bilkent university)"
+    ],
+    [
+     "W4324056332",
+     "corsican fire dataset [56]|era dataset [50]|flame dataset [51]",
+     "corsican fire dataset (cross-dataset evaluation only)|era dataset|flame dataset"
+    ],
+    [
+     "W4391754623",
+     "bowfiredataset|private/self-collected (2590 images, including frames extracted from downloaded forest fire videos)",
+     "bowfiredataset|frames extracted from downloaded forest fire videos|self-collected web images"
+    ],
+    [
+     "W4398141901",
+     "private/self-collected (7000 images from roboflow, bing, flickr, kaggle and other online sources)",
+     "private/self-collected (web-sourced via roboflow, bing, flickr, kaggle)"
+    ],
+    [
+     "W4399615782",
+     "flame|private/self-collected",
+     "flame"
+    ],
+    [
+     "W4403544374",
+     "kaggle|mivia|private/self-collected (web-scraped and camera images)|public uav wildfire dataset [35]|q-fire (custom)",
+     "public uav wildfire dataset [35]|q-fire (custom, assembled by the authors)|web-collected images (kaggle, mivia, web scraping)"
+    ],
+    [
+     "W4406324697",
+     "d-fire dataset [29,30]|smoke and fire dataset [28]",
+     "d-fire dataset [29,30] (21,527 images)|smoke and fire dataset [28] (11,667 images)"
+    ],
+    [
+     "W4413480292",
+     "forest fire detection dataset introduced in [19]",
+     "forest fire detection dataset introduced in [19] (2603 images)"
+    ],
+    [
+     "W7168166094",
+     "flame (ninth repository)|flame-derived yolo-format dataset released by the authors [9]",
+     "authors' yolo-format flame derivative with fire-tracking annotations|flame (ninth repository, 2003 frames)"
+    ]
+   ]
+  },
+  "dataset_public": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "n_train": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "n_val": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "n_test": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "data_source_type": {
+   "raw": 0.9333333333333333,
+   "kappa": 0.9013157894736842,
+   "n_disagree": 1,
+   "disagreements": [
+    [
+     "W4310379056",
+     "not_reported",
+     "mixed"
+    ]
+   ]
+  },
+  "split_protocol": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "split_stated_verbatim": {
+   "raw": 0.4666666666666667,
+   "kappa": 0.43396226415094336,
+   "n_disagree": 8,
+   "disagreements": [
+    [
+     "W3090022951",
+     "for the training of the proposed methodology, we used the corsican fire database (cfdb) [45,46], the firenet dataset [47], two datasets created by the center for wildfire research [48,49] and two more publicly available smoke datasets [50,51]. [...] we created a test 360-dataset",
+     "for the training of the proposed methodology, we used the corsican fire database (cfdb) [45,46], the firenet dataset [47], two datasets created by the center for wildfire research [48,49] and two more publicly available smoke datasets [50,51]. furthermore, we created a test 360-dataset"
+    ],
+    [
+     "W4310379056",
+     "all in all, the whole wildfire image dataset contains a total of 14,400 images. [...] the proportion of the training set is 80%, that is, 11,520 images as the training set and 2880 images as the testing set.",
+     "all in all, the whole wildfire image dataset contains a total of 14,400 images. the proportion of the training set is 80%, that is, 11,520 images as the training set and 2880 images as the testing set."
+    ],
+    [
+     "W4398141901",
+     "after applying the augmentation technique, our dataset increased four times, and the total number of images extended to 24,000 images. [...] our dataset is divided as follows: 70% for training images, 10% for test images, and 20% for validation images, as shown in table 2.",
+     "after applying the augmentation technique, our dataset increased four times, and the total number of images extended to 24,000 images. our dataset is divided as follows: 70% for training images, 10% for test images, and 20% for validation images, as shown in table 2."
+    ],
+    [
+     "W4399615782",
+     "the set of training image data taken as a randomly selected 80% of all available data",
+     "is the set of training image data taken as a randomly selected 80% of all available data [...] which is taken as 10% of the data, with the remaining 10% for testing and performance evaluation"
+    ],
+    [
+     "W4403544374",
+     "after these operations, a total of 10,295 images were generated. [...] the dataset is randomly divided into training, validation, and test sets in a 7:2:1 ratio.",
+     "after these operations, a total of 10,295 images were generated. [...] bringing the final total to 10,135 images. [...] the dataset is randomly divided into training, validation, and test sets in a 7:2:1 ratio."
+    ],
+    [
+     "W4406324697",
+     "the number of training images: 8494, validation images: 2114, and testing images: 1059. [...] initially, 20% of the dataset (4306 images) was allocated for testing. [...] the remaining images were further split into a training set of 15,498 images and a validation set of 1723 images.",
+     "the number of training images: 8494, validation images: 2114, and testing images: 1059. [...] initially, 20% of the dataset (4306 images) was allocated for testing. the remaining images were further split into a training set of 15,498 images and a validation set of 1723 images."
+    ],
+    [
+     "W4410239778",
+     "the dataset contains a total of 7514 images of forest fires, with 5262 images in the training set, 1502 images in the validation set, and 750 images in the test set. [...] the ratio of the training, validation, and test sets is 7:2:1.",
+     "the dataset contains a total of 7514 images of forest fires, with 5262 images in the training set, 1502 images in the validation set, and 750 images in the test set. the ratio of the training, validation, and test sets is 7:2:1."
+    ],
+    [
+     "W4413480292",
+     "to ensure experimental consistency, we follow the data partitioning way proposed in [19]. [...] specifically, the dataset is divided into training, validation, and test sets in a ratio of 8:1:1, resulting in 2083 training images, 260 validation images, and 260 test images.",
+     "to ensure experimental consistency, we follow the data partitioning way proposed in [19]. specifically, the dataset is divided into training, validation, and test sets in a ratio of 8:1:1, resulting in 2083 training images, 260 validation images, and 260 test images."
+    ]
+   ]
+  },
+  "leakage_risk": {
+   "raw": 0.9333333333333333,
+   "kappa": 0.8951048951048951,
+   "n_disagree": 1,
+   "disagreements": [
+    [
+     "W7168166094",
+     "low",
+     "high"
+    ]
+   ]
+  },
+  "leakage_acknowledged": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "duplicate_check_done": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "flame_official_test_used": {
+   "raw": 0.26666666666666666,
+   "kappa": 0.23255813953488372,
+   "n_disagree": 11,
+   "disagreements": [
+    [
+     "W3090022951",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4224297527",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4310379056",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4317934269",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4386251007",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4391754623",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4398141901",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4403544374",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4406324697",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4410239778",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4413480292",
+     "not_reported",
+     "not_applicable"
+    ]
+   ]
+  },
+  "flame_n_images_used": {
+   "raw": 0.26666666666666666,
+   "kappa": 0.20673076923076925,
+   "n_disagree": 11,
+   "disagreements": [
+    [
+     "W3090022951",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4224297527",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4310379056",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4317934269",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4386251007",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4391754623",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4398141901",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4403544374",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4406324697",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4410239778",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4413480292",
+     "not_reported",
+     "not_applicable"
+    ]
+   ]
+  },
+  "flame_reported_accuracy": {
+   "raw": 0.2,
+   "kappa": 0.0816326530612245,
+   "n_disagree": 12,
+   "disagreements": [
+    [
+     "W3090022951",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4224297527",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4310379056",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4317934269",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4386251007",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4391754623",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4398141901",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4403544374",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4404817293",
+     "not_reported",
+     "54.78"
+    ],
+    [
+     "W4406324697",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4410239778",
+     "not_reported",
+     "not_applicable"
+    ],
+    [
+     "W4413480292",
+     "not_reported",
+     "not_applicable"
+    ]
+   ]
+  },
+  "headline_metric": {
+   "raw": 0.8,
+   "kappa": 0.7846889952153111,
+   "n_disagree": 3,
+   "disagreements": [
+    [
+     "W4317934269",
+     "average current consumption per day (ma)",
+     "average current consumption (ma)"
+    ],
+    [
+     "W4386251007",
+     "share of detected fire pixels passing the accuracy test (%)",
+     "percentage of fire pixels passing the agreement-based accuracy test"
+    ],
+    [
+     "W4391754623",
+     "accuracy (convnextv2-yolov7 intermediate variant)",
+     "accuracy (convnextv2-yolov7 variant)"
+    ]
+   ]
+  },
+  "headline_value": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "metrics_reported": {
+   "raw": 0.8666666666666667,
+   "kappa": 0.8536585365853658,
+   "n_disagree": 2,
+   "disagreements": [
+    [
+     "W4391754623",
+     "map|precision|recall",
+     "accuracy|map|precision|recall"
+    ],
+    [
+     "W4403544374",
+     "accuracy|map|precision",
+     "accuracy|map|precision|recall"
+    ]
+   ]
+  },
+  "class_balance_reported": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "variance_reported": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "n_runs": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "statistical_test_vs_baseline": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "ablation_present": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "comparison_is_like_for_like": {
+   "raw": 0.8666666666666667,
+   "kappa": 0.7826086956521741,
+   "n_disagree": 2,
+   "disagreements": [
+    [
+     "W4317934269",
+     "unclear",
+     "no"
+    ],
+    [
+     "W4413480292",
+     "yes",
+     "unclear"
+    ]
+   ]
+  },
+  "cross_dataset_eval": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "cross_dataset_delta": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "tested_unseen_site_or_season": {
+   "raw": 0.8666666666666667,
+   "kappa": 0.44444444444444453,
+   "n_disagree": 2,
+   "disagreements": [
+    [
+     "W3090022951",
+     "no",
+     "yes"
+    ],
+    [
+     "W4386251007",
+     "no",
+     "yes"
+    ]
+   ]
+  },
+  "night_or_lowlight_tested": {
+   "raw": 0.8,
+   "kappa": 0.4705882352941179,
+   "n_disagree": 3,
+   "disagreements": [
+    [
+     "W4398141901",
+     "yes",
+     "no"
+    ],
+    [
+     "W4403544374",
+     "yes",
+     "no"
+    ],
+    [
+     "W4406324697",
+     "yes",
+     "no"
+    ]
+   ]
+  },
+  "smoke_only_early_stage_tested": {
+   "raw": 0.9333333333333333,
+   "kappa": 0.6341463414634149,
+   "n_disagree": 1,
+   "disagreements": [
+    [
+     "W4406324697",
+     "yes",
+     "no"
+    ]
+   ]
+  },
+  "adverse_weather_tested": {
+   "raw": 0.9333333333333333,
+   "kappa": 0.761904761904762,
+   "n_disagree": 1,
+   "disagreements": [
+    [
+     "W4406324697",
+     "yes",
+     "no"
+    ]
+   ]
+  },
+  "false_positive_sources_analysed": {
+   "raw": 0.9333333333333333,
+   "kappa": 0.8648648648648649,
+   "n_disagree": 1,
+   "disagreements": [
+    [
+     "W4406324697",
+     "no",
+     "yes"
+    ]
+   ]
+  },
+  "deployment_level": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "deployment_duration_days": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "n_nodes_or_cameras": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "area_covered_km2": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "real_wildfire_detected": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "failure_modes_reported": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "false_alarms_per_unit_time": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "time_to_detection": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "min_detectable_fire_size": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "detection_range": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "power_measured": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "latency_measured_on_target_hw": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "target_hardware_named": {
+   "raw": 0.8,
+   "kappa": 0.563106796116505,
+   "n_disagree": 3,
+   "disagreements": [
+    [
+     "W4317934269",
+     "cn0537 smoke-detector board (plus custom lora/lte sensor and hub node boards)",
+     "cn0537 smoke-sensor board; scd30 co2 sensor; lora transceiver at 915 mhz; lte modem shield"
+    ],
+    [
+     "W4399615782",
+     "raspberry pi hq 12-megapixel camera module (on-drone camera)",
+     "raspberry pi hq 12-megapixel camera module (on drone)"
+    ],
+    [
+     "W4410239778",
+     "nvidia jetson nano (named as a planned target only; not used)",
+     "nvidia jetson nano (planned only, not used)"
+    ]
+   ]
+  },
+  "code_available": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "weights_available": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "link_resolves": {
+   "raw": 1.0,
+   "kappa": NaN,
+   "n_disagree": 0,
+   "disagreements": []
+  },
+  "hyperparams_full": {
+   "raw": 0.7333333333333333,
+   "kappa": 0.5833333333333333,
+   "n_disagree": 4,
+   "disagreements": [
+    [
+     "W4224297527",
+     "yes",
+     "partial"
+    ],
+    [
+     "W4403544374",
+     "yes",
+     "partial"
+    ],
+    [
+     "W4404817293",
+     "yes",
+     "partial"
+    ],
+    [
+     "W4410239778",
+     "yes",
+     "partial"
+    ]
+   ]
+  },
+  "seed_reported": {
+   "raw": 1.0,
+   "kappa": 1.0,
+   "n_disagree": 0,
+   "disagreements": []
+  }
+ },
+ "n_failing_round2": 11,
+ "failing_fields": [
+  "datasets_used",
+  "split_stated_verbatim",
+  "flame_official_test_used",
+  "flame_n_images_used",
+  "flame_reported_accuracy",
+  "headline_metric",
+  "comparison_is_like_for_like",
+  "tested_unseen_site_or_season",
+  "night_or_lowlight_tested",
+  "target_hardware_named",
+  "hyperparams_full"
+ ]
+}

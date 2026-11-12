@@ -1,0 +1,55 @@
+{
+ "arms": {
+  "full": {
+   "n": 10,
+   "mean_gap_pp": 33.028,
+   "sd_pp": 2.777
+  },
+  "no_twins": {
+   "n": 10,
+   "mean_gap_pp": 33.479,
+   "sd_pp": 3.524
+  },
+  "random": {
+   "n": 10,
+   "mean_gap_pp": 33.5,
+   "sd_pp": 3.128
+  }
+ },
+ "contrasts": {
+  "no_twins_vs_random": {
+   "diff_pp": -0.021,
+   "t": -0.0141,
+   "df": 17.8,
+   "p": 0.9889,
+   "ci95_pp": [
+    -3.15,
+    3.11
+   ],
+   "tost_posthoc_not_claimed": {
+    "2pp": 0.1005,
+    "5pp": 0.0018,
+    "10pp": 0.0
+   }
+  },
+  "no_twins_vs_full": {
+   "diff_pp": 0.451,
+   "t": 0.3177,
+   "df": 17.1,
+   "p": 0.7546,
+   "ci95_pp": [
+    -2.54,
+    3.44
+   ],
+   "tost_posthoc_not_claimed": {
+    "2pp": 0.145,
+    "5pp": 0.0026,
+    "10pp": 0.0
+   }
+  }
+ },
+ "gap_pp": 33.03,
+ "bound_pp": 3.15,
+ "bound_share_of_gap_pct": 9.5,
+ "claim": "The interval bounds the duplicated images' contribution at about three percentage points of a thirty-three-point gap. No equivalence is asserted from a non-significant test."
+}

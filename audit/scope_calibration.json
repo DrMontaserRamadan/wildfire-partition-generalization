@@ -1,0 +1,42 @@
+{
+ "calibration_n": 76,
+ "insufficient": [
+  "W3012710328",
+  "W3090149962",
+  "W4399262691",
+  "W4394697163"
+ ],
+ "unclear_as_IN": {
+  "tp": 49,
+  "fp": 7,
+  "fn": 0,
+  "tn": 20,
+  "acc": 0.9078947368421053,
+  "kappa": 0.7865168539325844,
+  "sens": 1.0,
+  "spec": 0.7407407407407407,
+  "ppv": 0.875
+ },
+ "unclear_as_OUT": {
+  "tp": 49,
+  "fp": 3,
+  "fn": 0,
+  "tn": 24,
+  "acc": 0.9605263157894737,
+  "kappa": 0.9116279069767441,
+  "sens": 1.0,
+  "spec": 0.8888888888888888,
+  "ppv": 0.9423076923076923
+ },
+ "threshold": 0.6,
+ "threshold_met": true,
+ "unretrieved_counts": {
+  "OUT": 27,
+  "IN": 22,
+  "UNCLEAR": 5
+ },
+ "projected_in_scope_low": 20.73076923076923,
+ "projected_in_scope_high": 23.625,
+ "tierA": 18,
+ "tierB_in": 49
+}

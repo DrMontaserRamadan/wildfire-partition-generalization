@@ -1,0 +1,19 @@
+115	OUT_S2	semantic segmentation of forest DISTURBANCE (logged, burnt, windthrow) from multi-temporal Sentinel-2. NOTE: this is the same study as index 018, published in Russian; a probable duplicate inside the sampling frame
+116	OUT_S2	near-real-time wildfire progression monitoring from Sentinel-1; the quantity detected is BURNT AREA growth, not an active fire front. Borderline because the monitoring is during the fire rather than after it
+117	IN	forest fire recognition from images, CNN trained on Fire / No fire classes
+118	IN	proposes using the FY-3D/MERSI-II 10.8 um far-infrared channel at 250 m as the primary source for detecting fire spots, verified on wildfire cases
+119	OUT_S1	IoT smoke detection on tabular sensor data for "infrastructure safety"; no wildland setting, and the pipeline (StandardScaler, SMOTE) indicates a tabular indoor sensor dataset
+120	OUT_S2	geomorphological change detection quantifying post-fire SOIL EROSION from LiDAR and UAV point clouds
+121	OUT_S2	Dijkstra plus fuzzy-logic route selection between WSN nodes and a router; a communication-topology study inside a fire-detection system
+122	IN	classifies satellite imagery into cloud, land, sea and wildfire with CNNs, delivered as the CoFFI GUI
+123	IN	lightweight forest fire and smoke detection, FFYOLO on YOLOv8
+124	IN	forest fire flame and smoke detection, improved YOLOv5 with SAC, PSA and Soft-NMS
+125	IN	lightweight forest fire and smoke detection, LD-YOLO on YOLOv8
+126	IN	fire and smoke detection on edge devices for fire-prone regions via drones and satellites, early-exit compact models
+127	IN	forest wildfire detection from UAV remote sensing, ASCA-YOLO
+128	IN_BORDERLINE	PyroNear2025 benchmark of 640 wildfires with cross-dataset smoke-plume detection experiments; same dataset-versus-method question as index 010, coded the same way
+129	IN	forest fire smoke recognition with YOLOv11x on the Wildfire Dataset and Forest Fire Smoke datasets
+130	OUT_S2	burned-area segmentation from mono-temporal Sentinel-2 to assess fire extent after the event
+131	UNCLEAR	video fire detection for "wide outdoor areas" monitored by smart cameras; outdoor is stated but wildland is not, and the evaluation dataset is not identified
+132	OUT_S1	smoke detection for "fire monitoring, industrial safety, and urban surveillance"; the named settings are industrial and urban
+133	OUT_S1	household electrical safety: overcurrent, cable overheating and a flame sensor in domestic wiring

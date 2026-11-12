@@ -1,0 +1,103 @@
+{
+ "n": 64,
+ "both": 13,
+ "rule_only": 8,
+ "both_pct": 20.31,
+ "both_ci": [
+  12.27,
+  31.71
+ ],
+ "not_reconstructable": 51,
+ "not_pct": 79.69,
+ "not_ci": [
+  68.29,
+  87.73
+ ],
+ "status": "POST HOC - not pre-specified; prompted by the reporting criterion",
+ "per_paper": {
+  "W4213140935": {
+   "class": "BOTH",
+   "reason": "unit=fire (\"by fires instead of images\"); rule=disjoint"
+  },
+  "W7162802855": {
+   "class": "BOTH",
+   "reason": "unit=scene/event group (\"organized into 486 scene/event groups\"); rule=group-disjoint"
+  },
+  "W4381250385": {
+   "class": "BOTH",
+   "reason": "unit=wildfire (\"test set consists of 18 large wildfires\"); rule=disjoint, not in training"
+  },
+  "W4318206819": {
+   "class": "BOTH",
+   "reason": "unit=wildfire region (north-east vs south and north-west); rule=disjoint"
+  },
+  "W7168166094": {
+   "class": "BOTH",
+   "reason": "unit=chronologically ordered frames; rule=temporal, earlier to train"
+  },
+  "W7164802202": {
+   "class": "BOTH",
+   "reason": "unit=wildfire event; rule=events kept disjoint across train/val/test"
+  },
+  "W4399939400": {
+   "class": "BOTH",
+   "reason": "unit=case (ignition date and case number); rule=stratified folds"
+  },
+  "W4309091309": {
+   "class": "BOTH",
+   "reason": "unit=pixel patterns from the first frame; rule=random draw within that frame"
+  },
+  "W3090022951": {
+   "class": "BOTH",
+   "reason": "unit=corpus; rule=train on one corpus, evaluate on others"
+  },
+  "W4214895504": {
+   "class": "BOTH",
+   "reason": "unit=the benchmark's own camera-defined partition; rule=supplied split"
+  },
+  "W4390668539": {
+   "class": "BOTH",
+   "reason": "unit=labeled images; rule=random selection"
+  },
+  "W4205231989": {
+   "class": "BOTH",
+   "reason": "unit=images; rule=random selection into tenfold test batches"
+  },
+  "W4400779901": {
+   "class": "BOTH",
+   "reason": "unit=images; rule=random division"
+  },
+  "W4312250248": {
+   "class": "RULE_ONLY",
+   "reason": "rule=random sampling; the text does not say what is sampled"
+  },
+  "W4403544374": {
+   "class": "RULE_ONLY",
+   "reason": "rule=random division; unit unstated"
+  },
+  "W4225396518": {
+   "class": "RULE_ONLY",
+   "reason": "rule=random; unit is \"the collected data\", unspecified"
+  },
+  "W4224297527": {
+   "class": "RULE_ONLY",
+   "reason": "rule=random division; unit unstated"
+  },
+  "W4385704549": {
+   "class": "RULE_ONLY",
+   "reason": "rule=stratified four-fold CV; neither the unit nor the stratification variable is stated"
+  },
+  "W7133182996": {
+   "class": "RULE_ONLY",
+   "reason": "rule=stratified to preserve class distribution; assignment unit unstated"
+  },
+  "W4207031702": {
+   "class": "RULE_ONLY",
+   "reason": "rule=random selection; unit unstated"
+  },
+  "W4399615782": {
+   "class": "RULE_ONLY",
+   "reason": "rule=random selection of 80% of \"all available data\"; unit unstated"
+  }
+ }
+}

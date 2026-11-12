@@ -1,0 +1,121 @@
+{
+ "frozen_for": "67-paper full-corpus coding",
+ "corpus_sha256": "d14f8c7dcc55c223b9f89c7b64b2439d538fd229d0a5513f8db4e8c05d5fe49c",
+ "n_papers": 67,
+ "n_shards": 4,
+ "instrument": {
+  "RUBRIC.md": "16e9ae36cc7bdc0c92875c898ec05534661e891b7a99e60edac479ec6936350b",
+  "notes/CODER_BRIEF_67.md": "00b7f64a221c86840d607811174b7ac2debfaafd0b63cc361dbb4228c3b05b26",
+  "PRE_CODING_FREEZE.md": "f6a2e45ad0ce42cca23c89f7c2bc7a9374e39872914525a3a345f4c8ed0a8917",
+  "corpus/to_code.json": "18c65cb9ad2875b570dfd48994b2052e90d5e4c8fb89a2c8207c4e570944aaa5",
+  "scripts/prep_coding.py": "5097d7011786ce49bbd9e7b26d998758e6dce775e27bc56471e9935b9ed436f2",
+  "corpus/scope_final.json": "de5b4989b455f609f97207910101543ed34e8bc1283d1dc10666bfabb53e8e26"
+ },
+ "shards": [
+  {
+   "shard": 0,
+   "n": 17,
+   "chars": 350719,
+   "sha256": "0a149389855c4953f8f5485e946e383378fec98940d4d01b3a4ef838a0c5e545",
+   "paper_ids": [
+    "W4413480292",
+    "W4406661759",
+    "W4405322211",
+    "W4381250385",
+    "W4312250248",
+    "W4400779901",
+    "W4402820476",
+    "W4207031702",
+    "W3090022951",
+    "W4398141901",
+    "W4399615782",
+    "W7164802202",
+    "W4407450811",
+    "W4386453639",
+    "W4399527364",
+    "W4406576829",
+    "W4390668539"
+   ]
+  },
+  {
+   "shard": 1,
+   "n": 17,
+   "chars": 356766,
+   "sha256": "eb5a65ed258f1199b1fd776a735a7af3ad97be5cb2d48143fd942f87f1d1a299",
+   "paper_ids": [
+    "W4224297527",
+    "W7133343035",
+    "W4391216347",
+    "W3132971810",
+    "W4396605531",
+    "W4406322764",
+    "W4306404511",
+    "W4410259472",
+    "W4394819366",
+    "W4410239778",
+    "W4205231989",
+    "W4403079437",
+    "W4214895504",
+    "W4391034444",
+    "W3120107013",
+    "W4402123810",
+    "W4309091309"
+   ]
+  },
+  {
+   "shard": 2,
+   "n": 17,
+   "chars": 325429,
+   "sha256": "baaf14beb91d582c09a655ee5b36aa627a784052bed027a71be1fa23b3b390ee",
+   "paper_ids": [
+    "W7168166094",
+    "W4392911314",
+    "W4386432155",
+    "W4386251007",
+    "W4409359674",
+    "W4310379056",
+    "W4408215048",
+    "W4406324697",
+    "W4403544374",
+    "W4214663719",
+    "W4399749893",
+    "W4317934269",
+    "W4367310935",
+    "W7162802855",
+    "W4400071697",
+    "W4297537745",
+    "W7133182996"
+   ]
+  },
+  {
+   "shard": 3,
+   "n": 16,
+   "chars": 269391,
+   "sha256": "ade4ca25cb8077db779e6b94f17f53da97000c35d50d844be05aa1d0563da03f",
+   "paper_ids": [
+    "W4396937715",
+    "W4324056332",
+    "W4225396518",
+    "W4400909140",
+    "W4318206819",
+    "W4385704549",
+    "W4391754623",
+    "W4392303500",
+    "W4404817293",
+    "W4392699928",
+    "W4399244718",
+    "W4213140935",
+    "W4318464214",
+    "W4389737478",
+    "W7172270256",
+    "W4399939400"
+   ]
+  }
+ ],
+ "reliability_threshold": 0.8,
+ "threshold_unchanged_since": "round 1",
+ "known_defects_not_repaired": [
+  "P1: FLAME block does not specify what to code for non-FLAME papers",
+  "P2: four free-text fields scored as categories; kappa not meaningful on them"
+ ]
+}

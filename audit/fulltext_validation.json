@@ -1,0 +1,344 @@
+{
+ "n": 64,
+ "distribution": {
+  "1": 21,
+  "4": 2,
+  "2": 37,
+  "3": 4
+ },
+ "lacking_mechanism": 41,
+ "validated_pct": 64.06,
+ "validated_ci": [
+  51.82,
+  74.71
+ ],
+ "excl_unresolved": {
+  "k": 41,
+  "n": 62,
+  "pct": 66.13,
+  "ci": [
+   53.72,
+   76.66
+  ]
+ },
+ "frozen_E1": 38,
+ "frozen_pct": 59.38,
+ "concordance": 87.5,
+ "n_reclassified": 8,
+ "reclassified": [
+  {
+   "paper_id": "W4396937715",
+   "frozen": "ratio_only_mechanism_unstated",
+   "frozen_cat": 2,
+   "validated_cat": 4,
+   "reason": "leave-one-out CV stated only for the regression sub-models; the detection model's partition is never stated"
+  },
+  {
+   "paper_id": "W4403544374",
+   "frozen": "augment_then_split",
+   "frozen_cat": 2,
+   "validated_cat": 1,
+   "reason": "\"The dataset is randomly divided into training, validation, and test sets in a 7:2:1 ratio\" - random stated"
+  },
+  {
+   "paper_id": "W4413480292",
+   "frozen": "ratio_only_mechanism_unstated",
+   "frozen_cat": 2,
+   "validated_cat": 4,
+   "reason": "\"divided ... in a ratio of 8:1:1\" but the paper elsewhere defers to another work's partitioning; cannot resolve whether a rule is inherited"
+  },
+  {
+   "paper_id": "W4400071697",
+   "frozen": "explicitly_random",
+   "frozen_cat": 1,
+   "validated_cat": 2,
+   "reason": "set sizes stated (15,000 total; 4500 held out); no allocation rule"
+  },
+  {
+   "paper_id": "W4385704549",
+   "frozen": "no_split_statement",
+   "frozen_cat": 3,
+   "validated_cat": 1,
+   "reason": "\"stratified four-fold cross-validation scheme, repeated five times\" - mechanism stated"
+  },
+  {
+   "paper_id": "W4403079437",
+   "frozen": "group_disjoint",
+   "frozen_cat": 1,
+   "validated_cat": 2,
+   "reason": "per-palette training and test frame counts; no allocation rule"
+  },
+  {
+   "paper_id": "W4391034444",
+   "frozen": "explicitly_random",
+   "frozen_cat": 1,
+   "validated_cat": 2,
+   "reason": "\"divided into training, validation, and test sets, with a distribution ratio of 8:1:1\" - no rule"
+  },
+  {
+   "paper_id": "W4207031702",
+   "frozen": "augment_then_split",
+   "frozen_cat": 2,
+   "validated_cat": 1,
+   "reason": "\"Among these data, 70% was used for training, and 30% was used for testing. The training and testing data were randomly selected\" - random"
+  }
+ ],
+ "per_paper": {
+  "W4312250248": {
+   "category": 1,
+   "reason": "\"1% randomly sampled data and split it\" - random assignment stated"
+  },
+  "W4396937715": {
+   "category": 4,
+   "reason": "leave-one-out CV stated only for the regression sub-models; the detection model's partition is never stated"
+  },
+  "W4391754623": {
+   "category": 2,
+   "reason": "\"divided into the training set and verification set according to the ratio of 8:2\" - ratio, no rule"
+  },
+  "W4392911314": {
+   "category": 2,
+   "reason": "\"partitioned into training, testing, and validation sets in a ratio of 7:2:1\" - ratio, no rule"
+  },
+  "W4410259472": {
+   "category": 2,
+   "reason": "counts only (31,696 / 14,259 / 7,896); \"this partitioning strategy\" never says how"
+  },
+  "W4402123810": {
+   "category": 2,
+   "reason": "\"divided into three sets: a training set (17,518 images), a validation set (5005), test set (2503)\" - counts, no rule"
+  },
+  "W4406661759": {
+   "category": 2,
+   "reason": "\"split into training (70%), validation (20%), and testing (10%) subsets\" - ratio, no rule"
+  },
+  "W4407450811": {
+   "category": 2,
+   "reason": "\"split into training, validation, and test sets in a ratio of 8:1:1\" - ratio, no rule"
+  },
+  "W4406576829": {
+   "category": 2,
+   "reason": "\"divided into training, testing, and validation sets at a ratio of 8:1:1\" - ratio, no rule"
+  },
+  "W7133343035": {
+   "category": 2,
+   "reason": "\"divided into training, validation, and test sets with a ratio of 8:1:1\" - ratio, no rule"
+  },
+  "W4399749893": {
+   "category": 2,
+   "reason": "\"divided into training, validation, and test sets with an 8:1:1 distribution ratio\" - ratio, no rule"
+  },
+  "W3120107013": {
+   "category": 2,
+   "reason": "\"the 6135 images ... are divided into training and testing sets by [ratio]\" - ratio, no rule; column interleaving garbles the tail"
+  },
+  "W4410239778": {
+   "category": 2,
+   "reason": "counts + \"ratio of the training, validation, and test sets is 7:2:1\" - no rule"
+  },
+  "W4390668539": {
+   "category": 1,
+   "reason": "\"The training set was formed by randomly selecting 90% of labeled images\" - random stated"
+  },
+  "W4406324697": {
+   "category": 2,
+   "reason": "\"20% of the dataset (4306 images) was allocated for testing\"; remaining \"further split\" - no rule stated"
+  },
+  "W4403544374": {
+   "category": 1,
+   "reason": "\"The dataset is randomly divided into training, validation, and test sets in a 7:2:1 ratio\" - random stated"
+  },
+  "W4399527364": {
+   "category": 2,
+   "reason": "\"partitioned the dataset of 16 125 images into 12 393 for training and 3732 for validation\" - counts, no rule"
+  },
+  "W4408215048": {
+   "category": 3,
+   "reason": "no partition statement anywhere in the complete full text"
+  },
+  "W4318464214": {
+   "category": 3,
+   "reason": "no partition statement anywhere in the complete full text"
+  },
+  "W4404817293": {
+   "category": 3,
+   "reason": "no partition statement anywhere in the complete full text"
+  },
+  "W3132971810": {
+   "category": 2,
+   "reason": "set sizes given for train and test; no allocation rule stated"
+  },
+  "W4225396518": {
+   "category": 1,
+   "reason": "\"Eighty percent of the collected data were randomly used as training data\" - random stated"
+  },
+  "W4213140935": {
+   "category": 1,
+   "reason": "group-disjoint by fire, stated explicitly: \"Splitting the data by fires instead of images ensures that no data related to the test set are in the training set\""
+  },
+  "W4413480292": {
+   "category": 4,
+   "reason": "\"divided ... in a ratio of 8:1:1\" but the paper elsewhere defers to another work's partitioning; cannot resolve whether a rule is inherited"
+  },
+  "W4297537745": {
+   "category": 2,
+   "reason": "\"divided into training set, validation set, and test set in 8:1:1\"; augmentation explicitly AFTER allocation - no allocation rule"
+  },
+  "W4391216347": {
+   "category": 2,
+   "reason": "\"was divided into training, validation, and testing sets in a ratio\" - no rule"
+  },
+  "W7172270256": {
+   "category": 2,
+   "reason": "\"divided into training, validation, and test sets at a fixed ratio of 8:1:1\" - no rule"
+  },
+  "W4402820476": {
+   "category": 2,
+   "reason": "\"In a ratio of 8:1:1, the dataset is split into training, testing, and validation subsets\" - no rule"
+  },
+  "W4224297527": {
+   "category": 1,
+   "reason": "\"the dataset is randomly divided into the training set, validation set, and test set according to the ratio of 70%, 20%, and 10%\" - random stated"
+  },
+  "W4399244718": {
+   "category": 2,
+   "reason": "\"partitioned into three subsets: 6856 images for training, 1963 for validation, and 977 for testing\" - counts, no rule"
+  },
+  "W4367310935": {
+   "category": 2,
+   "reason": "\"all the samples are divided into test sets and training sets in a 1:4 ratio\" - no rule"
+  },
+  "W4392303500": {
+   "category": 2,
+   "reason": "test-set size stated (441 images); no allocation rule anywhere"
+  },
+  "W7162802855": {
+   "category": 1,
+   "reason": "group-disjoint stated: \"the 7414 images were organized into 486 scene/event groups and divided into train, valid, and test sets\""
+  },
+  "W4400071697": {
+   "category": 2,
+   "reason": "set sizes stated (15,000 total; 4500 held out); no allocation rule"
+  },
+  "W4396605531": {
+   "category": 2,
+   "reason": "\"The dataset is separated into 70%, 20%, and 10% for training, validation, and test\" - no rule"
+  },
+  "W4214895504": {
+   "category": 1,
+   "reason": "counts identify the benchmark's provided partition (31,515 / 7,878 / 8,617 matches FLAME's designated pool and test set); rule is the supplied split"
+  },
+  "W4381250385": {
+   "category": 1,
+   "reason": "group-disjoint by wildfire event, stated: \"test set consists of 18 large wildfires ... not included in the training set\""
+  },
+  "W4310379056": {
+   "category": 2,
+   "reason": "\"The proportion of the training set is 80%, that is, 11,520 images ... and 2880 images as the testing set\" - no rule"
+  },
+  "W4205231989": {
+   "category": 1,
+   "reason": "\"The images are organized in tenfold for the test set, randomly selected\" - random stated"
+  },
+  "W4306404511": {
+   "category": 2,
+   "reason": "\"we used 80% of the data and 20% for testing\"; \"training data were split into 80:20\" - no rule"
+  },
+  "W4386432155": {
+   "category": 2,
+   "reason": "2300 images expanded to 6500 by augmentation, then divided; counts only, no allocation rule"
+  },
+  "W4386453639": {
+   "category": 2,
+   "reason": "\"70% or around 6,300 images ... 20% ... 899 images ... set aside for testing\" - counts/ratio, no rule"
+  },
+  "W4398141901": {
+   "category": 2,
+   "reason": "\"Our dataset is divided as follows: 70% for training images, 10% for test images, and 20% for validation images\" - no rule"
+  },
+  "W4309091309": {
+   "category": 1,
+   "reason": "\"the training set is composed of two-class pixel-pattern samples, randomly drawn from the first frame\" - random, temporal"
+  },
+  "W4394819366": {
+   "category": 2,
+   "reason": "\"split into training, testing, and validation sets. First, the testing data contained 20% of the images (4306)\" - no rule"
+  },
+  "W4385704549": {
+   "category": 1,
+   "reason": "\"stratified four-fold cross-validation scheme, repeated five times\" - mechanism stated"
+  },
+  "W7168166094": {
+   "category": 1,
+   "reason": "\"ordered to preserve the chronology ... earlier portion for training and the later portion for validation\" - temporal, explicit"
+  },
+  "W4403079437": {
+   "category": 2,
+   "reason": "per-palette training and test frame counts; no allocation rule"
+  },
+  "W4318206819": {
+   "category": 1,
+   "reason": "group-disjoint by wildfire: north-east wildfire for training/validation, south and north-west wildfires as test"
+  },
+  "W4389737478": {
+   "category": 2,
+   "reason": "\"divided into training, validation, and test sets in a ratio of 7:1:2\" plus counts - no rule"
+  },
+  "W4400779901": {
+   "category": 1,
+   "reason": "\"All the images ... are randomly divided into a training set, a verification set, and a test set in a ratio of 8:1:1\" - random"
+  },
+  "W3090022951": {
+   "category": 1,
+   "reason": "trained on one corpus and evaluated on separate corpora - cross-dataset design is the mechanism"
+  },
+  "W4392699928": {
+   "category": 2,
+   "reason": "three mutually inconsistent ratios (80/20, 80/5/15, 80/20) and no allocation rule in any of them"
+  },
+  "W7164802202": {
+   "category": 1,
+   "reason": "\"we kept the wildfire events disjoints between the train, val, and test\" - event-disjoint, explicit"
+  },
+  "W4391034444": {
+   "category": 2,
+   "reason": "\"divided into training, validation, and test sets, with a distribution ratio of 8:1:1\" - no rule"
+  },
+  "W4324056332": {
+   "category": 2,
+   "reason": "\"The dataset was divided as follows: 80% to train and 20% to test our network\" - no rule"
+  },
+  "W4399939400": {
+   "category": 1,
+   "reason": "\"each validation fold was stratified by ignition date and case number\" - stratified by event, explicit"
+  },
+  "W7133182996": {
+   "category": 1,
+   "reason": "\"All experiments were conducted using stratified training-validation splits to preserve class distributions\" - stratified, explicit"
+  },
+  "W4214663719": {
+   "category": 3,
+   "reason": "no partition statement anywhere in the complete full text (15 candidates, 0 set-language)"
+  },
+  "W4405322211": {
+   "category": 2,
+   "reason": "\"The datasets were split into training, validation, and testing sets with [ratio]\" - no rule"
+  },
+  "W4207031702": {
+   "category": 1,
+   "reason": "\"Among these data, 70% was used for training, and 30% was used for testing. The training and testing data were randomly selected\" - random"
+  },
+  "W4400909140": {
+   "category": 2,
+   "reason": "\"We split each dataset in the ratio of 70-15-15\" - no rule"
+  },
+  "W4399615782": {
+   "category": 1,
+   "reason": "\"the set of training image data taken as a randomly selected 80% of all available data\" - random"
+  },
+  "W4409359674": {
+   "category": 2,
+   "reason": "\"split into training and testing sets, with 6,856 images for training and 2,940 for testing\" - counts, no rule"
+  }
+ }
+}

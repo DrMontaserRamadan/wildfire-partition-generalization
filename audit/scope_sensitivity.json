@@ -1,0 +1,134 @@
+{
+ "contested": {
+  "W3119132889": {
+   "title": "Convolutional neural network for smoke and fire semantic segmentation",
+   "tier": "C",
+   "code": "IN_BORDERLINE",
+   "in_scope_primary": true,
+   "contest_type": "wildland framing, non-wildland use stated",
+   "contest_reason": "S1: motivated by wildfires, but the stated deployment is a camera embedded in a vehicle; the abstract never establishes wildland imagery."
+  },
+  "W3204651913": {
+   "title": "Forest Fire Detection System using ZigBee",
+   "tier": "C",
+   "code": "IN_BORDERLINE",
+   "in_scope_primary": true,
+   "contest_type": "system described, no evaluation reported",
+   "contest_reason": "Evidence insufficiency: a forest fire detection system is described and no evaluation of it is reported anywhere in the abstract."
+  },
+  "W4396670524": {
+   "title": "An Analysis of Internet-of-Things-Based Fire Detection and Alert Systems",
+   "tier": "C",
+   "code": "IN_BORDERLINE",
+   "in_scope_primary": true,
+   "contest_type": "document type unresolvable from the abstract",
+   "contest_reason": "S3: titled 'An Analysis of' and reads like a survey, but describes a built device. Only the full text could settle it, and we do not have it."
+  },
+  "W3176110204": {
+   "title": "Wildfire Detection From Multisensor Satellite Imagery Using Deep Semantic Segmentation",
+   "tier": "A",
+   "code": "OUT_BORDERLINE_S2",
+   "in_scope_primary": false,
+   "contest_type": "active detection vs burned-area mapping",
+   "contest_reason": "S2: titled 'Wildfire Detection', but the workflow is repeatedly described as detection of fire-AFFECTED AREAS, with burned-area framing throughout."
+  },
+  "W3180371431": {
+   "title": "Ground-Based Corroboration of GOES-17 Fire Detection Capabilities During Ignition of the Kincade Fire",
+   "tier": "C",
+   "code": "IN_BORDERLINE",
+   "in_scope_primary": true,
+   "contest_type": "measures detection but proposes no method",
+   "contest_reason": "S2: wildland fire, and detection latency is the measured quantity, but the paper corroborates an existing detector rather than contributing one."
+  },
+  "W4312250248": {
+   "title": "Wildland Fire Detection and Monitoring Using a Drone-Collected RGB/IR Image Dataset",
+   "tier": "A",
+   "code": "IN_BORDERLINE",
+   "in_scope_primary": true,
+   "contest_type": "benchmark-with-baselines vs method paper",
+   "contest_reason": "S3: a dataset paper that also reports detection baselines. If a benchmark release counts as a primary method study, IN; if not, OUT."
+  },
+  "W4399361386": {
+   "title": "An open flame and smoke detection dataset for deep learning in remote sensing based fire detection",
+   "tier": "C",
+   "code": "IN_BORDERLINE",
+   "in_scope_primary": true,
+   "contest_type": "benchmark-with-baselines vs method paper",
+   "contest_reason": "S3: same ambiguity as FLAME2, coded the same way for consistency."
+  },
+  "W4394697163": {
+   "title": "YOLOv5 vs. YOLOv8: Performance Benchmarking in Wildfire and Smoke Detection Scenarios",
+   "tier": "C",
+   "code": "IN_BORDERLINE",
+   "in_scope_primary": true,
+   "contest_type": "wildland framing, general-fire evaluation data",
+   "contest_reason": "S1: titled and framed as wildfire detection, evaluated on the Foggia dataset, which is general fire video rather than wildland-specific."
+  },
+  "W7198168751": {
+   "title": "Development of a model for segmentation of forest fires on satellite images using neural network technologies",
+   "tier": "C",
+   "code": "IN_BORDERLINE",
+   "in_scope_primary": true,
+   "contest_type": "DATA DEFECT: no abstract exists",
+   "contest_reason": "The abstract field holds a bibliographic citation string, not an abstract. The decision rests on the title alone, which is the very failure mode this paper documents in others."
+  }
+ },
+ "unclear_ids": [
+  "W4319161405",
+  "W3012710328",
+  "W7140072504",
+  "W4237188161",
+  "W4415363134",
+  "W4400354193"
+ ],
+ "verified_bounds_pct": [
+  59.45945945945946,
+  61.26126126126126
+ ],
+ "verified_primary": [
+  67,
+  111
+ ],
+ "total_bounds_of_159": [
+  81.07692307692308,
+  93.375
+ ],
+ "scenarios": [
+  {
+   "name": "PRIMARY (rule as pre-specified)",
+   "in": 67,
+   "n": 111,
+   "pct": 60.36036036036036
+  },
+  {
+   "name": "all 9 contested -> OUT",
+   "in": 66,
+   "n": 111,
+   "pct": 59.45945945945946
+  },
+  {
+   "name": "all 9 contested -> IN",
+   "in": 68,
+   "n": 111,
+   "pct": 61.26126126126126
+  },
+  {
+   "name": "all 6 UNCLEAR -> IN",
+   "in": 67,
+   "n": 111,
+   "pct": 60.36036036036036
+  },
+  {
+   "name": "contested OUT and UNCLEAR OUT (hard lower)",
+   "in": 66,
+   "n": 111,
+   "pct": 59.45945945945946
+  },
+  {
+   "name": "contested IN and UNCLEAR IN (hard upper)",
+   "in": 68,
+   "n": 111,
+   "pct": 61.26126126126126
+  }
+ ]
+}

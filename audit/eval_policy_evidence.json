@@ -1,0 +1,31 @@
+{
+ "n_images": 33636,
+ "n_boxes": 32109,
+ "boxes_per_image": {
+  "0": 5499,
+  "1": 24588,
+  "2": 3170,
+  "3": 339,
+  "4": 36,
+  "5": 4
+ },
+ "mean_boxes_per_image": 0.955,
+ "max_boxes_in_any_image": 5,
+ "n_ground_truth_pairs_sharing_an_image": 4443,
+ "gt_pair_iou": {
+  "max": 0.0,
+  "p99": 0.0,
+  "p95": 0.0,
+  "median": 0.0,
+  "n_at_or_above": {
+   "0.3": 0,
+   "0.5": 0,
+   "0.7": 0
+  }
+ },
+ "box_area_fraction_of_image": {
+  "median": 0.00138,
+  "p95": 0.01228,
+  "max": 0.88594
+ }
+}
