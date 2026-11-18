@@ -1,0 +1,106 @@
+{
+ "_note": "Sensitivity of the FLAME protocol comparison (ESWA panel, 2026-11-18). POST HOC.\n\nBase comparison, as in the manuscript: the 31 FLAME-record papers that report a headline\naccuracy, 18 on the designated test set (OFFICIAL) against 13 that substituted a partition of\ntheir own (every other protocol code). Reported here for the base set and for four removals:\n  - the authors' own paper (Ramadan 2024);\n  - papers whose evidence is not a full text read for this record (abstract only, secondary\n    sources only, or a prior pass not re-read);\n  - papers whose headline is not a held-out test figure (validation, training, cross-validation);\n  - all three removals together.\nFor each: medians, the count of paper pairs in which the substituting paper reports more, the\nprobability of superiority (= pairs / all pairs, ties counted half), the exact Mann-Whitney p, and\nthe Hodges-Lehmann shift with its distribution-free confidence interval.\n",
+ "removed": {
+  "base": [],
+  "minus_own_paper": [
+   "Ramadan 2024"
+  ],
+  "minus_weak_evidence": [
+   "Treneska 2021",
+   "Dutta 2021",
+   "Wang 2023",
+   "Reis 2023"
+  ],
+  "minus_non_test_headline": [
+   "Wang 2023",
+   "Namburu 2023",
+   "Kurasinski 2023",
+   "Islam 2023"
+  ],
+  "minus_all_three": [
+   "Treneska 2021",
+   "Dutta 2021",
+   "Wang 2023",
+   "Namburu 2023",
+   "Kurasinski 2023",
+   "Reis 2023",
+   "Islam 2023",
+   "Ramadan 2024"
+  ]
+ },
+ "base": {
+  "n_official": 18,
+  "n_substituted": 13,
+  "median_official": 83.98,
+  "median_substituted": 98.18,
+  "pairs": 234,
+  "pairs_substituted_higher": 233.0,
+  "prob_superiority": 0.9957264957264957,
+  "mann_whitney_p": 1.9393650252244723e-08,
+  "hodges_lehmann_shift": 13.169999999999995,
+  "hl_ci95": [
+   10.989999999999995,
+   16.700000000000003
+  ]
+ },
+ "minus_own_paper": {
+  "n_official": 18,
+  "n_substituted": 12,
+  "median_official": 83.98,
+  "median_substituted": 98.14,
+  "pairs": 216,
+  "pairs_substituted_higher": 215.0,
+  "prob_superiority": 0.9953703703703703,
+  "mann_whitney_p": 4.6246396755352804e-08,
+  "hodges_lehmann_shift": 13.055,
+  "hl_ci95": [
+   10.810000000000002,
+   16.700000000000003
+  ]
+ },
+ "minus_weak_evidence": {
+  "n_official": 16,
+  "n_substituted": 11,
+  "median_official": 82.84,
+  "median_substituted": 98.1,
+  "pairs": 176,
+  "pairs_substituted_higher": 176.0,
+  "prob_superiority": 1.0,
+  "mann_whitney_p": 1.5339899577347416e-07,
+  "hodges_lehmann_shift": 14.359999999999992,
+  "hl_ci95": [
+   11.120000000000005,
+   17.42
+  ]
+ },
+ "minus_non_test_headline": {
+  "n_official": 18,
+  "n_substituted": 9,
+  "median_official": 83.98,
+  "median_substituted": 98.18,
+  "pairs": 162,
+  "pairs_substituted_higher": 161.0,
+  "prob_superiority": 0.9938271604938271,
+  "mann_whitney_p": 8.534562310306017e-07,
+  "hodges_lehmann_shift": 13.094999999999999,
+  "hl_ci95": [
+   10.289999999999992,
+   17.0
+  ]
+ },
+ "minus_all_three": {
+  "n_official": 16,
+  "n_substituted": 7,
+  "median_official": 82.84,
+  "median_substituted": 98.1,
+  "pairs": 112,
+  "pairs_substituted_higher": 112.0,
+  "prob_superiority": 1.0,
+  "mann_whitney_p": 8.1580375024984e-06,
+  "hodges_lehmann_shift": 13.594999999999999,
+  "hl_ci95": [
+   10.289999999999992,
+   18.61999999999999
+  ]
+ }
+}

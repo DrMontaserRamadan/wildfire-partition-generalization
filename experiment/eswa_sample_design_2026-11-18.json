@@ -1,0 +1,222 @@
+{
+ "n_cleaned_harvest": 4915,
+ "n_eligible_pool": 1744,
+ "n_sampled": 182,
+ "strata": [
+  {
+   "stratum": "edge|2020-21",
+   "pool": 20,
+   "top": 2,
+   "random": 2
+  },
+  {
+   "stratum": "edge|2022-23",
+   "pool": 51,
+   "top": 2,
+   "random": 3
+  },
+  {
+   "stratum": "edge|2024-26",
+   "pool": 132,
+   "top": 7,
+   "random": 7
+  },
+  {
+   "stratum": "iot|2020-21",
+   "pool": 46,
+   "top": 2,
+   "random": 3
+  },
+  {
+   "stratum": "iot|2022-23",
+   "pool": 79,
+   "top": 4,
+   "random": 4
+  },
+  {
+   "stratum": "iot|2024-26",
+   "pool": 151,
+   "top": 8,
+   "random": 8
+  },
+  {
+   "stratum": "satellite|2020-21",
+   "pool": 65,
+   "top": 3,
+   "random": 4
+  },
+  {
+   "stratum": "satellite|2022-23",
+   "pool": 90,
+   "top": 4,
+   "random": 5
+  },
+  {
+   "stratum": "satellite|2024-26",
+   "pool": 149,
+   "top": 7,
+   "random": 8
+  },
+  {
+   "stratum": "uav|2020-21",
+   "pool": 39,
+   "top": 2,
+   "random": 2
+  },
+  {
+   "stratum": "uav|2022-23",
+   "pool": 108,
+   "top": 5,
+   "random": 6
+  },
+  {
+   "stratum": "uav|2024-26",
+   "pool": 252,
+   "top": 13,
+   "random": 13
+  },
+  {
+   "stratum": "vision|2020-21",
+   "pool": 59,
+   "top": 3,
+   "random": 3
+  },
+  {
+   "stratum": "vision|2022-23",
+   "pool": 156,
+   "top": 8,
+   "random": 8
+  },
+  {
+   "stratum": "vision|2024-26",
+   "pool": 347,
+   "top": 18,
+   "random": 18
+  }
+ ],
+ "by_half": {
+  "author_validation|top_cited": {
+   "n": 51,
+   "k": 38,
+   "pct": 74.50980392156863,
+   "ci": [
+    61.13171816155626,
+    84.4542318434177
+   ]
+  },
+  "author_validation|random": {
+   "n": 28,
+   "k": 16,
+   "pct": 57.142857142857146,
+   "ci": [
+    39.070785627468766,
+    73.49145287587629
+   ]
+  },
+  "author_validation|forced_self_inclusion": {
+   "n": 0,
+   "k": 0,
+   "pct": null,
+   "ci": [
+    null,
+    null
+   ]
+  },
+  "author_validation|ALL": {
+   "n": 79,
+   "k": 54,
+   "pct": 68.35443037974683,
+   "ci": [
+    57.45191237451232,
+    77.55471403312849
+   ]
+  },
+  "author_validation|not_in_sample_map": 0,
+  "human_consensus|top_cited": {
+   "n": 51,
+   "k": 35,
+   "pct": 68.62745098039215,
+   "ci": [
+    54.97300046930565,
+    79.67232153447455
+   ]
+  },
+  "human_consensus|random": {
+   "n": 28,
+   "k": 15,
+   "pct": 53.57142857142857,
+   "ci": [
+    35.812689234467896,
+    70.46843001720462
+   ]
+  },
+  "human_consensus|forced_self_inclusion": {
+   "n": 0,
+   "k": 0,
+   "pct": null,
+   "ci": [
+    null,
+    null
+   ]
+  },
+  "human_consensus|ALL": {
+   "n": 79,
+   "k": 50,
+   "pct": 63.29113924050633,
+   "ci": [
+    52.27691853982361,
+    73.0727074795025
+   ]
+  },
+  "human_consensus|not_in_sample_map": 0,
+  "author_validation|sampled_only": {
+   "n": 79,
+   "k": 54,
+   "pct": 68.35443037974683,
+   "ci": [
+    57.45191237451232,
+    77.55471403312849
+   ]
+  },
+  "human_consensus|sampled_only": {
+   "n": 79,
+   "k": 50,
+   "pct": 63.29113924050633,
+   "ci": [
+    52.27691853982361,
+    73.0727074795025
+   ]
+  }
+ },
+ "n_drawn": 182,
+ "n_removed_before_freeze": 23,
+ "removed_by_half": {
+  "top_cited": 16,
+  "random": 7
+ },
+ "frozen_by_half": {
+  "top_cited": 72,
+  "random": 87,
+  "forced_self_inclusion": 0
+ },
+ "self_paper_half": "top_cited",
+ "reconstruction_is_superset_of_sample_json": true,
+ "weighted|author_validation": {
+  "n": 79,
+  "pct": 58.415662614572256,
+  "ci": [
+   42.35438078759211,
+   73.93267292693359
+  ],
+  "effective_weights_sum": 551.1954822954823
+ },
+ "weighted|human_consensus": {
+  "n": 79,
+  "pct": 55.059321607756345,
+  "ci": [
+   40.95914507948203,
+   69.17360887900226
+  ],
+  "effective_weights_sum": 551.1954822954823
+ }
+}
