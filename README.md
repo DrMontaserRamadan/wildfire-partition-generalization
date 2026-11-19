@@ -1,8 +1,8 @@
-# Data partitioning and generalization in deep learning-based wildfire detection
+# Random image splits overstate wildfire detector accuracy
 
-Materials for the paper "Data Partitioning and Generalization in Deep Learning-Based Wildfire
-Detection: Controlled Experiments and a Reporting Audit" (M. N. A. Ramadan, H. Saygın,
-R. Alhindawi, M. Alkhedher; under review). The release lets a reader check every number in the
+Materials for the paper "Random image splits overstate wildfire detector accuracy: A controlled experiment on data leakage and an audit of reporting practice"
+(M. N. A. Ramadan, H. Saygın, M. A. H. Ali, N. N. Nik Ghazali, M. Alkhedher; manuscript
+submitted for publication). The release lets a reader check every number in the
 paper: the controlled partition experiment and the audit of published wildfire detection studies.
 
 ## Contents

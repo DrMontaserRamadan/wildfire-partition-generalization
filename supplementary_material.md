@@ -1,11 +1,8 @@
 # Supplementary materials
 
-Companion to the article "Data partitioning in deep learning for wildfire detection from
-airborne and terrestrial imagery: controlled experiments and a reporting audit". Every table
+Companion to the article "Random image splits overstate wildfire detector accuracy: A controlled experiment on data leakage and an audit of reporting practice". Every table
 here is generated from the same frozen records the manuscript's verification gate reads, so
-the two cannot drift apart. Section S4 and the protocol paragraphs in S5 were part of the
-manuscript body until 2026-09-20 and were moved here to bring the article inside the
-journal's length band; they are reproduced unchanged rather than rewritten.
+the two cannot drift apart.
 
 This document names files and scripts by path. That is deliberate and is confined to
 this document: here they are re-run instructions for the archive, not narrative, and the
@@ -751,3 +748,272 @@ and are given here so that nothing in this document is cited without a reference
 - Lee, K., Ippolito, D., Nystrom, A., Zhang, C., Eck, D., Callison-Burch, C., and Carlini, N. (2022). Deduplicating Training Data Makes Language Models Better. Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), 8424-8445. https://doi.org/10.18653/v1/2022.acl-long.577
 - He, K., Zhang, X., Ren, S., and Sun, J. (2016). Deep Residual Learning for Image Recognition. 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 770-778. https://doi.org/10.1109/CVPR.2016.90
 
+## S10. Re-analyses reported in the ESWA version
+
+Computed on 2026-11-18 from the stored per-run records, raw predictions, split files and images; no model was retrained. Analyses the protocol pre-specified are marked as such; the rest are post hoc. Scripts: `scripts/eswa_experiment_reanalysis.py`, `scripts/eswa_sample_design.py`, `scripts/eswa_flame_sensitivity.py`.
+
+### S10.1 Detector ranking under mAP@0.50 and mAP@0.50:0.95 (pre-specified)
+
+| rule | order under mAP@0.50 | order under mAP@0.50:0.95 |
+|---|---|---|
+| P1_random_image | yolov8s > yolov8n > retinanet > fasterrcnn | yolov8s > yolov8n > retinanet > fasterrcnn |
+| P2_event_disjoint | retinanet > yolov8s > yolov8n > fasterrcnn | yolov8s > yolov8n > retinanet > fasterrcnn |
+| P3_camera_disjoint | retinanet > yolov8s > yolov8n > fasterrcnn | retinanet > yolov8s > yolov8n > fasterrcnn |
+| P4_partner_lopo | retinanet > yolov8s > yolov8n > fasterrcnn | retinanet > yolov8s > yolov8n > fasterrcnn |
+| P5_temporal | retinanet > yolov8s > yolov8n > fasterrcnn | yolov8s > retinanet > yolov8n > fasterrcnn |
+
+| rule pair | τ, mAP@0.50 | τ, mAP@0.50:0.95 | τ without Faster R-CNN, mAP@0.50 | τ without Faster R-CNN, mAP@0.50:0.95 |
+|---|---|---|---|---|
+| P1_random_image vs P2_event_disjoint | +0.33 | +1.00 | -0.33 | +1.00 |
+| P1_random_image vs P3_camera_disjoint | +0.33 | +0.33 | -0.33 | -0.33 |
+| P1_random_image vs P4_partner_lopo | +0.33 | +0.33 | -0.33 | -0.33 |
+| P1_random_image vs P5_temporal | +0.33 | +0.67 | -0.33 | +0.33 |
+| P2_event_disjoint vs P3_camera_disjoint | +1.00 | +0.33 | +1.00 | -0.33 |
+| P2_event_disjoint vs P4_partner_lopo | +1.00 | +0.33 | +1.00 | -0.33 |
+| P2_event_disjoint vs P5_temporal | +1.00 | +0.67 | +1.00 | +0.33 |
+| P3_camera_disjoint vs P4_partner_lopo | +1.00 | +1.00 | +1.00 | +1.00 |
+| P3_camera_disjoint vs P5_temporal | +1.00 | +0.67 | +1.00 | +0.33 |
+| P4_partner_lopo vs P5_temporal | +1.00 | +0.67 | +1.00 | +0.33 |
+
+### S10.2 Linear mixed model for the change in mAP@0.50 (pre-specified, E1)
+
+Fixed effect: allocation rule (reference: random). Random intercepts: detector and replicate. Partner rule excluded (different training size). REML.
+
+| detectors | term | estimate | 95% CI |
+|---|---|---|---|
+| all4 | Intercept | 0.694 | 0.507 to 0.881 |
+| all4 | C(rule)[T.P2_event_disjoint] | -0.246 | -0.279 to -0.212 |
+| all4 | C(rule)[T.P3_camera_disjoint] | -0.393 | -0.427 to -0.359 |
+| all4 | C(rule)[T.P5_temporal] | -0.409 | -0.474 to -0.344 |
+| working3 | Intercept | 0.821 | 0.784 to 0.858 |
+| working3 | C(rule)[T.P2_event_disjoint] | -0.257 | -0.290 to -0.223 |
+| working3 | C(rule)[T.P3_camera_disjoint] | -0.435 | -0.468 to -0.401 |
+| working3 | C(rule)[T.P5_temporal] | -0.466 | -0.535 to -0.397 |
+
+### S10.3 RetinaNet minus YOLOv8s, paired within replicate (t interval, post hoc)
+
+| rule and metric | n | mean | 95% CI |
+|---|---|---|---|
+| P1_random_image, map_50 | 5 | -0.024 | -0.031 to -0.016 |
+| P1_random_image, map_50_95 | 5 | -0.090 | -0.097 to -0.083 |
+| P2_event_disjoint, map_50 | 5 | 0.005 | -0.013 to 0.024 |
+| P2_event_disjoint, map_50_95 | 5 | -0.044 | -0.056 to -0.031 |
+| P3_camera_disjoint, map_50 | 5 | 0.094 | 0.031 to 0.157 |
+| P3_camera_disjoint, map_50_95 | 5 | 0.012 | -0.019 to 0.044 |
+| P4_partner_lopo, map_50 | 3 | 0.098 | 0.022 to 0.175 |
+| P4_partner_lopo, map_50_95 | 3 | 0.022 | -0.024 to 0.067 |
+| P5_temporal, map_50 | 1 | 0.040 | single split, no interval |
+| P5_temporal, map_50_95 | 1 | -0.005 | single split, no interval |
+
+### S10.4 Complete separation of random-split and group-disjoint runs (post hoc)
+
+| detector | random runs | group-disjoint runs | worst random run | best group-disjoint run |
+|---|---|---|---|---|
+| yolov8n | 5 | 14 | 0.8076 | 0.5753 |
+| yolov8s | 5 | 14 | 0.8272 | 0.6144 |
+| retinanet | 5 | 14 | 0.8051 | 0.5943 |
+| fasterrcnn | 5 | 14 | 0.3027 | 0.1074 |
+
+### S10.5 Test images with a confirmed near-duplicate in the training arm used (post hoc)
+
+64-bit dHash or pHash within Hamming distance 5, confirmed by normalized cross-correlation ≥ 0.95 on 32×32 greyscale; the training arm is the matched subsample actually trained on.
+
+| partition | test images | training images used | test images with a near-duplicate | share |
+|---|---|---|---|---|
+| P1_random_image__seed20260911 | 6728 | 21995 | 6365 | 94.6% |
+| P1_random_image__seed20260912 | 6728 | 21995 | 6346 | 94.3% |
+| P1_random_image__seed20260913 | 6728 | 21995 | 6343 | 94.3% |
+| P1_random_image__seed20260914 | 6728 | 21995 | 6362 | 94.6% |
+| P1_random_image__seed20260915 | 6728 | 21995 | 6362 | 94.6% |
+| P2_event_disjoint__seed20260911 | 6718 | 21995 | 2237 | 33.3% |
+| P2_event_disjoint__seed20260912 | 6836 | 21995 | 2496 | 36.5% |
+| P2_event_disjoint__seed20260913 | 6721 | 21995 | 2279 | 33.9% |
+| P2_event_disjoint__seed20260914 | 6737 | 21995 | 2128 | 31.6% |
+| P2_event_disjoint__seed20260915 | 6757 | 21995 | 2432 | 36.0% |
+| P3_camera_disjoint__seed20260911 | 5614 | 21995 | 90 | 1.6% |
+| P3_camera_disjoint__seed20260912 | 5203 | 21995 | 0 | 0.0% |
+| P3_camera_disjoint__seed20260913 | 7552 | 21995 | 61 | 0.8% |
+| P3_camera_disjoint__seed20260914 | 6687 | 21995 | 3 | 0.0% |
+| P3_camera_disjoint__seed20260915 | 6712 | 21995 | 0 | 0.0% |
+| P4_partner_lopo__seed20260911 | 13768 | 13836 | 0 | 0.0% |
+| P4_partner_lopo__seed20260912 | 17766 | 13836 | 0 | 0.0% |
+| P4_partner_lopo__seed20260913 | 2102 | 13836 | 0 | 0.0% |
+| P5_temporal__seed20260911 | 6728 | 21995 | 526 | 7.8% |
+
+### S10.6 Event-level detection and false detections at the validation-chosen threshold (post hoc)
+
+An event counts as detected if any of its smoke images carries a detection at or above the threshold with IoU ≥ 0.50 to an annotated box. A smoke-free image counts as a false detection if it carries any detection at or above the threshold.
+
+| detector, rule, seed | threshold | test events with smoke | detected | event detection rate | smoke-free test images | with a detection | rate |
+|---|---|---|---|---|---|---|---|
+| fasterrcnn, P1_random_image, 20260911 | 0.372 | 807 | 457 | 56.6% | 1161 | 165 | 14.2% |
+| fasterrcnn, P1_random_image, 20260912 | 0.431 | 798 | 445 | 55.8% | 1137 | 134 | 11.8% |
+| fasterrcnn, P1_random_image, 20260913 | 0.399 | 789 | 447 | 56.7% | 1135 | 166 | 14.6% |
+| fasterrcnn, P1_random_image, 20260914 | 0.430 | 792 | 443 | 55.9% | 1074 | 133 | 12.4% |
+| fasterrcnn, P1_random_image, 20260915 | 0.429 | 796 | 437 | 54.9% | 1059 | 126 | 11.9% |
+| fasterrcnn, P2_event_disjoint, 20260911 | 0.272 | 180 | 104 | 57.8% | 907 | 236 | 26.0% |
+| fasterrcnn, P2_event_disjoint, 20260912 | 0.251 | 193 | 103 | 53.4% | 1218 | 355 | 29.1% |
+| fasterrcnn, P2_event_disjoint, 20260913 | 0.309 | 197 | 95 | 48.2% | 1049 | 256 | 24.4% |
+| fasterrcnn, P2_event_disjoint, 20260914 | 0.253 | 168 | 96 | 57.1% | 1014 | 354 | 34.9% |
+| fasterrcnn, P2_event_disjoint, 20260915 | 0.176 | 187 | 122 | 65.2% | 1190 | 466 | 39.2% |
+| fasterrcnn, P3_camera_disjoint, 20260911 | 0.150 | 153 | 75 | 49.0% | 1340 | 655 | 48.9% |
+| fasterrcnn, P3_camera_disjoint, 20260912 | 0.350 | 151 | 44 | 29.1% | 603 | 121 | 20.1% |
+| fasterrcnn, P3_camera_disjoint, 20260913 | 0.196 | 183 | 58 | 31.7% | 889 | 199 | 22.4% |
+| fasterrcnn, P3_camera_disjoint, 20260914 | 0.115 | 180 | 89 | 49.4% | 1643 | 881 | 53.6% |
+| fasterrcnn, P3_camera_disjoint, 20260915 | 0.310 | 200 | 49 | 24.5% | 868 | 72 | 8.3% |
+| fasterrcnn, P4_partner_lopo, 20260911 | 0.232 | 417 | 165 | 39.6% | 3321 | 1142 | 34.4% |
+| fasterrcnn, P4_partner_lopo, 20260912 | 0.305 | 393 | 91 | 23.2% | 1729 | 181 | 10.5% |
+| fasterrcnn, P4_partner_lopo, 20260913 | 0.273 | 82 | 12 | 14.6% | 449 | 56 | 12.5% |
+| fasterrcnn, P5_temporal, 20260911 | 0.246 | 245 | 77 | 31.4% | 1497 | 486 | 32.5% |
+| retinanet, P1_random_image, 20260911 | 0.397 | 807 | 757 | 93.8% | 1161 | 190 | 16.4% |
+| retinanet, P1_random_image, 20260912 | 0.421 | 798 | 732 | 91.7% | 1137 | 167 | 14.7% |
+| retinanet, P1_random_image, 20260913 | 0.374 | 789 | 734 | 93.0% | 1135 | 190 | 16.7% |
+| retinanet, P1_random_image, 20260914 | 0.422 | 792 | 732 | 92.4% | 1074 | 147 | 13.7% |
+| retinanet, P1_random_image, 20260915 | 0.414 | 796 | 740 | 93.0% | 1059 | 160 | 15.1% |
+| retinanet, P2_event_disjoint, 20260911 | 0.354 | 180 | 165 | 91.7% | 907 | 279 | 30.8% |
+| retinanet, P2_event_disjoint, 20260912 | 0.364 | 193 | 172 | 89.1% | 1218 | 444 | 36.5% |
+| retinanet, P2_event_disjoint, 20260913 | 0.325 | 197 | 176 | 89.3% | 1049 | 335 | 31.9% |
+| retinanet, P2_event_disjoint, 20260914 | 0.284 | 168 | 158 | 94.0% | 1014 | 523 | 51.6% |
+| retinanet, P2_event_disjoint, 20260915 | 0.289 | 187 | 173 | 92.5% | 1190 | 466 | 39.2% |
+| retinanet, P3_camera_disjoint, 20260911 | 0.236 | 153 | 134 | 87.6% | 1340 | 663 | 49.5% |
+| retinanet, P3_camera_disjoint, 20260912 | 0.254 | 151 | 126 | 83.4% | 603 | 260 | 43.1% |
+| retinanet, P3_camera_disjoint, 20260913 | 0.211 | 183 | 159 | 86.9% | 889 | 165 | 18.6% |
+| retinanet, P3_camera_disjoint, 20260914 | 0.253 | 180 | 167 | 92.8% | 1643 | 706 | 43.0% |
+| retinanet, P3_camera_disjoint, 20260915 | 0.231 | 200 | 164 | 82.0% | 868 | 201 | 23.2% |
+| retinanet, P4_partner_lopo, 20260911 | 0.417 | 417 | 359 | 86.1% | 3321 | 1730 | 52.1% |
+| retinanet, P4_partner_lopo, 20260912 | 0.303 | 393 | 289 | 73.5% | 1729 | 349 | 20.2% |
+| retinanet, P4_partner_lopo, 20260913 | 0.300 | 82 | 39 | 47.6% | 449 | 149 | 33.2% |
+| retinanet, P5_temporal, 20260911 | 0.360 | 245 | 159 | 64.9% | 1497 | 642 | 42.9% |
+| yolov8n, P1_random_image, 20260911 | 0.356 | 807 | 743 | 92.1% | 1161 | 335 | 28.9% |
+| yolov8n, P1_random_image, 20260912 | 0.299 | 798 | 744 | 93.2% | 1137 | 339 | 29.8% |
+| yolov8n, P1_random_image, 20260913 | 0.351 | 789 | 733 | 92.9% | 1135 | 306 | 27.0% |
+| yolov8n, P1_random_image, 20260914 | 0.284 | 792 | 748 | 94.4% | 1074 | 370 | 34.5% |
+| yolov8n, P1_random_image, 20260915 | 0.310 | 796 | 743 | 93.3% | 1059 | 323 | 30.5% |
+| yolov8n, P2_event_disjoint, 20260911 | 0.224 | 180 | 161 | 89.4% | 907 | 372 | 41.0% |
+| yolov8n, P2_event_disjoint, 20260912 | 0.140 | 193 | 177 | 91.7% | 1218 | 610 | 50.1% |
+| yolov8n, P2_event_disjoint, 20260913 | 0.121 | 197 | 169 | 85.8% | 1049 | 518 | 49.4% |
+| yolov8n, P2_event_disjoint, 20260914 | 0.158 | 168 | 156 | 92.9% | 1014 | 535 | 52.8% |
+| yolov8n, P2_event_disjoint, 20260915 | 0.132 | 187 | 169 | 90.4% | 1190 | 572 | 48.1% |
+| yolov8n, P3_camera_disjoint, 20260911 | 0.046 | 153 | 127 | 83.0% | 1340 | 672 | 50.1% |
+| yolov8n, P3_camera_disjoint, 20260912 | 0.025 | 151 | 117 | 77.5% | 603 | 384 | 63.7% |
+| yolov8n, P3_camera_disjoint, 20260913 | 0.054 | 183 | 130 | 71.0% | 889 | 256 | 28.8% |
+| yolov8n, P3_camera_disjoint, 20260914 | 0.054 | 180 | 151 | 83.9% | 1643 | 864 | 52.6% |
+| yolov8n, P3_camera_disjoint, 20260915 | 0.117 | 200 | 141 | 70.5% | 868 | 182 | 21.0% |
+| yolov8n, P4_partner_lopo, 20260911 | 0.147 | 417 | 318 | 76.3% | 3321 | 1830 | 55.1% |
+| yolov8n, P4_partner_lopo, 20260912 | 0.097 | 393 | 253 | 64.4% | 1729 | 342 | 19.8% |
+| yolov8n, P4_partner_lopo, 20260913 | 0.190 | 82 | 21 | 25.6% | 449 | 28 | 6.2% |
+| yolov8n, P5_temporal, 20260911 | 0.194 | 245 | 159 | 64.9% | 1497 | 673 | 45.0% |
+| yolov8s, P1_random_image, 20260911 | 0.321 | 807 | 749 | 92.8% | 1161 | 328 | 28.3% |
+| yolov8s, P1_random_image, 20260912 | 0.372 | 798 | 746 | 93.5% | 1137 | 284 | 25.0% |
+| yolov8s, P1_random_image, 20260913 | 0.338 | 789 | 742 | 94.0% | 1135 | 285 | 25.1% |
+| yolov8s, P1_random_image, 20260914 | 0.331 | 792 | 749 | 94.6% | 1074 | 299 | 27.8% |
+| yolov8s, P1_random_image, 20260915 | 0.385 | 796 | 741 | 93.1% | 1059 | 262 | 24.7% |
+| yolov8s, P2_event_disjoint, 20260911 | 0.177 | 180 | 167 | 92.8% | 907 | 333 | 36.7% |
+| yolov8s, P2_event_disjoint, 20260912 | 0.194 | 193 | 174 | 90.2% | 1218 | 515 | 42.3% |
+| yolov8s, P2_event_disjoint, 20260913 | 0.233 | 197 | 176 | 89.3% | 1049 | 378 | 36.0% |
+| yolov8s, P2_event_disjoint, 20260914 | 0.145 | 168 | 152 | 90.5% | 1014 | 554 | 54.6% |
+| yolov8s, P2_event_disjoint, 20260915 | 0.127 | 187 | 172 | 92.0% | 1190 | 544 | 45.7% |
+| yolov8s, P3_camera_disjoint, 20260911 | 0.050 | 153 | 134 | 87.6% | 1340 | 726 | 54.2% |
+| yolov8s, P3_camera_disjoint, 20260912 | 0.012 | 151 | 118 | 78.1% | 603 | 326 | 54.1% |
+| yolov8s, P3_camera_disjoint, 20260913 | 0.041 | 183 | 137 | 74.9% | 889 | 286 | 32.2% |
+| yolov8s, P3_camera_disjoint, 20260914 | 0.058 | 180 | 160 | 88.9% | 1643 | 706 | 43.0% |
+| yolov8s, P3_camera_disjoint, 20260915 | 0.103 | 200 | 140 | 70.0% | 868 | 219 | 25.2% |
+| yolov8s, P4_partner_lopo, 20260911 | 0.159 | 417 | 341 | 81.8% | 3321 | 1527 | 46.0% |
+| yolov8s, P4_partner_lopo, 20260912 | 0.059 | 393 | 277 | 70.5% | 1729 | 448 | 25.9% |
+| yolov8s, P4_partner_lopo, 20260913 | 0.138 | 82 | 37 | 45.1% | 449 | 85 | 18.9% |
+| yolov8s, P5_temporal, 20260911 | 0.118 | 245 | 159 | 64.9% | 1497 | 731 | 48.8% |
+
+### S10.7 Matched-image AP: the same test images scored by models trained under two rules (post hoc)
+
+| detector, rule, seed | shared test images | mAP@0.50, random-rule model | mAP@0.50, group-disjoint model | difference |
+|---|---|---|---|---|
+| fasterrcnn, P2_event_disjoint, 20260911 | 1359 | 0.304 | 0.111 | 0.192 |
+| fasterrcnn, P2_event_disjoint, 20260912 | 1374 | 0.279 | 0.101 | 0.178 |
+| fasterrcnn, P2_event_disjoint, 20260913 | 1405 | 0.261 | 0.102 | 0.159 |
+| fasterrcnn, P2_event_disjoint, 20260914 | 1385 | 0.329 | 0.099 | 0.229 |
+| fasterrcnn, P2_event_disjoint, 20260915 | 1358 | 0.311 | 0.099 | 0.212 |
+| fasterrcnn, P3_camera_disjoint, 20260911 | 1162 | 0.294 | 0.070 | 0.224 |
+| fasterrcnn, P3_camera_disjoint, 20260912 | 1025 | 0.386 | 0.048 | 0.338 |
+| fasterrcnn, P3_camera_disjoint, 20260913 | 1487 | 0.270 | 0.020 | 0.250 |
+| fasterrcnn, P3_camera_disjoint, 20260914 | 1297 | 0.323 | 0.061 | 0.262 |
+| fasterrcnn, P3_camera_disjoint, 20260915 | 1299 | 0.213 | 0.019 | 0.193 |
+| fasterrcnn, P5_temporal, 20260911 | 1430 | 0.238 | 0.046 | 0.192 |
+| retinanet, P2_event_disjoint, 20260911 | 1359 | 0.824 | 0.598 | 0.227 |
+| retinanet, P2_event_disjoint, 20260912 | 1374 | 0.769 | 0.545 | 0.223 |
+| retinanet, P2_event_disjoint, 20260913 | 1405 | 0.809 | 0.593 | 0.216 |
+| retinanet, P2_event_disjoint, 20260914 | 1385 | 0.811 | 0.582 | 0.230 |
+| retinanet, P2_event_disjoint, 20260915 | 1358 | 0.809 | 0.585 | 0.224 |
+| retinanet, P3_camera_disjoint, 20260911 | 1162 | 0.796 | 0.502 | 0.293 |
+| retinanet, P3_camera_disjoint, 20260912 | 1025 | 0.863 | 0.505 | 0.358 |
+| retinanet, P3_camera_disjoint, 20260913 | 1487 | 0.813 | 0.373 | 0.440 |
+| retinanet, P3_camera_disjoint, 20260914 | 1297 | 0.802 | 0.484 | 0.319 |
+| retinanet, P3_camera_disjoint, 20260915 | 1299 | 0.794 | 0.459 | 0.335 |
+| retinanet, P5_temporal, 20260911 | 1430 | 0.768 | 0.384 | 0.384 |
+| yolov8n, P2_event_disjoint, 20260911 | 1359 | 0.824 | 0.561 | 0.262 |
+| yolov8n, P2_event_disjoint, 20260912 | 1374 | 0.777 | 0.519 | 0.258 |
+| yolov8n, P2_event_disjoint, 20260913 | 1405 | 0.823 | 0.574 | 0.249 |
+| yolov8n, P2_event_disjoint, 20260914 | 1385 | 0.806 | 0.543 | 0.263 |
+| yolov8n, P2_event_disjoint, 20260915 | 1358 | 0.810 | 0.532 | 0.278 |
+| yolov8n, P3_camera_disjoint, 20260911 | 1162 | 0.798 | 0.381 | 0.416 |
+| yolov8n, P3_camera_disjoint, 20260912 | 1025 | 0.843 | 0.333 | 0.510 |
+| yolov8n, P3_camera_disjoint, 20260913 | 1487 | 0.808 | 0.199 | 0.609 |
+| yolov8n, P3_camera_disjoint, 20260914 | 1297 | 0.795 | 0.359 | 0.436 |
+| yolov8n, P3_camera_disjoint, 20260915 | 1299 | 0.805 | 0.312 | 0.493 |
+| yolov8n, P5_temporal, 20260911 | 1430 | 0.750 | 0.320 | 0.430 |
+| yolov8s, P2_event_disjoint, 20260911 | 1359 | 0.826 | 0.590 | 0.237 |
+| yolov8s, P2_event_disjoint, 20260912 | 1374 | 0.806 | 0.535 | 0.270 |
+| yolov8s, P2_event_disjoint, 20260913 | 1405 | 0.839 | 0.596 | 0.243 |
+| yolov8s, P2_event_disjoint, 20260914 | 1385 | 0.840 | 0.582 | 0.258 |
+| yolov8s, P2_event_disjoint, 20260915 | 1358 | 0.832 | 0.583 | 0.249 |
+| yolov8s, P3_camera_disjoint, 20260911 | 1162 | 0.804 | 0.461 | 0.343 |
+| yolov8s, P3_camera_disjoint, 20260912 | 1025 | 0.862 | 0.370 | 0.492 |
+| yolov8s, P3_camera_disjoint, 20260913 | 1487 | 0.828 | 0.251 | 0.576 |
+| yolov8s, P3_camera_disjoint, 20260914 | 1297 | 0.821 | 0.420 | 0.401 |
+| yolov8s, P3_camera_disjoint, 20260915 | 1299 | 0.825 | 0.326 | 0.499 |
+| yolov8s, P5_temporal, 20260911 | 1430 | 0.747 | 0.333 | 0.413 |
+
+### S10.8 The audit's sampling design
+
+Cleaned harvest 4,915; eligible 1,744; drawn 182; removed before the freeze 23 (most-cited half 16, random half 7); frozen frame 159 (most-cited 72, random 87). The sampling script contains a step that would have added one named paper had the draw not selected it; the draw selected it in the most-cited half, so the step did not run.
+
+| stratum (modality, years) | eligible records | most-cited drawn | random drawn |
+|---|---|---|---|
+| edge, 2020-21 | 20 | 2 | 2 |
+| edge, 2022-23 | 51 | 2 | 3 |
+| edge, 2024-26 | 132 | 7 | 7 |
+| iot, 2020-21 | 46 | 2 | 3 |
+| iot, 2022-23 | 79 | 4 | 4 |
+| iot, 2024-26 | 151 | 8 | 8 |
+| satellite, 2020-21 | 65 | 3 | 4 |
+| satellite, 2022-23 | 90 | 4 | 5 |
+| satellite, 2024-26 | 149 | 7 | 8 |
+| uav, 2020-21 | 39 | 2 | 2 |
+| uav, 2022-23 | 108 | 5 | 6 |
+| uav, 2024-26 | 252 | 13 | 13 |
+| vision, 2020-21 | 59 | 3 | 3 |
+| vision, 2022-23 | 156 | 8 | 8 |
+| vision, 2024-26 | 347 | 18 | 18 |
+
+| coding | half | lacking a reconstructable mechanism | % | Wilson 95% CI |
+|---|---|---|---|---|
+| author_validation | top_cited | 38 of 51 | 74.5 | 61.1–84.5 |
+| author_validation | random | 16 of 28 | 57.1 | 39.1–73.5 |
+| author_validation | ALL | 54 of 79 | 68.4 | 57.5–77.6 |
+| human_consensus | top_cited | 35 of 51 | 68.6 | 55.0–79.7 |
+| human_consensus | random | 15 of 28 | 53.6 | 35.8–70.5 |
+| human_consensus | ALL | 50 of 79 | 63.3 | 52.3–73.1 |
+| author_validation | sampled_only | 54 of 79 | 68.4 | 57.5–77.6 |
+| human_consensus | sampled_only | 50 of 79 | 63.3 | 52.3–73.1 |
+| author_validation | design-weighted | of 79 | 58.4 | 42.4–73.9 (bootstrap) |
+| human_consensus | design-weighted | of 79 | 55.1 | 41.0–69.2 (bootstrap) |
+
+### S10.9 FLAME comparison under removals (post hoc)
+
+| set | designated / substituted | medians | pairs favouring the substituting paper | probability of superiority | exact Mann–Whitney p | Hodges–Lehmann shift (95% CI) |
+|---|---|---|---|---|---|---|
+| base | 18 / 13 | 83.98 / 98.18 | 233 of 234 | 0.996 | 1.9e-08 | 13.17 (10.99 to 16.70) |
+| minus_weak_evidence | 16 / 11 | 82.84 / 98.10 | 176 of 176 | 1.000 | 1.5e-07 | 14.36 (11.12 to 17.42) |
+| minus_non_test_headline | 18 / 9 | 83.98 / 98.18 | 161 of 162 | 0.994 | 8.5e-07 | 13.09 (10.29 to 17.00) |
+| minus_weak_and_non_test | 16 / 8 | 82.84 / 98.14 | 128 of 128 | 1.000 | 2.7e-06 | 14.00 (10.78 to 18.62) |
+
+Removed: minus_weak_evidence: Treneska 2021, Dutta 2021, Wang 2023, Reis 2023; minus_non_test_headline: Wang 2023, Namburu 2023, Kurasinski 2023, Islam 2023; minus_weak_and_non_test: Treneska 2021, Dutta 2021, Wang 2023, Namburu 2023, Kurasinski 2023, Reis 2023, Islam 2023. Removing any single paper leaves at most one pair favouring the designated-protocol paper.

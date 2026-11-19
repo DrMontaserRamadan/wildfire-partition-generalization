@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use these materials, please cite them as below."
-title: "Data Partitioning and Generalization in Deep Learning-Based Wildfire Detection: materials"
-version: 1.0.0
-date-released: 2026-11-12
+title: "Random image splits overstate wildfire detector accuracy: A controlled experiment on data leakage and an audit of reporting practice: materials"
+version: 1.1.0
+date-released: 2026-11-19
 license: [MIT, CC-BY-4.0]
 authors:
   - family-names: Ramadan
@@ -11,9 +11,12 @@ authors:
   - family-names: Saygın
     given-names: Hasan
     orcid: "https://orcid.org/0000-0003-2479-7635"
-  - family-names: Alhindawi
-    given-names: Reham
-    orcid: "https://orcid.org/0000-0002-1992-8795"
+  - family-names: "A. H. Ali"
+    given-names: Mohammed
+    orcid: "https://orcid.org/0000-0002-5179-7027"
+  - family-names: Nik Ghazali
+    given-names: Nik Nazri
+    orcid: "https://orcid.org/0000-0001-6042-3599"
   - family-names: Alkhedher
     given-names: Mohammad
     orcid: "https://orcid.org/0000-0001-6140-7371"
